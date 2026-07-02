@@ -6,20 +6,27 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public PlayerInput playerInput;
-    public Texture2D cursorTexture;
-    [Header("Move Parameter")]
+    //Move Parameter
     private Vector2 inputDireciton;
     private Vector2 mousePosition;
     private float moveSpeed=3;
-    [Header("Component")]
+
+    //Component
     private Animator animator;
     private Rigidbody2D rb;
+
+    //Openable Object Variable
+    public OpenableObject openableObject;
     private void Awake()
     {
         playerInput=new PlayerInput();
         rb=GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        SetCustomCursor();
+    }
+
+    private void Start()
+    {
+        GameManager.instance.SetCustomCursor();
     }
 
 
@@ -35,11 +42,13 @@ public class PlayerController : MonoBehaviour
     }
     private void OnEnable()
     {
-        playerInput.Enable();
+        playerInput.Player.Enable();
+        UIInputSubscribe();
     }
     private void OnDisable()
     {
-        playerInput.Disable();
+        playerInput.Player.Disable();
+        UIInputUnsubscribe();
     }
 
 
@@ -58,15 +67,52 @@ public class PlayerController : MonoBehaviour
     }
 
 
-        private void InputCheck()
+
+
+
+
+    //Switch UI
+    private void OpenBackpackInventory(InputAction.CallbackContext callBackContext)
     {
-        inputDireciton=playerInput.Player.Move.ReadValue<Vector2>().normalized;
+        playerInput.Player.Disable();
+        InventoryManager.instance.playerInput.UI.Enable();
+        GameManager.instance.SetDefaultCursor();
+        InventoryManager.instance.CloseAllInventories();
+        InventoryManager.instance.OpenInventoryWindow("Backpack Inventory");
+
+    }
+
+    private void OpenObjectInvetory(InputAction.CallbackContext callBackContext)
+    {
+        if (openableObject == null) return; 
+        playerInput.Player.Disable();
+        InventoryManager.instance.playerInput.UI.Enable();
+        GameManager.instance.SetDefaultCursor();
+        InventoryManager.instance.CloseAllInventories();
+        openableObject.GetComponent<OpenableObject>().OpenInventory();
+
+
+    }
+
+
+    //InputArea
+    private void InputCheck()
+    {
+        inputDireciton = playerInput.Player.Move.ReadValue<Vector2>().normalized;
         mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
     }
 
-    private void SetCustomCursor() //Change the cursor in game
+    private void UIInputSubscribe()
     {
-        Vector2 mousePoint = new Vector2(201, 201);
-        Cursor.SetCursor(cursorTexture, mousePoint, CursorMode.Auto);
+        playerInput.Player.OpenBackpackInventory.started += OpenBackpackInventory;
+        playerInput.Player.OpenObjectInventory.started += OpenObjectInvetory;
+    }
+
+    private void UIInputUnsubscribe()
+    {
+        playerInput.Player.OpenBackpackInventory.started -= OpenBackpackInventory;
+        playerInput.Player.OpenObjectInventory.started -= OpenObjectInvetory;
+
+
     }
 }

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f23db71e287d004cb1ca19ce5cb3c89, type: 3}
+  m_Name: Posion
+  m_EditorClassIdentifier: 
+  sizeWidth: 1
+  sizeHeight: 2
+  itemIcon: {fileID: 21300000, guid: 9e56fe4f6e64ab748b48c368deb6ed0d, type: 3}
+  itemName: Potion
+  itemDescription: A postion test
+  itemNameColor: {r: 0.94509804, g: 0.93333334, b: 0, a: 1}
