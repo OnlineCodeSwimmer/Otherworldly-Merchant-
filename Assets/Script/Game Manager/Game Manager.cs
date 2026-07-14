@@ -10,6 +10,11 @@ public class GameManager : MonoBehaviour
     //Component
     [Header("Component")]
     public PlayerController playerController;
+
+    //
+    [Header("UI")]
+    public ComputerManager computerManager;
+
     //Cursor Variable
     public Texture2D cursorTexture;
 

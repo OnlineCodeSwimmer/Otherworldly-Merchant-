@@ -129,7 +129,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Open Object Inventory"",
+                    ""name"": ""Open Object"",
                     ""type"": ""Button"",
                     ""id"": ""c0adef52-60d5-4e6d-a2c6-7e0a254f4c6f"",
                     ""expectedControlType"": """",
@@ -377,7 +377,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Open Object Inventory"",
+                    ""action"": ""Open Object"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1020,7 +1020,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
         m_Player_OpenBackpackInventory = m_Player.FindAction("Open Backpack Inventory", throwIfNotFound: true);
-        m_Player_OpenObjectInventory = m_Player.FindAction("Open Object Inventory", throwIfNotFound: true);
+        m_Player_OpenObject = m_Player.FindAction("Open Object", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1120,7 +1120,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_Fire;
     private readonly InputAction m_Player_OpenBackpackInventory;
-    private readonly InputAction m_Player_OpenObjectInventory;
+    private readonly InputAction m_Player_OpenObject;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -1149,9 +1149,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @OpenBackpackInventory => m_Wrapper.m_Player_OpenBackpackInventory;
         /// <summary>
-        /// Provides access to the underlying input action "Player/OpenObjectInventory".
+        /// Provides access to the underlying input action "Player/OpenObject".
         /// </summary>
-        public InputAction @OpenObjectInventory => m_Wrapper.m_Player_OpenObjectInventory;
+        public InputAction @OpenObject => m_Wrapper.m_Player_OpenObject;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1190,9 +1190,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @OpenBackpackInventory.started += instance.OnOpenBackpackInventory;
             @OpenBackpackInventory.performed += instance.OnOpenBackpackInventory;
             @OpenBackpackInventory.canceled += instance.OnOpenBackpackInventory;
-            @OpenObjectInventory.started += instance.OnOpenObjectInventory;
-            @OpenObjectInventory.performed += instance.OnOpenObjectInventory;
-            @OpenObjectInventory.canceled += instance.OnOpenObjectInventory;
+            @OpenObject.started += instance.OnOpenObject;
+            @OpenObject.performed += instance.OnOpenObject;
+            @OpenObject.canceled += instance.OnOpenObject;
         }
 
         /// <summary>
@@ -1216,9 +1216,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @OpenBackpackInventory.started -= instance.OnOpenBackpackInventory;
             @OpenBackpackInventory.performed -= instance.OnOpenBackpackInventory;
             @OpenBackpackInventory.canceled -= instance.OnOpenBackpackInventory;
-            @OpenObjectInventory.started -= instance.OnOpenObjectInventory;
-            @OpenObjectInventory.performed -= instance.OnOpenObjectInventory;
-            @OpenObjectInventory.canceled -= instance.OnOpenObjectInventory;
+            @OpenObject.started -= instance.OnOpenObject;
+            @OpenObject.performed -= instance.OnOpenObject;
+            @OpenObject.canceled -= instance.OnOpenObject;
         }
 
         /// <summary>
@@ -1570,12 +1570,12 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnOpenBackpackInventory(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Open Object Inventory" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Open Object" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnOpenObjectInventory(InputAction.CallbackContext context);
+        void OnOpenObject(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.

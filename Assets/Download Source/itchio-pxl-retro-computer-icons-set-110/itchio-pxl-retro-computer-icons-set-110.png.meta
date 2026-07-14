@@ -1,0 +1,2657 @@
+fileFormatVersion: 2
+guid: 82c6ab502de60284cbf51a1a706cc9c1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 345
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604b48e9d3c515141ad04f1b4f8e7f3c
+      internalID: -1121509494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 345
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29cb5d989dff6464aa391904124ad176
+      internalID: -1149866056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 344
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75699df12fb4084eab3434be518ea2d
+      internalID: 981408726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_3
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 342
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bf73fc6ad8afb41a8ada658e720592
+      internalID: -2077207769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_4
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 345
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4fed710a75a1142881101e4b7b7b38
+      internalID: -1161158388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_5
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 347
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5306bb19086e447b13fd4b577e5bb3
+      internalID: -540606377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_6
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 343
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e59b0051d32534a9b63ede1cbd85ad
+      internalID: -146126483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_7
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 342
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbba35d2501dc6e44911699eecf7ff8e
+      internalID: -1141292765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_8
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 359
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595fb56734a01a64c8f3282123b1f6bf
+      internalID: 419038300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_9
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 344
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8dfc342facb214987d921c1c01ed4f
+      internalID: 1958487043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_10
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 344
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42df16df71b5a947851a76f5992692d
+      internalID: -748814690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_11
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 344
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a46933dd51b014d9bd54b956561b88
+      internalID: -1145662838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 310
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff5898ce1793414bacc8e5b162c9e22
+      internalID: -1134547035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_13
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 306
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ea851d7ac63434ba57161b2d5c3c49
+      internalID: -1875567434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_14
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 308
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3348dcc70b307f4f809f750a0c2f90b
+      internalID: -1597390043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_15
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 309
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24720c3010e9bac46bcc20e597a29273
+      internalID: -357971860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_16
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 309
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a03cdbee51e2a45b479bd794b830f6
+      internalID: -721155790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_17
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 306
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c4699b8c8682746b3b732169601725
+      internalID: -1249959443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_18
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 305
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22705138dc3e0ea4b914c689a46eee85
+      internalID: 1337257882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_19
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 307
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560fb117d9eb15e49bc5c4f1a1197dd3
+      internalID: -707967317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_20
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 309
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f44cabe564179b43b5b753f2fa9d8fa
+      internalID: 1328765477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_21
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 306
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f1f07f9c5aa3e42a6c1d6dbc3b4a12
+      internalID: 1774888360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_22
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 307
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2462fd6625c802e48aa57144d32eba38
+      internalID: 2100760061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_23
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 271
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b3bdd97d897074e863ca4a2d99be44
+      internalID: 1121106677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_24
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 271
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b518dda4909a73b4a8a8e405b1040252
+      internalID: 375209119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_25
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 270
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd6d8fcdc47fa3468bb07708b9d8937
+      internalID: -500901137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_26
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 272
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6348a3e030fed03438f616c855807c98
+      internalID: -679051129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_27
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 270
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6635d66f52deae2489d24d3d1cf5fd2c
+      internalID: -1574960662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_28
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 272
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3aec90ad0ba6948afb8c36ed704c19
+      internalID: -738450106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_29
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 270
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33771796ce8c034684d37ee0cbd060e
+      internalID: 39224209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_30
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 270
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ae428be3388764ea480f319f59b054
+      internalID: 203400484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_31
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 272
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423a724861ca86f4491f1f2df4446d30
+      internalID: -819251271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_32
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 269
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d80c8d4cdbfb84f989093e20726b3d
+      internalID: -2027524889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_33
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 269
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5df4fcd7a13bd4eb421ca34a100f99
+      internalID: -756013076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_34
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 233
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fb08b285a0f5448882263616e16a03
+      internalID: 199870673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_35
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 233
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48383c56f9ae7df4f881af4ac990c2fb
+      internalID: -2129244868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_36
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 233
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de13852255c9aad48826cc52f57c723d
+      internalID: 126680587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_37
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 233
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb72c2bdf5933d40a9af8958ef0c6c9
+      internalID: 1942259500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_38
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 233
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e54d9a8ce0e564180465379d07d887
+      internalID: -851427591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_39
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 232
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76099ffe3ff2dc04095e96501159d545
+      internalID: -165016119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_40
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 235
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6209362bf86aa044ab0f84c15b4317bf
+      internalID: 1232024542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_41
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 234
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338ec6b1185865f45a768def5c02c19b
+      internalID: -1784697670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_42
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 232
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e08854c9bc2fa4aab306f60bc4c9c3
+      internalID: 1418587341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_43
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 233
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e066d1456a351ac46a47896f3e2f0524
+      internalID: -1984409571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_44
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 233
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486105609cd4fe74ca15a09385a79bee
+      internalID: 1847018537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_45
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 198
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03da2903e5381244a49cc82e3066c33
+      internalID: 23351878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_46
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 198
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b177b72c4f3893f43974a09f2fdaf231
+      internalID: 791229182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_47
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 198
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ab51993bbaaaf4bba682a8d3851a52
+      internalID: -272498966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_48
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 198
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6bd15973789a7f41824740ffc5e0a81
+      internalID: 596229464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_49
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 196
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7583ffff1f5bb8e41ac70ab0f16f3252
+      internalID: 43061704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_50
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 198
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cba6bb9045807449e48a16bbe92234
+      internalID: 1630527411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_51
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 220
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518b017f5a56c034e9292f05d2174529
+      internalID: -2091939361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_52
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 200
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a240d72099a952409a7647012acb422
+      internalID: 2090929321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_53
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 203
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9acad40332deb44a543206113c1ca2
+      internalID: 2031857645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_54
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 198
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7814ec650504b6444a0651b6d44b272a
+      internalID: -16916382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_55
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 197
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983be897634fc8948b451e29aa299226
+      internalID: 349240313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_56
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 202
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43703077afb5e64592f652ea58fa5e6
+      internalID: -1472754333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_57
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 195
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4b19bb1ea285944b3c2d2fa3b6a549
+      internalID: 1883923990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_58
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc78e45d35fb01d4282b2170d5c826c5
+      internalID: -731849781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_59
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 158
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4136e36d6dcc2c49a478ec4c78a4e03
+      internalID: -1366759157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_60
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 161
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52035c9cae1c6f4ba5489fc03345541
+      internalID: 1439337247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_61
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 159
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8491a1c0e77f747990f9455a15920b
+      internalID: -1966838672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_62
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 159
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e0556f13cdaed4f97378d10e95915d
+      internalID: -1870059756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_63
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 160
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff296b255bdcf8046abea31bcdd7d740
+      internalID: -2112022188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_64
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 160
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c54848c988e4841b107931a5656e0a
+      internalID: 2035412786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_65
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 157
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed526891e097aba41bb6e6ddf1be3b5d
+      internalID: 1766355418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_66
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 157
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d819626141881194ab114cc8bc733595
+      internalID: -1511553524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_67
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 160
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0eedf499fbaef46b686676a7eeb6b9
+      internalID: 2018501219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_68
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 158
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47da3502de7508145996ddcf4fdadafd
+      internalID: -1243559916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_69
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 125
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10bd5b49513bec4409ca78c079e97ebd
+      internalID: 1503472287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_70
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 124
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5d38b860aec444289d40aca013cf2e
+      internalID: -990378206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_71
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 122
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ffd60617306e464e8e86c01454419e6
+      internalID: 535638336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_72
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 125
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6df97725d0aab40af827d6d5499f39
+      internalID: -1576956692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_73
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 122
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb668b809fa3c24e9b06718c7001483
+      internalID: 73795988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_74
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 124
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8974bd7fac47bb1448bada7590f8d544
+      internalID: 773462783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_75
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 125
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b88bcde74f95684d95a9bfd4271f9a5
+      internalID: -521617390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_76
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 123
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11db0a606f3b2644a6b9856da40499a
+      internalID: 864784704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_77
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 124
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e1d95f14d99d242bf4aa4a0b1bb5c6
+      internalID: -1342229294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_78
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 123
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f4eadcf0f6425438ecb83e90667308
+      internalID: -1201831966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_79
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 125
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4f471827c7a8e46a37eb6808257509
+      internalID: -766475575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_80
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 87
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f11636a182b464f9e6a8b643cdb397
+      internalID: -439588005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_81
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 84
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34717afb717ca34488104ed5ad3fb244
+      internalID: 838001282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_82
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 85
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cedc09765fb62945a4467a626018e8b
+      internalID: -103583400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_83
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 89
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1be4e4f75c59749968ba45bc2c098c
+      internalID: -1829357431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_84
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 86
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d2e4b94501c314e873ef9045eb546b
+      internalID: -1739380532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_85
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 87
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1aab10150a7df54393576ad16b267b5
+      internalID: 1916851400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_86
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 88
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9934479120182ba4ea29f596f490a806
+      internalID: 464808190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_87
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 85
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533e94f6877ae43489f375d7164014f8
+      internalID: 893997096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_88
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 85
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2309471c21d4465419269cd81b336a31
+      internalID: 1670657828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_89
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 85
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981fbf91d8a2a9b42a3688784f3bdb2a
+      internalID: 1742501382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_90
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 89
+        width: 4
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79f91e99952f9d43855530d1b86c4f5
+      internalID: -2130523775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_91
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 84
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f7ce988e7c15c46ac17b4fab5e97e8
+      internalID: 483861942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_92
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 49
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571c5ddc86dbc184da58356a08cf5de5
+      internalID: 1807102408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_93
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 47
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795393f4776bc1f45ac7d985f59c0caf
+      internalID: -761072214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_94
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 47
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3b3752cb23fe84ca66b16a1368f4d6
+      internalID: 2058280649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_95
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 47
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4784846fc18c2ab41883442893e01a8e
+      internalID: 1968220156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_96
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 49
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7766a3ff704a74399df848d7185992
+      internalID: 1470057792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_97
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 49
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad1b1cf1355a1748a6f6fed59491f8d
+      internalID: 464273006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_98
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 49
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f32b1aa22d12c4ba2e12f0d5eed33f
+      internalID: -1952399110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_99
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 51
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df405281feb3304dbce3cfa730307b4
+      internalID: -820479238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_100
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 51
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72de4d09c813214e90feb9ae31b2efe
+      internalID: -1469296493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_101
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 51
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb40b27c047177440a8f334472c34e05
+      internalID: 1269078060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_102
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 51
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e303759d9ade42f45b4432b91d14b5a9
+      internalID: 1387921711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_103
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 32
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1943a2cc29fca4b85ae0fb4c8ece7d
+      internalID: -995478842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_104
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 10
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e949cb7bfc7f9724ebceebb58da139be
+      internalID: -413072169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_105
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 13
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb96996286c19ec4390e9ac0c4a0a735
+      internalID: -107457772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_106
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 11
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed982b386e7aa940b3c079b9359d617
+      internalID: -1453931839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_107
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 10
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ee90bbf09e19f479fe87602378c0a1
+      internalID: -27455667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_108
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 17
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dade6992b2f6414291b148cd173c6c2
+      internalID: 1830772065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_109
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 9
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4613fb7d4b343584ea378954e1bbae16
+      internalID: -618607832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_110
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 13
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c055ec37203d26469e7a1e3b1f3c078
+      internalID: 660617669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_111
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 14
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1b80030956fe942aa6b84b3f1087e7
+      internalID: -120213674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_112
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 14
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b1619a45a2da8418bf1cd021828ece
+      internalID: 99496522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_113
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 10
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d843eccb59a91204fab6fc6057844f4a
+      internalID: -1520728398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itchio-pxl-retro-computer-icons-set-110_114
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 19
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98c70072e8b7134081caf99eea917a2
+      internalID: -832713411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      itchio-pxl-retro-computer-icons-set-110_0: -1121509494
+      itchio-pxl-retro-computer-icons-set-110_1: -1149866056
+      itchio-pxl-retro-computer-icons-set-110_10: -748814690
+      itchio-pxl-retro-computer-icons-set-110_100: -1469296493
+      itchio-pxl-retro-computer-icons-set-110_101: 1269078060
+      itchio-pxl-retro-computer-icons-set-110_102: 1387921711
+      itchio-pxl-retro-computer-icons-set-110_103: -995478842
+      itchio-pxl-retro-computer-icons-set-110_104: -413072169
+      itchio-pxl-retro-computer-icons-set-110_105: -107457772
+      itchio-pxl-retro-computer-icons-set-110_106: -1453931839
+      itchio-pxl-retro-computer-icons-set-110_107: -27455667
+      itchio-pxl-retro-computer-icons-set-110_108: 1830772065
+      itchio-pxl-retro-computer-icons-set-110_109: -618607832
+      itchio-pxl-retro-computer-icons-set-110_11: -1145662838
+      itchio-pxl-retro-computer-icons-set-110_110: 660617669
+      itchio-pxl-retro-computer-icons-set-110_111: -120213674
+      itchio-pxl-retro-computer-icons-set-110_112: 99496522
+      itchio-pxl-retro-computer-icons-set-110_113: -1520728398
+      itchio-pxl-retro-computer-icons-set-110_114: -832713411
+      itchio-pxl-retro-computer-icons-set-110_12: -1134547035
+      itchio-pxl-retro-computer-icons-set-110_13: -1875567434
+      itchio-pxl-retro-computer-icons-set-110_14: -1597390043
+      itchio-pxl-retro-computer-icons-set-110_15: -357971860
+      itchio-pxl-retro-computer-icons-set-110_16: -721155790
+      itchio-pxl-retro-computer-icons-set-110_17: -1249959443
+      itchio-pxl-retro-computer-icons-set-110_18: 1337257882
+      itchio-pxl-retro-computer-icons-set-110_19: -707967317
+      itchio-pxl-retro-computer-icons-set-110_2: 981408726
+      itchio-pxl-retro-computer-icons-set-110_20: 1328765477
+      itchio-pxl-retro-computer-icons-set-110_21: 1774888360
+      itchio-pxl-retro-computer-icons-set-110_22: 2100760061
+      itchio-pxl-retro-computer-icons-set-110_23: 1121106677
+      itchio-pxl-retro-computer-icons-set-110_24: 375209119
+      itchio-pxl-retro-computer-icons-set-110_25: -500901137
+      itchio-pxl-retro-computer-icons-set-110_26: -679051129
+      itchio-pxl-retro-computer-icons-set-110_27: -1574960662
+      itchio-pxl-retro-computer-icons-set-110_28: -738450106
+      itchio-pxl-retro-computer-icons-set-110_29: 39224209
+      itchio-pxl-retro-computer-icons-set-110_3: -2077207769
+      itchio-pxl-retro-computer-icons-set-110_30: 203400484
+      itchio-pxl-retro-computer-icons-set-110_31: -819251271
+      itchio-pxl-retro-computer-icons-set-110_32: -2027524889
+      itchio-pxl-retro-computer-icons-set-110_33: -756013076
+      itchio-pxl-retro-computer-icons-set-110_34: 199870673
+      itchio-pxl-retro-computer-icons-set-110_35: -2129244868
+      itchio-pxl-retro-computer-icons-set-110_36: 126680587
+      itchio-pxl-retro-computer-icons-set-110_37: 1942259500
+      itchio-pxl-retro-computer-icons-set-110_38: -851427591
+      itchio-pxl-retro-computer-icons-set-110_39: -165016119
+      itchio-pxl-retro-computer-icons-set-110_4: -1161158388
+      itchio-pxl-retro-computer-icons-set-110_40: 1232024542
+      itchio-pxl-retro-computer-icons-set-110_41: -1784697670
+      itchio-pxl-retro-computer-icons-set-110_42: 1418587341
+      itchio-pxl-retro-computer-icons-set-110_43: -1984409571
+      itchio-pxl-retro-computer-icons-set-110_44: 1847018537
+      itchio-pxl-retro-computer-icons-set-110_45: 23351878
+      itchio-pxl-retro-computer-icons-set-110_46: 791229182
+      itchio-pxl-retro-computer-icons-set-110_47: -272498966
+      itchio-pxl-retro-computer-icons-set-110_48: 596229464
+      itchio-pxl-retro-computer-icons-set-110_49: 43061704
+      itchio-pxl-retro-computer-icons-set-110_5: -540606377
+      itchio-pxl-retro-computer-icons-set-110_50: 1630527411
+      itchio-pxl-retro-computer-icons-set-110_51: -2091939361
+      itchio-pxl-retro-computer-icons-set-110_52: 2090929321
+      itchio-pxl-retro-computer-icons-set-110_53: 2031857645
+      itchio-pxl-retro-computer-icons-set-110_54: -16916382
+      itchio-pxl-retro-computer-icons-set-110_55: 349240313
+      itchio-pxl-retro-computer-icons-set-110_56: -1472754333
+      itchio-pxl-retro-computer-icons-set-110_57: 1883923990
+      itchio-pxl-retro-computer-icons-set-110_58: -731849781
+      itchio-pxl-retro-computer-icons-set-110_59: -1366759157
+      itchio-pxl-retro-computer-icons-set-110_6: -146126483
+      itchio-pxl-retro-computer-icons-set-110_60: 1439337247
+      itchio-pxl-retro-computer-icons-set-110_61: -1966838672
+      itchio-pxl-retro-computer-icons-set-110_62: -1870059756
+      itchio-pxl-retro-computer-icons-set-110_63: -2112022188
+      itchio-pxl-retro-computer-icons-set-110_64: 2035412786
+      itchio-pxl-retro-computer-icons-set-110_65: 1766355418
+      itchio-pxl-retro-computer-icons-set-110_66: -1511553524
+      itchio-pxl-retro-computer-icons-set-110_67: 2018501219
+      itchio-pxl-retro-computer-icons-set-110_68: -1243559916
+      itchio-pxl-retro-computer-icons-set-110_69: 1503472287
+      itchio-pxl-retro-computer-icons-set-110_7: -1141292765
+      itchio-pxl-retro-computer-icons-set-110_70: -990378206
+      itchio-pxl-retro-computer-icons-set-110_71: 535638336
+      itchio-pxl-retro-computer-icons-set-110_72: -1576956692
+      itchio-pxl-retro-computer-icons-set-110_73: 73795988
+      itchio-pxl-retro-computer-icons-set-110_74: 773462783
+      itchio-pxl-retro-computer-icons-set-110_75: -521617390
+      itchio-pxl-retro-computer-icons-set-110_76: 864784704
+      itchio-pxl-retro-computer-icons-set-110_77: -1342229294
+      itchio-pxl-retro-computer-icons-set-110_78: -1201831966
+      itchio-pxl-retro-computer-icons-set-110_79: -766475575
+      itchio-pxl-retro-computer-icons-set-110_8: 419038300
+      itchio-pxl-retro-computer-icons-set-110_80: -439588005
+      itchio-pxl-retro-computer-icons-set-110_81: 838001282
+      itchio-pxl-retro-computer-icons-set-110_82: -103583400
+      itchio-pxl-retro-computer-icons-set-110_83: -1829357431
+      itchio-pxl-retro-computer-icons-set-110_84: -1739380532
+      itchio-pxl-retro-computer-icons-set-110_85: 1916851400
+      itchio-pxl-retro-computer-icons-set-110_86: 464808190
+      itchio-pxl-retro-computer-icons-set-110_87: 893997096
+      itchio-pxl-retro-computer-icons-set-110_88: 1670657828
+      itchio-pxl-retro-computer-icons-set-110_89: 1742501382
+      itchio-pxl-retro-computer-icons-set-110_9: 1958487043
+      itchio-pxl-retro-computer-icons-set-110_90: -2130523775
+      itchio-pxl-retro-computer-icons-set-110_91: 483861942
+      itchio-pxl-retro-computer-icons-set-110_92: 1807102408
+      itchio-pxl-retro-computer-icons-set-110_93: -761072214
+      itchio-pxl-retro-computer-icons-set-110_94: 2058280649
+      itchio-pxl-retro-computer-icons-set-110_95: 1968220156
+      itchio-pxl-retro-computer-icons-set-110_96: 1470057792
+      itchio-pxl-retro-computer-icons-set-110_97: 464273006
+      itchio-pxl-retro-computer-icons-set-110_98: -1952399110
+      itchio-pxl-retro-computer-icons-set-110_99: -820479238
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

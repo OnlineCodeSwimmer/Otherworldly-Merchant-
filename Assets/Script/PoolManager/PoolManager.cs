@@ -8,7 +8,7 @@ public class PoolManager : MonoBehaviour
     [Header("Prefabs Store")]
     public GameObject[] prefabs;
     private Dictionary<string, List<GameObject>> pools = new Dictionary<string, List<GameObject>>();
-    private Dictionary<string, GameObject> prefabDic = new Dictionary<string, GameObject>();
+    private Dictionary<string, GameObject> prefabDictionary = new Dictionary<string, GameObject>();
 
 
     public static PoolManager instance;
@@ -33,7 +33,7 @@ public class PoolManager : MonoBehaviour
 
             string prefabName = prefab.name;
 
-            prefabDic.Add(prefabName, prefab);
+            prefabDictionary.Add(prefabName, prefab);
             pools.Add(prefabName, new List<GameObject>());
         }
     }
@@ -42,9 +42,10 @@ public class PoolManager : MonoBehaviour
 
         GameObject selectedObject = null;
 
-        if (!pools.ContainsKey(prefabName))
+        if (!prefabDictionary.ContainsKey(prefabName))
         {
             Debug.LogWarning("The prefab is not exist: " + prefabName);
+            return null;
         }
 
         foreach (GameObject item in pools[prefabName]) //Get object from pool, activate if exists, avoid new instantiation
@@ -59,7 +60,7 @@ public class PoolManager : MonoBehaviour
 
         if (selectedObject == null)
         {
-            selectedObject = Instantiate(prefabDic[prefabName], transform);
+            selectedObject = Instantiate(prefabDictionary[prefabName], transform);
             selectedObject.name = prefabName;
             pools[prefabName].Add(selectedObject);
         }
@@ -85,3 +86,7 @@ public class PoolManager : MonoBehaviour
         return false;
     }
 }
+
+
+
+

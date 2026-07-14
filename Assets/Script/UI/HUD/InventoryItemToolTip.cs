@@ -45,6 +45,11 @@ public class InventoryItemToolTip : MonoBehaviour
 
         descriptionText.text = data.itemDescription;
 
+        FollowMouse();
+
+        gameObject.SetActive(true);
+
+
 
     }
 

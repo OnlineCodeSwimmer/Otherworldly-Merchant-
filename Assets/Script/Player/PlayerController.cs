@@ -82,17 +82,17 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OpenObjectInvetory(InputAction.CallbackContext callBackContext)
+    private void OpenObject(InputAction.CallbackContext callBackContext)
     {
         if (openableObject == null) return; 
-        playerInput.Player.Disable();
-        InventoryManager.instance.playerInput.UI.Enable();
+        Time.timeScale = 0;
         GameManager.instance.SetDefaultCursor();
-        InventoryManager.instance.CloseAllInventories();
-        openableObject.GetComponent<OpenableObject>().OpenInventory();
+        openableObject.GetComponent<OpenableObject>().OpenObject();
 
 
     }
+
+    
 
 
     //InputArea
@@ -105,13 +105,13 @@ public class PlayerController : MonoBehaviour
     private void UIInputSubscribe()
     {
         playerInput.Player.OpenBackpackInventory.started += OpenBackpackInventory;
-        playerInput.Player.OpenObjectInventory.started += OpenObjectInvetory;
+        playerInput.Player.OpenObject.started += OpenObject;
     }
 
     private void UIInputUnsubscribe()
     {
         playerInput.Player.OpenBackpackInventory.started -= OpenBackpackInventory;
-        playerInput.Player.OpenObjectInventory.started -= OpenObjectInvetory;
+        playerInput.Player.OpenObject.started -= OpenObject;
 
 
     }
