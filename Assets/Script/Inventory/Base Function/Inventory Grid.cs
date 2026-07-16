@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using static RandomDialogueGenerate;
 
 public class InventoryGrid : MonoBehaviour
 {
@@ -31,20 +32,13 @@ public class InventoryGrid : MonoBehaviour
     private Vector2Int tileGridPoistion = new Vector2Int();
 
     //Check Variable
-    [HideInInspector] public bool loadedFromSave;
+    [HideInInspector] public bool loadedFromSave; //To prevent conflicts between backpack loading and the spawning of pre-configured items
 
     private void Awake()
     {
         InitGrid();
 
     }
-    private void Start()
-    {
-
-    }
-
-
-
 
 
     public bool PlaceInventoryItem(InventoryItem inventoryItem, int tileGridPositionX, int tileGridPositionY, ref InventoryItem overlapItem)
@@ -244,6 +238,94 @@ public class InventoryGrid : MonoBehaviour
 
         return inventoryitems;
     }
+
+    private Dictionary<int, int> BuildRequiredAmounts(List<ItemRequirement> requirements)
+    {
+        Dictionary<int, int> requiredAmounts = new Dictionary<int, int>();
+
+        foreach(ItemRequirement requirement in requirements)
+        {
+            int itemID = requirement.inventoryItemData.ItemID;
+            int amount = requirement.amount;
+
+            if(requiredAmounts.ContainsKey(itemID))
+            {
+                requiredAmounts[itemID] += amount;
+            }
+            else
+            {
+                requiredAmounts.Add(itemID, amount);
+            }
+        }
+
+        return requiredAmounts;
+    }
+
+
+    public int GetItemCount(int ItemID)
+    {
+        int count = 0;
+
+        foreach(InventoryItem item in GetAllItems())
+        {
+            if(item.inventoryItemData.ItemID == ItemID)
+            {
+                count++;
+            }
+        }
+
+        return count;   
+    }
+
+    public bool HasRequiredItems(List<ItemRequirement> requirements)
+    {
+
+        Dictionary<int, int> requiredAmounts = BuildRequiredAmounts(requirements);
+
+        foreach(KeyValuePair<int,int> requitement in requiredAmounts)
+        {
+            int itemID =requitement.Key;
+            int requiredAmount=requitement.Value;
+
+            if(GetItemCount(itemID) < requiredAmount) return false; 
+            
+        }
+
+        return true;
+    }
+
+    public void RemoveRequiredItems(List<ItemRequirement> requirements)
+    {
+
+        Dictionary<int, int> requiredAmounts=BuildRequiredAmounts(requirements);
+        List<InventoryItem> itemsToRemove = new List<InventoryItem>();
+
+        foreach(InventoryItem item in GetAllItems())
+        {
+            int itemID = item.inventoryItemData.ItemID;
+
+            if (!requiredAmounts.ContainsKey(itemID)) continue;
+
+            if (requiredAmounts[itemID]<=0) continue;   
+
+            itemsToRemove.Add(item);
+            requiredAmounts[itemID]--;
+        }
+
+        foreach(InventoryItem item in itemsToRemove)
+        {
+            CleaningGridItem(item);
+            item.transform.SetParent(PoolManager.instance.transform);
+            item.gameObject.SetActive(false);
+        }
+
+    }
+
+
+
+
+
+
 
     public void ClearGrid()
     {

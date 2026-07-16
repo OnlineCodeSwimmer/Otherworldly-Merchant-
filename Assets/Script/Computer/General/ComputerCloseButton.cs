@@ -15,7 +15,8 @@ public class ComputerCloseButton : MonoBehaviour
     public enum ButtonType
     {
         FirstPageButton,
-        BankPageButton
+        BankPageButton,
+        CommutePageButton
     }
 
     public ButtonType buttonType;
@@ -39,6 +40,11 @@ public class ComputerCloseButton : MonoBehaviour
 
             case ButtonType.BankPageButton:
                 computerManager.CloseWindow("Computer Bank Page");
+                computerManager.OpenWindow("Computer First Page");
+                break;
+
+            case ButtonType.CommutePageButton:
+                computerManager.CloseWindow("Commute Page");
                 computerManager.OpenWindow("Computer First Page");
                 break;
         }
