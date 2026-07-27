@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     [Header("Component")]
     public PlayerController playerController;
 
-    //
+    //UI
     [Header("UI")]
     public ComputerManager computerManager;
 

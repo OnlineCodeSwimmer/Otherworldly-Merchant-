@@ -239,27 +239,7 @@ public class InventoryGrid : MonoBehaviour
         return inventoryitems;
     }
 
-    private Dictionary<int, int> BuildRequiredAmounts(List<ItemRequirement> requirements)
-    {
-        Dictionary<int, int> requiredAmounts = new Dictionary<int, int>();
 
-        foreach(ItemRequirement requirement in requirements)
-        {
-            int itemID = requirement.inventoryItemData.ItemID;
-            int amount = requirement.amount;
-
-            if(requiredAmounts.ContainsKey(itemID))
-            {
-                requiredAmounts[itemID] += amount;
-            }
-            else
-            {
-                requiredAmounts.Add(itemID, amount);
-            }
-        }
-
-        return requiredAmounts;
-    }
 
 
     public int GetItemCount(int ItemID)
@@ -322,7 +302,27 @@ public class InventoryGrid : MonoBehaviour
     }
 
 
+    private Dictionary<int, int> BuildRequiredAmounts(List<ItemRequirement> requirements)
+    {
+        Dictionary<int, int> requiredAmounts = new Dictionary<int, int>();
 
+        foreach (ItemRequirement requirement in requirements)
+        {
+            int itemID = requirement.inventoryItemData.ItemID;
+            int amount = requirement.amount;
+
+            if (requiredAmounts.ContainsKey(itemID))
+            {
+                requiredAmounts[itemID] += amount;
+            }
+            else
+            {
+                requiredAmounts.Add(itemID, amount);
+            }
+        }
+
+        return requiredAmounts;
+    }
 
 
 

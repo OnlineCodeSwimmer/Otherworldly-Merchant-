@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,14 +7,27 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public PlayerInput playerInput;
+
+    //Character
+    [Header("Character")]
+    public float health;
+    public float moveSpeed = 3;
+
+
+    //Weapon Varible
+    private bool HoldWepon;
+    private float fireInterval=0.25f;
+    private bool  isFireInterval;
+
     //Move Parameter
-    private Vector2 inputDireciton;
+    private Vector2 inputDirection;
     private Vector2 mousePosition;
-    private float moveSpeed=3;
+
 
     //Component
     private Animator animator;
     private Rigidbody2D rb;
+    Transform  muzzle;
 
     //Openable Object Variable
     public OpenableObject openableObject;
@@ -22,6 +36,7 @@ public class PlayerController : MonoBehaviour
         playerInput=new PlayerInput();
         rb=GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        muzzle=transform.Find("Muzzle").GetComponent<Transform>();
     }
 
     private void Start()
@@ -34,6 +49,7 @@ public class PlayerController : MonoBehaviour
     {
         InputCheck();
         FlipByMouse();
+        AnimationUpdate();
     }
 
     private void FixedUpdate()
@@ -54,21 +70,60 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        rb.velocity = inputDireciton * moveSpeed;
+        rb.velocity = inputDirection * moveSpeed;
+
+
+    }
+
+    private void AnimationUpdate()
+    {
         animator.SetFloat("VelocityX", Mathf.Abs(rb.velocity.x));
         animator.SetFloat("VelocityY", Mathf.Abs(rb.velocity.y));
-
     }
     private void FlipByMouse()
     {
         Vector2 direction = mousePosition - (Vector2)transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg-90f;
-        transform.rotation = Quaternion.Euler(0, 0, angle);
+        transform.up = direction;
     }
 
 
 
 
+
+    //Weapon
+    private void ToggleWeapon(InputAction.CallbackContext context)
+    {
+       if(HoldWepon==false)
+          {
+              HoldWepon = true;
+          }
+       else
+          {
+            HoldWepon=false;
+          }
+
+        animator.SetBool("Hold Weapon", HoldWepon);
+
+    }
+
+    private void Fire(InputAction.CallbackContext callBackContext)
+    {
+        if (HoldWepon == false) return;
+        if (isFireInterval) return;
+
+        Vector2 direction=(mousePosition - (Vector2)transform.position).normalized;
+        GameObject bullet = PoolManager.instance.Get("Bullet");
+        bullet.GetComponent<Bullet>().damage = 1;
+        bullet.transform.position = muzzle.position; 
+        bullet.GetComponent<Bullet>().SetSpeed(direction);
+        isFireInterval = true;
+        StartCoroutine(FireCooldown());
+    }
+    private IEnumerator FireCooldown()
+    {
+        yield return new WaitForSeconds(fireInterval);
+        isFireInterval = false;
+    }
 
 
     //Switch UI
@@ -98,7 +153,7 @@ public class PlayerController : MonoBehaviour
     //InputArea
     private void InputCheck()
     {
-        inputDireciton = playerInput.Player.Move.ReadValue<Vector2>().normalized;
+        inputDirection = playerInput.Player.Move.ReadValue<Vector2>().normalized;
         mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
     }
 
@@ -106,13 +161,19 @@ public class PlayerController : MonoBehaviour
     {
         playerInput.Player.OpenBackpackInventory.started += OpenBackpackInventory;
         playerInput.Player.OpenObject.started += OpenObject;
+        playerInput.Player.ToggleWepon.started += ToggleWeapon;
+        playerInput.Player.Fire.started += Fire;
     }
+
+
 
     private void UIInputUnsubscribe()
     {
         playerInput.Player.OpenBackpackInventory.started -= OpenBackpackInventory;
         playerInput.Player.OpenObject.started -= OpenObject;
-
-
+        playerInput.Player.ToggleWepon.started -= ToggleWeapon;
+        playerInput.Player.Fire.started -= Fire;
     }
+
+
 }

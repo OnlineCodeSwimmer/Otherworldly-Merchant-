@@ -15,9 +15,9 @@ public class ComputerIconButton : MonoBehaviour
     private Text iconText;
 
     //Color
+    public Color selectedButtonColor = new Color32(131, 149, 255, 255);
     private Color originalButtonColor;
     private Color originalTextColor;
-    public Color selectedButtonColor = new Color32(131, 149, 255, 255);
 
     //Check Varible
     private bool isSelected=false;

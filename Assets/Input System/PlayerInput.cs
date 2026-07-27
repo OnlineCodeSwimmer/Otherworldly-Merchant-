@@ -136,6 +136,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Toggle Wepon"",
+                    ""type"": ""Button"",
+                    ""id"": ""3dd6272d-5e4b-4e5d-b3f6-dc9303eac4d5"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -306,55 +315,11 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""143bb1cd-cc10-4eca-a2f0-a3664166fe91"",
-                    ""path"": ""<Gamepad>/rightTrigger"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Gamepad"",
-                    ""action"": ""Fire"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""05f6913d-c316-48b2-a6bb-e225f14c7960"",
                     ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Fire"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""886e731e-7071-4ae4-95c0-e61739dad6fd"",
-                    ""path"": ""<Touchscreen>/primaryTouch/tap"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Touch"",
-                    ""action"": ""Fire"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""ee3d0cd2-254e-47a7-a8cb-bc94d9658c54"",
-                    ""path"": ""<Joystick>/trigger"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Joystick"",
-                    ""action"": ""Fire"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8255d333-5683-4943-a58a-ccb207ff1dce"",
-                    ""path"": ""<XRController>/{PrimaryAction}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""XR"",
                     ""action"": ""Fire"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -378,6 +343,17 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""Open Object"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""587d50af-d747-48dd-82bb-c55e7de83327"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Toggle Wepon"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1021,6 +997,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
         m_Player_OpenBackpackInventory = m_Player.FindAction("Open Backpack Inventory", throwIfNotFound: true);
         m_Player_OpenObject = m_Player.FindAction("Open Object", throwIfNotFound: true);
+        m_Player_ToggleWepon = m_Player.FindAction("Toggle Wepon", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1121,6 +1098,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Fire;
     private readonly InputAction m_Player_OpenBackpackInventory;
     private readonly InputAction m_Player_OpenObject;
+    private readonly InputAction m_Player_ToggleWepon;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -1152,6 +1130,10 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/OpenObject".
         /// </summary>
         public InputAction @OpenObject => m_Wrapper.m_Player_OpenObject;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/ToggleWepon".
+        /// </summary>
+        public InputAction @ToggleWepon => m_Wrapper.m_Player_ToggleWepon;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1193,6 +1175,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @OpenObject.started += instance.OnOpenObject;
             @OpenObject.performed += instance.OnOpenObject;
             @OpenObject.canceled += instance.OnOpenObject;
+            @ToggleWepon.started += instance.OnToggleWepon;
+            @ToggleWepon.performed += instance.OnToggleWepon;
+            @ToggleWepon.canceled += instance.OnToggleWepon;
         }
 
         /// <summary>
@@ -1219,6 +1204,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @OpenObject.started -= instance.OnOpenObject;
             @OpenObject.performed -= instance.OnOpenObject;
             @OpenObject.canceled -= instance.OnOpenObject;
+            @ToggleWepon.started -= instance.OnToggleWepon;
+            @ToggleWepon.performed -= instance.OnToggleWepon;
+            @ToggleWepon.canceled -= instance.OnToggleWepon;
         }
 
         /// <summary>
@@ -1576,6 +1564,13 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnOpenObject(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Toggle Wepon" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnToggleWepon(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.

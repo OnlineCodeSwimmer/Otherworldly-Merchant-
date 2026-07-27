@@ -46,8 +46,9 @@ public class RandomDialogueGenerate : MonoBehaviour
     //InventoryGrid
     public InventoryGrid storageInventoryGrid;
 
-    //Varible
-    private int dialogueCount = 3;
+    //Dialogue Number
+    [Header("Dialogute Number")]
+    public int dialogueCount = 3;
 
 
 
@@ -90,7 +91,7 @@ public class RandomDialogueGenerate : MonoBehaviour
             //Generate price
             int minCents = (int)(randomMessageOption.minPrice * 100f);
             int maxCents = (int)(randomMessageOption.maxPrice * 100f);
-            float randomPrice = Random.Range(minCents, maxCents+1)/100;
+            float randomPrice = Random.Range(minCents, maxCents + 1) / 100f;
 
             CommuteDialogueItem dialogueItem = PoolManager.instance.Get("Commute Dialoge Prefab").GetComponent<CommuteDialogueItem>();
             dialogueItem.transform.SetParent(transform, false);
