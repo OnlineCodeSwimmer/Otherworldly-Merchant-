@@ -19,8 +19,8 @@ public class Enemy : MonoBehaviour
     [Header("Character")]
     public float patrolSpeed;
     public float chaseSpeed;
+    public float damage;
     private float health;
-    private float damage;
 
 
     //Patrol Varible
@@ -34,6 +34,7 @@ public class Enemy : MonoBehaviour
     [Header("Chase Parameter")]
     public float loseDistance;
     public float detectionDistance ;
+    public float attackDistance;
 
 
     //Component
@@ -144,13 +145,14 @@ public class Enemy : MonoBehaviour
                 direction = player.transform.position - transform.position;
                 transform.right = direction;
 
+                bool isAttack = direction.sqrMagnitude <= attackDistance * attackDistance;
+                animator.SetBool("Attack", isAttack);
 
-                /*if(direction.sqrMagnitude <= 2f)
+                if (isAttack)
                 {
-                    animator.SetTrigger("Attack");
-                }*/
-
-
+                    rb.velocity= Vector2.zero;
+                    return;
+                }
 
                 rb.velocity = chaseSpeed * direction.normalized;
 
@@ -183,9 +185,14 @@ public class Enemy : MonoBehaviour
         //Discovery Area
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, detectionDistance);
+
         //Lose Chase Area
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, loseDistance);
+
+        //Attack Area
+        Gizmos.color= Color.green;
+        Gizmos.DrawWireSphere(transform.position, attackDistance);
     }
 
     private IEnumerator PatrolWait()

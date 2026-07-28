@@ -8,8 +8,8 @@ public class PlayerStateManager : MonoBehaviour
 
     //State
     [Header("Player various states")]
-    public float balance=10f;
-    public float debt=1000f;
+    public float balance;
+    public float debt;
     public float health;
 
     private void Awake()
@@ -24,6 +24,13 @@ public class PlayerStateManager : MonoBehaviour
             Destroy(gameObject);
          }
     }
+
+
+    private void Update()
+    {
+        
+    }
+
 
 
 

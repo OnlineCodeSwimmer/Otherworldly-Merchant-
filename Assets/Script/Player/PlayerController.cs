@@ -10,8 +10,7 @@ public class PlayerController : MonoBehaviour
 
     //Character
     [Header("Character")]
-    public float health;
-    public float moveSpeed = 3;
+    public float moveSpeed;
 
 
     //Weapon Varible
@@ -27,16 +26,19 @@ public class PlayerController : MonoBehaviour
     //Component
     private Animator animator;
     private Rigidbody2D rb;
-    Transform  muzzle;
+    private Transform  muzzle;
+    private Bleeding bleeding;
 
     //Openable Object Variable
-    public OpenableObject openableObject;
+    [HideInInspector]  public OpenableObject openableObject;
     private void Awake()
     {
         playerInput=new PlayerInput();
         rb=GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        muzzle=transform.Find("Muzzle").GetComponent<Transform>();
+        bleeding = GetComponent<Bleeding>();
+
+        muzzle = transform.Find("Muzzle").GetComponent<Transform>();
     }
 
     private void Start()
@@ -175,5 +177,27 @@ public class PlayerController : MonoBehaviour
         playerInput.Player.Fire.started -= Fire;
     }
 
+
+    //Tirgger Area
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            Enemy enemy = collision.GetComponent<Enemy>();
+
+            if (PlayerStateManager.instance.health > 0)
+            {
+                PlayerStateManager.instance.health -= enemy.damage;
+                bleeding.BloodSpawn(collision.transform);
+            }
+            else
+            {
+                PlayerStateManager.instance.health = 0;
+            }
+        }
+
+
+
+    }
 
 }

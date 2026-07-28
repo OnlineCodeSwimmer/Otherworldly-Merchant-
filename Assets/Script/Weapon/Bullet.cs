@@ -44,10 +44,27 @@ public class Bullet : MonoBehaviour
         float distanceY = Mathf.Abs(GameManager.instance.playerController.transform.position.y - transform.position.y);
         if (distanceX > 30 || distanceY > 30)
         {
-            gameObject.SetActive(false);
-            trailRenderer.Clear();
-            gameObject.transform.SetParent(PoolManager.instance.transform);
+            Destory();
         }
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destory();
+    }
+
+    private void Destory()
+    {
+        GameObject bulletExplosion = PoolManager.instance.Get("GunBulletExplosion");
+        bulletExplosion.transform.position = transform.position;
+
+        gameObject.SetActive(false);
+        trailRenderer.Clear();
+        gameObject.transform.SetParent(PoolManager.instance.transform);
+
+    }
+
+
+
 }

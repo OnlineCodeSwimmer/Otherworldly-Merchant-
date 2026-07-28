@@ -11,6 +11,7 @@ public class HUD : MonoBehaviour
     public enum InfomationType
     {
         InventoryWaring,
+        PlayerHealth
     }
 
     public InfomationType type;
@@ -50,7 +51,6 @@ public class HUD : MonoBehaviour
 
                 }
 
-
                 if (lifeTimer > 0)
                 {
                     lifeTimer -= Time.deltaTime;
@@ -62,6 +62,11 @@ public class HUD : MonoBehaviour
                     gameObject.SetActive(false);
                     transform.SetParent(PoolManager.instance.transform);
                 }
+
+                break;
+
+            case InfomationType.PlayerHealth:
+                uiText.text = string.Format("{0}",PlayerStateManager.instance.health);
                 break;
         }
     }
