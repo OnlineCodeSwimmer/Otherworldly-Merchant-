@@ -5,17 +5,18 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Door
   - Water
   - UI
   - Player
   - Enemy
-  - 
-  - 
+  - Obstacle Object
+  - Wall
   - 
   - 
   - 
@@ -54,14 +55,14 @@ TagManager:
   - name: Object
     uniqueID: 3576119081
     locked: 0
+  - name: Enemy
+    uniqueID: 3602574709
+    locked: 0
   - name: Player
     uniqueID: 2567657977
     locked: 0
   - name: Bullet
     uniqueID: 2236534147
-    locked: 0
-  - name: Enemy
-    uniqueID: 3602574709
     locked: 0
   - name: VFX
     uniqueID: 1683451287

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Item", menuName = "Inventory/Item Data")]
+[CreateAssetMenu(fileName = "New Item Data", menuName = "Data/Item Data")]
 public class InventoryItemData : ScriptableObject
 {
     [Header("Size")]

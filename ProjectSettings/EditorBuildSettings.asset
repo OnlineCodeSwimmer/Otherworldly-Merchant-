@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Home 1.unity
     guid: 5cd8fb9d1d0118c4aa9138907fb48fcb
+  - enabled: 1
+    path: Assets/Scenes/Hospital.unity
+    guid: 234a410e47a71b34bb4f959f5cf65108
   m_configObjects: {}

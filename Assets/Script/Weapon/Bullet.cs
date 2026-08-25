@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    //Bullet Character 
-    public float damage;
-    private float speed=30f;
-
+    //Character
+    [HideInInspector]public float currentDamage;
+    [HideInInspector] public Vector2 moveDirection;
 
     //Component
     private Rigidbody2D rb;
     private TrailRenderer trailRenderer;
+
+
 
 
     private void Update()
@@ -27,11 +28,13 @@ public class Bullet : MonoBehaviour
     }
     private void Start()
     {
-        trailRenderer.widthMultiplier = 0.3f; 
+        trailRenderer.widthMultiplier = 0.5f; 
     }
 
-    public void SetSpeed(Vector2 direction)
+    public void Init(Vector2 direction, float speed, float damage)
     {
+        currentDamage = damage;
+        moveDirection = direction;
         rb.velocity = speed*direction;
         transform.right = direction;
     }
@@ -42,23 +45,26 @@ public class Bullet : MonoBehaviour
     {
         float distanceX = Mathf.Abs(GameManager.instance.playerController.transform.position.x - transform.position.x);
         float distanceY = Mathf.Abs(GameManager.instance.playerController.transform.position.y - transform.position.y);
-        if (distanceX > 30 || distanceY > 30)
+        GunData cunrrentGunData = GameManager.instance.playerController.gun.currentGunData;
+        if (distanceX > cunrrentGunData.fireDistance || distanceY > cunrrentGunData.fireDistance)
         {
             Destory();
         }
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         Destory();
     }
-
     private void Destory()
     {
         GameObject bulletExplosion = PoolManager.instance.Get("GunBulletExplosion");
         bulletExplosion.transform.position = transform.position;
 
+        rb.velocity = Vector2.zero;
         gameObject.SetActive(false);
         trailRenderer.Clear();
         gameObject.transform.SetParent(PoolManager.instance.transform);

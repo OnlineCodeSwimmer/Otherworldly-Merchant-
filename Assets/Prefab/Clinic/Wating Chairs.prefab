@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6160847426186086157}
   - component: {fileID: 8212168963908557088}
   - component: {fileID: 3868967629232623907}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wating Chairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.1942856, y: 1.4628571}
+    oldSize: {x: 2.56, y: 1.7066667}
     newSize: {x: 3.072, y: 2.048}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

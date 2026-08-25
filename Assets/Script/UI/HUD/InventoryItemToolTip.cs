@@ -38,27 +38,32 @@ public class InventoryItemToolTip : MonoBehaviour
     {
         InventoryItemData data = inventoryItem.inventoryItemData;
 
-        gameObject.SetActive(true);
-
         nameText.text = data.itemName;
         nameText.color = data.itemNameColor;
-
         descriptionText.text = data.itemDescription;
 
         FollowMouse();
+
+        Canvas targetCanvas = inventoryItem.GetComponentInParent<Canvas>();
+        transform.SetParent(targetCanvas.transform);
 
         gameObject.SetActive(true);
 
 
 
     }
-
+    private void EnsureInitialized()
+    {
+        if (rectTransform == null)
+        {
+            rectTransform = GetComponent<RectTransform>();
+        }
+    }
     private void FollowMouse()
     {
-        if (!gameObject.activeSelf) return;
+        EnsureInitialized();
+
         Vector2 mousePosition = Mouse.current.position.ReadValue();
-
-
 
         rectTransform.position = mousePosition + offset;
     }

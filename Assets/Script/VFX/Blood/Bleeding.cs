@@ -5,22 +5,27 @@ using UnityEngine;
 
 public class Bleeding : MonoBehaviour
 {
-    //Generate position
-    [Header("Generate Position")]
-    public GameObject spawnPoint;
 
     //Prefab
     [Header("Prefab")]
     public string bloodSparyName;
 
-    public void BloodSpawn(Transform DamageSource)
+    public void BloodSpawn(Transform damageSource)
     {
-        Vector2 spawnDirction= (spawnPoint.transform.position - DamageSource.position).normalized;
+        Vector2 spawnDirction= (transform.position - damageSource.position).normalized;
         GameObject bloodSpray = PoolManager.instance.Get(bloodSparyName);
-        bloodSpray.transform.SetParent(spawnPoint.transform);
-        bloodSpray.transform.position = spawnPoint.transform.position;
+        bloodSpray.transform.SetParent(transform);
+        bloodSpray.transform.position = transform.position;
         bloodSpray.transform.right = spawnDirction;
 
+    }
+
+    public void BloodSpawn(Vector2 DamgeSourceDirection)
+    {
+        GameObject bloodSpray = PoolManager.instance.Get(bloodSparyName);
+        bloodSpray.transform.SetParent(transform);
+        bloodSpray.transform.position = transform.position;
+        bloodSpray.transform.right = DamgeSourceDirection;
     }
 
 }

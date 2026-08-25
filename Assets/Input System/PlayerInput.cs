@@ -138,9 +138,27 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Toggle Wepon"",
+                    ""name"": ""Hold Weapon"",
                     ""type"": ""Button"",
                     ""id"": ""3dd6272d-5e4b-4e5d-b3f6-dc9303eac4d5"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Reload"",
+                    ""type"": ""Button"",
+                    ""id"": ""8493af58-f0c6-4392-92e2-2da4a4ea9d12"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Toggle Weapon"",
+                    ""type"": ""Button"",
+                    ""id"": ""38db49b2-42e9-4c5f-9753-979fb3f92d54"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -349,11 +367,33 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""587d50af-d747-48dd-82bb-c55e7de83327"",
-                    ""path"": ""<Keyboard>/q"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Hold Weapon"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8761f120-ed5b-4515-abd2-db0ec57880a4"",
+                    ""path"": ""<Keyboard>/r"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Toggle Wepon"",
+                    ""action"": ""Reload"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""70f43d0b-93cf-4dee-8999-93da26e351ab"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Toggle Weapon"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -997,7 +1037,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
         m_Player_OpenBackpackInventory = m_Player.FindAction("Open Backpack Inventory", throwIfNotFound: true);
         m_Player_OpenObject = m_Player.FindAction("Open Object", throwIfNotFound: true);
-        m_Player_ToggleWepon = m_Player.FindAction("Toggle Wepon", throwIfNotFound: true);
+        m_Player_HoldWeapon = m_Player.FindAction("Hold Weapon", throwIfNotFound: true);
+        m_Player_Reload = m_Player.FindAction("Reload", throwIfNotFound: true);
+        m_Player_ToggleWeapon = m_Player.FindAction("Toggle Weapon", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1098,7 +1140,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Fire;
     private readonly InputAction m_Player_OpenBackpackInventory;
     private readonly InputAction m_Player_OpenObject;
-    private readonly InputAction m_Player_ToggleWepon;
+    private readonly InputAction m_Player_HoldWeapon;
+    private readonly InputAction m_Player_Reload;
+    private readonly InputAction m_Player_ToggleWeapon;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -1131,9 +1175,17 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @OpenObject => m_Wrapper.m_Player_OpenObject;
         /// <summary>
-        /// Provides access to the underlying input action "Player/ToggleWepon".
+        /// Provides access to the underlying input action "Player/HoldWeapon".
         /// </summary>
-        public InputAction @ToggleWepon => m_Wrapper.m_Player_ToggleWepon;
+        public InputAction @HoldWeapon => m_Wrapper.m_Player_HoldWeapon;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Reload".
+        /// </summary>
+        public InputAction @Reload => m_Wrapper.m_Player_Reload;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/ToggleWeapon".
+        /// </summary>
+        public InputAction @ToggleWeapon => m_Wrapper.m_Player_ToggleWeapon;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1175,9 +1227,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @OpenObject.started += instance.OnOpenObject;
             @OpenObject.performed += instance.OnOpenObject;
             @OpenObject.canceled += instance.OnOpenObject;
-            @ToggleWepon.started += instance.OnToggleWepon;
-            @ToggleWepon.performed += instance.OnToggleWepon;
-            @ToggleWepon.canceled += instance.OnToggleWepon;
+            @HoldWeapon.started += instance.OnHoldWeapon;
+            @HoldWeapon.performed += instance.OnHoldWeapon;
+            @HoldWeapon.canceled += instance.OnHoldWeapon;
+            @Reload.started += instance.OnReload;
+            @Reload.performed += instance.OnReload;
+            @Reload.canceled += instance.OnReload;
+            @ToggleWeapon.started += instance.OnToggleWeapon;
+            @ToggleWeapon.performed += instance.OnToggleWeapon;
+            @ToggleWeapon.canceled += instance.OnToggleWeapon;
         }
 
         /// <summary>
@@ -1204,9 +1262,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @OpenObject.started -= instance.OnOpenObject;
             @OpenObject.performed -= instance.OnOpenObject;
             @OpenObject.canceled -= instance.OnOpenObject;
-            @ToggleWepon.started -= instance.OnToggleWepon;
-            @ToggleWepon.performed -= instance.OnToggleWepon;
-            @ToggleWepon.canceled -= instance.OnToggleWepon;
+            @HoldWeapon.started -= instance.OnHoldWeapon;
+            @HoldWeapon.performed -= instance.OnHoldWeapon;
+            @HoldWeapon.canceled -= instance.OnHoldWeapon;
+            @Reload.started -= instance.OnReload;
+            @Reload.performed -= instance.OnReload;
+            @Reload.canceled -= instance.OnReload;
+            @ToggleWeapon.started -= instance.OnToggleWeapon;
+            @ToggleWeapon.performed -= instance.OnToggleWeapon;
+            @ToggleWeapon.canceled -= instance.OnToggleWeapon;
         }
 
         /// <summary>
@@ -1565,12 +1629,26 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnOpenObject(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Toggle Wepon" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Hold Weapon" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnToggleWepon(InputAction.CallbackContext context);
+        void OnHoldWeapon(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Reload" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnReload(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Toggle Weapon" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnToggleWeapon(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.

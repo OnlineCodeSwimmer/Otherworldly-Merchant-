@@ -7,6 +7,6 @@ public class AnimationEvent: MonoBehaviour
     public void AnimationFinish()
     {
         gameObject.SetActive(false);
-        transform.SetParent(PoolManager.instance.transform);
+        //transform.SetParent(PoolManager.instance.transform);
     }
 }

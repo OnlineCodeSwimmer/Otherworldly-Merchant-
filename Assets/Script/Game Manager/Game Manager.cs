@@ -24,6 +24,11 @@ public class GameManager : MonoBehaviour
         instance = this; 
     }
 
+    private void Update()
+    {
+        
+    }
+
     public void SetCustomCursor() //Change the cursor in game
     {
         Vector2 mousePoint = new Vector2(201, 201);
@@ -35,4 +40,7 @@ public class GameManager : MonoBehaviour
         Vector2 mousePoint = new Vector2(201, 201);
         Cursor.SetCursor(null, mousePoint, CursorMode.Auto);
     }
+
+
+
 }

@@ -1,9 +1,10 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 [RequireComponent(typeof(Rigidbody2D),typeof(Animator),typeof(PolygonCollider2D))]
+[RequireComponent(typeof(Seeker), typeof(AIPath))]
 public class Enemy : MonoBehaviour
 {
     //State
@@ -20,7 +21,7 @@ public class Enemy : MonoBehaviour
     public float patrolSpeed;
     public float chaseSpeed;
     public float damage;
-    private float health;
+    public float health;
 
 
     //Patrol Varible
@@ -32,30 +33,39 @@ public class Enemy : MonoBehaviour
 
     //Chase Vairible
     [Header("Chase Parameter")]
-    public float loseDistance;
-    public float detectionDistance ;
+    public float hearingDistance;
+    public float visionDistance ;
     public float attackDistance;
+    private LayerMask wallLayer;
+    private LayerMask doorLayer;
 
+    //Check Vairible
+    private bool isDead;
 
     //Component
     private Rigidbody2D rb;
     private Animator animator;
+    private Bleeding bleeding;
+    private AIPath aiPath;
+    private PolygonCollider2D polygonCollider2D;
 
     private void Awake()
     {
         rb=GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        bleeding = GetComponent<Bleeding>();
+        aiPath = GetComponent<AIPath>();
+        polygonCollider2D=GetComponent<PolygonCollider2D>();
+        wallLayer = LayerMask.GetMask("Wall");
+        doorLayer = LayerMask.GetMask("Door");
     }
 
-    private void Start()
-    {
-
-    }
 
     private void OnEnable()
     {
         currentState = EnemyState.Patrol;
         patrolCenter = transform.position;
+        polygonCollider2D.enabled = true;
         SelectNewPatrolPosition();
     }
 
@@ -68,37 +78,42 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        UpdateState();
-        AnimationUpdate();
+        if (!isDead)
+        {
+            UpdateState();
+            Move();
+            MoveAnimationUpdate();
+
+        }
     }
 
-    private void FixedUpdate()
-    {
-        Move();
-    }
 
 
 
 
     private void UpdateState()
     {
-        float distanceSqrMagnitude = ((Vector2)(GameManager.instance.playerController.transform.position - transform.position)).sqrMagnitude;
-
+        Vector2 playerPosition = GameManager.instance.playerController.transform.position;
+        Vector2 playerDirection =playerPosition - (Vector2)transform.position;
+        float distanceSqrMagnitude = playerDirection.sqrMagnitude;
+        bool playerInVisionDistance =distanceSqrMagnitude < visionDistance * visionDistance;
+        bool canSeePlayer =playerInVisionDistance && CanSeePlayer(playerPosition);
 
         switch (currentState)
         {
             case EnemyState.Patrol:
 
-                if (distanceSqrMagnitude < detectionDistance * detectionDistance)
+                if (canSeePlayer)
                 {
                     currentState = EnemyState.Chase;
                 }
+
 
                 break;
 
             case EnemyState.Chase:
 
-                if(distanceSqrMagnitude > loseDistance * loseDistance)
+                if(distanceSqrMagnitude > hearingDistance * hearingDistance)
                 {
                     currentState=EnemyState.Patrol;
                     patrolCenter = transform.position;
@@ -110,62 +125,81 @@ public class Enemy : MonoBehaviour
     }
 
 
-    private void AnimationUpdate()
+    private void MoveAnimationUpdate()
     {
-        animator.SetFloat("VelocityX", Mathf.Abs(rb.velocity.x));
-        animator.SetFloat("VelocityY", Mathf.Abs(rb.velocity.y));
+        Vector2 velocity = aiPath.canMove ? (Vector2) aiPath.velocity :Vector2.zero;
+
+        animator.SetFloat("VelocityX", Mathf.Abs(velocity.x));
+        animator.SetFloat("VelocityY", Mathf.Abs(velocity.y));
+    }
+    private bool CanSeePlayer(Vector2 playerPosition)
+    {
+
+        RaycastHit2D wallHit = Physics2D.Linecast(transform.position,playerPosition,wallLayer);
+        RaycastHit2D doorHit= Physics2D.Linecast(transform.position,playerPosition,doorLayer);
+        return wallHit.collider == null && doorHit.collider == null;
     }
 
     private void Move()
     {
-        Vector2 direction;
+
         switch (currentState)
         {
-           
             case EnemyState.Patrol:
                 if (isPatrolWatiing) return;
 
-                 direction = patrolTarget - (Vector2)transform.position;
-                transform.right = direction;
 
-                if (direction.sqrMagnitude <= 0.1f)
+                aiPath.canMove = true;
+                aiPath.maxSpeed = patrolSpeed;
+                aiPath.destination = patrolTarget;
+
+                if (aiPath.reachedDestination)
                 {
-                    rb.velocity = Vector2.zero;
                     StartCoroutine(PatrolWait());
-                    return;
                 }
-                rb.velocity = patrolSpeed * direction.normalized;
 
                 break;
-
 
 
             case EnemyState.Chase:
-                PlayerController player = GameManager.instance.playerController;
-                direction = player.transform.position - transform.position;
-                transform.right = direction;
 
-                bool isAttack = direction.sqrMagnitude <= attackDistance * attackDistance;
+                PlayerController player =GameManager.instance.playerController;
+                Vector2 playerDirection =player.transform.position - transform.position;
+                bool isAttack = playerDirection.sqrMagnitude <= attackDistance * attackDistance;
                 animator.SetBool("Attack", isAttack);
+
+                aiPath.destination =player.transform.position;
+                aiPath.maxSpeed = chaseSpeed;
 
                 if (isAttack)
                 {
-                    rb.velocity= Vector2.zero;
-                    return;
+                    aiPath.canMove = false;
+                    rb.velocity = Vector2.zero;
+                    transform.right = playerDirection;
+                }
+                else
+                {
+                    aiPath.canMove = true;
                 }
 
-                rb.velocity = chaseSpeed * direction.normalized;
-
                 break;
+        }
 
-                
+        Vector2 moveDirection = aiPath.steeringTarget - transform.position;
+
+        if (aiPath.canMove && moveDirection.sqrMagnitude > 0.01f)
+        {
+            transform.right = moveDirection;
         }
     }
     
     private void SelectNewPatrolPosition()
     {
         Vector2 randomOffset = Random.insideUnitCircle * patrolRadius;
-        patrolTarget= patrolCenter + randomOffset;
+        Vector2 randomPosition = patrolCenter + randomOffset;
+        NNInfo nearestNode = AstarPath.active.GetNearest(randomPosition);
+        patrolTarget = nearestNode.position;
+
     }
 
     private void OnDrawGizmos()
@@ -184,24 +218,66 @@ public class Enemy : MonoBehaviour
 
         //Discovery Area
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, detectionDistance);
+        Gizmos.DrawWireSphere(transform.position, visionDistance);
 
         //Lose Chase Area
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, loseDistance);
+        Gizmos.DrawWireSphere(transform.position, hearingDistance);
 
         //Attack Area
         Gizmos.color= Color.green;
         Gizmos.DrawWireSphere(transform.position, attackDistance);
     }
 
+
+
+
     private IEnumerator PatrolWait()
     {
         isPatrolWatiing = true;
+        aiPath.canMove = false;
 
         yield return new WaitForSeconds(1f);
 
         SelectNewPatrolPosition();
+        aiPath.destination = patrolTarget;
         isPatrolWatiing = false;
+
     }
+
+
+    private void Die()
+    {
+        isDead = true;
+        aiPath.canMove = false;
+        rb.velocity = Vector2.zero;
+        polygonCollider2D.enabled = false;
+        health = 0;
+        animator.SetBool("Attack", false);
+        animator.SetBool("Dead", isDead);
+    }
+
+
+    //Trrigger Area
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+       if( collision.CompareTag("Bullet"))
+        {
+            Bullet bullet = collision.GetComponent<Bullet>();
+
+            if (health > 0)
+            {
+                health -= bullet.currentDamage;
+                bleeding.BloodSpawn(bullet.moveDirection);
+            }
+            else
+            {
+                Die();
+            }
+
+        }
+
+    }
+
+
 }

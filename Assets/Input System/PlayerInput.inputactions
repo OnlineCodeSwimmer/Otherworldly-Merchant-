@@ -52,9 +52,27 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Toggle Wepon",
+                    "name": "Hold Weapon",
                     "type": "Button",
                     "id": "3dd6272d-5e4b-4e5d-b3f6-dc9303eac4d5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Reload",
+                    "type": "Button",
+                    "id": "8493af58-f0c6-4392-92e2-2da4a4ea9d12",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Toggle Weapon",
+                    "type": "Button",
+                    "id": "38db49b2-42e9-4c5f-9753-979fb3f92d54",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -263,11 +281,33 @@
                 {
                     "name": "",
                     "id": "587d50af-d747-48dd-82bb-c55e7de83327",
-                    "path": "<Keyboard>/q",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Hold Weapon",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8761f120-ed5b-4515-abd2-db0ec57880a4",
+                    "path": "<Keyboard>/r",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Toggle Wepon",
+                    "action": "Reload",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "70f43d0b-93cf-4dee-8999-93da26e351ab",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Toggle Weapon",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

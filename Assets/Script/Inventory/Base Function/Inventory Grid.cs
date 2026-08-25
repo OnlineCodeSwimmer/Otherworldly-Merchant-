@@ -99,12 +99,13 @@ public class InventoryGrid : MonoBehaviour
         itemRectTransform.localPosition = position;
     }
 
-    public InventoryItem PickUpInventoryItem(int tileGridPositionX, int tileGridPositionY)
+    public InventoryItem PickUpInventoryItem(int tileGridPositionX, int tileGridPositionY,Canvas dragCanvas)
     {
         InventoryItem inventoryItem = inventoryItemSlot[tileGridPositionX, tileGridPositionY];
         if (inventoryItem == null) return null;
 
-        inventoryItem.GetComponent<RectTransform>().SetParent(inventoryUI.transform, false); ;
+        
+        inventoryItem.GetComponent<RectTransform>().SetParent(dragCanvas.transform,false);
         CleaningGridItem(inventoryItem);
         return inventoryItem;
     }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Playables;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,13 +11,12 @@ public class PlayerController : MonoBehaviour
 
     //Character
     [Header("Character")]
-    public float moveSpeed;
-
+    public float moveSpeed=3f;
+    public int maxHealth=100;
 
     //Weapon Varible
-    private bool HoldWepon;
-    private float fireInterval=0.25f;
-    private bool  isFireInterval;
+    private bool holdWeapon;
+    private bool isFire;
 
     //Move Parameter
     private Vector2 inputDirection;
@@ -26,24 +26,26 @@ public class PlayerController : MonoBehaviour
     //Component
     private Animator animator;
     private Rigidbody2D rb;
-    private Transform  muzzle;
     private Bleeding bleeding;
+    public Gun gun;
 
     //Openable Object Variable
-    [HideInInspector]  public OpenableObject openableObject;
+    public OpenableObject openableObject;
     private void Awake()
     {
-        playerInput=new PlayerInput();
-        rb=GetComponent<Rigidbody2D>();
+        playerInput = new PlayerInput();
+        rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         bleeding = GetComponent<Bleeding>();
+        gun = GetComponent<Gun>();
 
-        muzzle = transform.Find("Muzzle").GetComponent<Transform>();
     }
 
     private void Start()
     {
         GameManager.instance.SetCustomCursor();
+        PlayerStateManager.instance.ReloadAllWeaponsOnSceneEnter();
+        EquipWeapon(0);
     }
 
 
@@ -52,6 +54,7 @@ public class PlayerController : MonoBehaviour
         InputCheck();
         FlipByMouse();
         AnimationUpdate();
+        AutomaticFire();
     }
 
     private void FixedUpdate()
@@ -93,38 +96,80 @@ public class PlayerController : MonoBehaviour
 
 
     //Weapon
-    private void ToggleWeapon(InputAction.CallbackContext context)
+    private void HoldWeapon(InputAction.CallbackContext context)
     {
-       if(HoldWepon==false)
-          {
-              HoldWepon = true;
-          }
-       else
-          {
-            HoldWepon=false;
-          }
+        if (holdWeapon == false)
+        {
+            holdWeapon = true;
+        }
+        else
+        {
+            holdWeapon = false;
+        }
 
-        animator.SetBool("Hold Weapon", HoldWepon);
+        animator.SetBool("Hold Weapon", holdWeapon);
 
     }
 
-    private void Fire(InputAction.CallbackContext callBackContext)
+    private void Fire()
     {
-        if (HoldWepon == false) return;
-        if (isFireInterval) return;
-
-        Vector2 direction=(mousePosition - (Vector2)transform.position).normalized;
-        GameObject bullet = PoolManager.instance.Get("Bullet");
-        bullet.GetComponent<Bullet>().damage = 1;
-        bullet.transform.position = muzzle.position; 
-        bullet.GetComponent<Bullet>().SetSpeed(direction);
-        isFireInterval = true;
-        StartCoroutine(FireCooldown());
+        Vector2 direction = (mousePosition - (Vector2)transform.position).normalized;
+        gun.Shoot(direction);
     }
-    private IEnumerator FireCooldown()
+
+    private void Reload(InputAction.CallbackContext context)
     {
-        yield return new WaitForSeconds(fireInterval);
-        isFireInterval = false;
+        if (!holdWeapon)
+            return;
+
+        gun.Reload();
+    }
+    private void FireStarted(InputAction.CallbackContext context)
+    {
+        if (!holdWeapon) return;
+
+        isFire = true;
+        Fire();
+    }
+
+    private void FireCanceled(InputAction.CallbackContext context)
+    {
+        isFire = false;
+    }
+
+
+    private void AutomaticFire()
+    {
+        if (!isFire) return;
+        if (gun.currentGunData.fireMode !=FireMode.Automatic) return;
+
+        Fire();
+    }
+
+    private void EquipWeapon(int index)
+    {
+        PlayerStateManager playerState = PlayerStateManager.instance;
+        PlayerStateManager.WeaponInformation weapon =playerState.ownGun[index];
+        playerState.weaponIndex = index;
+        gun.Equip(weapon);
+
+        animator.runtimeAnimatorController = weapon.gunData.animatorOverrideController;
+    }
+
+    private void SwitchWeapon(InputAction.CallbackContext context)
+    {
+        PlayerStateManager playerState =PlayerStateManager.instance;
+
+        if (playerState.ownGun.Count <= 1) return;
+
+        playerState.weaponIndex++;
+
+        if (playerState.weaponIndex >= playerState.ownGun.Count)
+        {
+            playerState.weaponIndex = 0;
+        }
+
+        EquipWeapon(playerState.weaponIndex);
     }
 
 
@@ -135,21 +180,18 @@ public class PlayerController : MonoBehaviour
         InventoryManager.instance.playerInput.UI.Enable();
         GameManager.instance.SetDefaultCursor();
         InventoryManager.instance.CloseAllInventories();
-        InventoryManager.instance.OpenInventoryWindow("Backpack Inventory");
+        InventoryManager.instance.OpenBackpackInventory();
 
     }
 
     private void OpenObject(InputAction.CallbackContext callBackContext)
     {
         if (openableObject == null) return; 
-        Time.timeScale = 0;
         GameManager.instance.SetDefaultCursor();
-        openableObject.GetComponent<OpenableObject>().OpenObject();
-
-
+        openableObject.OpenObject();
     }
 
-    
+
 
 
     //InputArea
@@ -163,8 +205,11 @@ public class PlayerController : MonoBehaviour
     {
         playerInput.Player.OpenBackpackInventory.started += OpenBackpackInventory;
         playerInput.Player.OpenObject.started += OpenObject;
-        playerInput.Player.ToggleWepon.started += ToggleWeapon;
-        playerInput.Player.Fire.started += Fire;
+        playerInput.Player.HoldWeapon.started += HoldWeapon;
+        playerInput.Player.Fire.started += FireStarted;
+        playerInput.Player.Fire.canceled += FireCanceled;
+        playerInput.Player.Reload.started += Reload;
+        playerInput.Player.ToggleWeapon.started += SwitchWeapon;
     }
 
 
@@ -173,8 +218,11 @@ public class PlayerController : MonoBehaviour
     {
         playerInput.Player.OpenBackpackInventory.started -= OpenBackpackInventory;
         playerInput.Player.OpenObject.started -= OpenObject;
-        playerInput.Player.ToggleWepon.started -= ToggleWeapon;
-        playerInput.Player.Fire.started -= Fire;
+        playerInput.Player.HoldWeapon.started -= HoldWeapon;
+        playerInput.Player.Fire.started -= FireStarted;
+        playerInput.Player.Fire.canceled -= FireCanceled;
+        playerInput.Player.Reload.started -= Reload;
+        playerInput.Player.ToggleWeapon.started-= SwitchWeapon;
     }
 
 

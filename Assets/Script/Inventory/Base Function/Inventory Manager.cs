@@ -18,6 +18,9 @@ public class InventoryManager : MonoBehaviour
     public RectTransform highlighter;
     private Vector2Int oldPosition;
 
+    [Header("Tooltip")]
+    public Transform ItemToolTip;
+
 
     //Item Variable
     public InventoryGrid selectedInventoryGrid;
@@ -36,7 +39,9 @@ public class InventoryManager : MonoBehaviour
     [Header("Inventory UI")]
     public GameObject inventoryUIpanel;
     public GameObject mainInventoryUI;
-    public GameObject[] inventoryWindows;
+    public GameObject backpackInventory;
+    public Canvas dragCanvas;
+    private GameObject currentObjectInventory;
 
     //Inventory Warning
     [Header("Inventory Warning")]
@@ -134,7 +139,7 @@ public class InventoryManager : MonoBehaviour
 
     private void PickUpInventoryItem(Vector2Int tileGridPosition)
     {
-        selectedItem = selectedInventoryGrid.PickUpInventoryItem(tileGridPosition.x, tileGridPosition.y);
+        selectedItem = selectedInventoryGrid.PickUpInventoryItem(tileGridPosition.x, tileGridPosition.y, dragCanvas);
         if (selectedItem != null)
         {
             selectedItemRectTransform = selectedItem.GetComponent<RectTransform>();
@@ -251,49 +256,42 @@ public class InventoryManager : MonoBehaviour
 
     //Inventory UI Open and Close
 
-    public void OpenInventoryWindow(string name)
+    private void PrepareOpenInventory()
     {
+        CloseAllInventories();
         inventoryUIpanel.SetActive(true);
         mainInventoryUI.SetActive(true);
-        foreach(GameObject window in inventoryWindows)
-        {
-            if(window.name == name)
-            {
-                window.SetActive(true);
-                return;
-            }
-        }
-
-        Debug.LogError("Inventory window not found: " + name);
-
     }
 
-    public void ColseInventoryWindow(string name)
+    public void OpenBackpackInventory()
     {
-
-        foreach (GameObject window in inventoryWindows)
-        {
-            if (window.name == name)
-            {
-                window.SetActive(false);
-                return;
-            }
-        }
-
-        Debug.LogError("Inventory window not found: " + name);
-
+        PrepareOpenInventory();
+        backpackInventory.SetActive(true);
     }
+
+    public void OpenObjectInventory(GameObject objectInventory)
+    {
+        PrepareOpenInventory();
+        backpackInventory.SetActive(true);
+        currentObjectInventory = objectInventory;
+        currentObjectInventory.SetActive(true);
+    }
+
+
+
     public void CloseAllInventories()
     {
-        foreach (GameObject window in inventoryWindows)
-        {
-            if (window != null)
-            {
-                window.SetActive(false);
-            }
-        }
+        backpackInventory.SetActive(false);
 
+        if (currentObjectInventory != null)
+        {
+            currentObjectInventory.SetActive(false);
+            currentObjectInventory = null;
+        }
+        highlighter.SetParent(mainInventoryUI.transform, false);
+        ItemToolTip.SetParent(mainInventoryUI.transform, false);
         mainInventoryUI.SetActive(false);
+
     }
 
 
@@ -320,7 +318,7 @@ public class InventoryManager : MonoBehaviour
 
         CloseAllInventories();
         selectedInventoryGrid = null;
-        oldPosition = new Vector2Int(int.MinValue, int.MinValue);
+        oldPosition = new Vector2Int(int.MinValue, int.MinValue); // Clear oldPosition to force highlight to refresh immediately
         playerInput.UI.Disable();
         GameManager.instance.playerController.playerInput.Player.Enable();
         GameManager.instance.SetCustomCursor();

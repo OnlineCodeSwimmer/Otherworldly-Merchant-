@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1119314922340945316}
   - component: {fileID: 4042919663297450399}
   - component: {fileID: 149497796698520543}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.0666667, y: 1.0666667}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

@@ -118,4 +118,9 @@ public class RandomDialogueGenerate : MonoBehaviour
         }
     }
 
+    private void FineComponent()
+    {
+
+    }
+
 }
