@@ -86,16 +86,13 @@ public class ComputerIconButton : MonoBehaviour
 
         if (mouseIsOnThisButton == false)
         {
-            ClearSelectedButton();
+           if (currentSelectedButton == null) return;
+
+           currentSelectedButton.SetSelected(false);
+           currentSelectedButton = null;
         }
 
 
     }
-    public void ClearSelectedButton()
-    {
-        if (currentSelectedButton == null)  return;
 
-        currentSelectedButton.SetSelected(false);
-        currentSelectedButton = null;
-    }
 }

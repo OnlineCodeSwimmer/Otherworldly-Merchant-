@@ -74,6 +74,7 @@ public class RandomDialogueGenerate : MonoBehaviour
 
     private void Start()
     {
+        FindComponent();
         ClearAllDialogues();
         GenerateDialogue();
     }
@@ -120,6 +121,8 @@ public class RandomDialogueGenerate : MonoBehaviour
 
     private void FindComponent()
     {
+        InventoryManager inventoryManager= InventoryManager.instance;
+        storageInventoryGrid = inventoryManager.transform.Find("Inventory UI/Storage Inventory/Storage Inventory Grid").GetComponent<InventoryGrid>();
 
     }
 

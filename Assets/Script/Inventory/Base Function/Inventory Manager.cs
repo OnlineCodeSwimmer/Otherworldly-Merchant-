@@ -40,7 +40,7 @@ public class InventoryManager : MonoBehaviour
     public GameObject inventoryUIpanel;
     public GameObject mainInventoryUI;
     public GameObject backpackInventory;
-    public Canvas dragCanvas;
+    public Canvas dragCanvan;
     private GameObject currentObjectInventory;
 
     //Inventory Warning
@@ -88,6 +88,7 @@ public class InventoryManager : MonoBehaviour
         ItemIconDrag();
         HandleHighlight();
         HandleTooltip();
+        CheckComponent();
     }
 
 
@@ -105,7 +106,7 @@ public class InventoryManager : MonoBehaviour
 
 
 
-
+    
     private void LeftMouseButtonPress(InputAction.CallbackContext context)
     {
         if (selectedInventoryGrid == null) return; 
@@ -139,7 +140,7 @@ public class InventoryManager : MonoBehaviour
 
     private void PickUpInventoryItem(Vector2Int tileGridPosition)
     {
-        selectedItem = selectedInventoryGrid.PickUpInventoryItem(tileGridPosition.x, tileGridPosition.y, dragCanvas);
+        selectedItem = selectedInventoryGrid.PickUpInventoryItem(tileGridPosition.x, tileGridPosition.y, dragCanvan);
         if (selectedItem != null)
         {
             selectedItemRectTransform = selectedItem.GetComponent<RectTransform>();
@@ -169,6 +170,16 @@ public class InventoryManager : MonoBehaviour
         if (selectedItem == null) return;
         selectedItem.Rotate();
     }
+
+    //Check Area
+    private void CheckComponent()
+    {
+        if (dragCanvan == null)
+        {
+            dragCanvan = transform.Find("Drag Canvas").GetComponent<Canvas>();
+        }
+    }
+
 
     //HighLighter
     private void HandleHighlight()
@@ -380,4 +391,7 @@ public class InventoryManager : MonoBehaviour
 
 
     }
+
+
+
 }

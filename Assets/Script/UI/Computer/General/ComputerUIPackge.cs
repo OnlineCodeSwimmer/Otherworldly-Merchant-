@@ -31,12 +31,12 @@ public class ComputerUIPackge: MonoBehaviour
         {
             case UIType.BankBalance:
                 float balance = PlayerStateManager.instance.balance;
-                uiText.text = string.Format("Balance: {0:F2}$", balance);
+                uiText.text = string.Format("Balance: ${0:F2}", balance);
                 break;
 
             case UIType.BankDebt:
                 float debt = PlayerStateManager.instance.debt;
-                uiText.text = string.Format("Debt: {0:F2}$", debt);
+                uiText.text = string.Format("Debt: ${0:F2}", debt);
                 break;
         }
     }
