@@ -52,9 +52,12 @@ public class PoolManager : MonoBehaviour
         {
             if (!item.activeSelf)
             {
-                selectedObject = item;
-                selectedObject.SetActive(true);
-                break;
+                if (item.transform.parent == transform)
+                {
+                    selectedObject = item;
+                    selectedObject.SetActive(true);
+                    break;
+                }
             }
         }
 

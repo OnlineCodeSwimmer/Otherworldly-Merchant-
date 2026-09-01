@@ -10,7 +10,7 @@ public class ComputerIconButton : MonoBehaviour
 {
     private static ComputerIconButton currentSelectedButton;
 
-    //Icon Button && Text
+    //productIcon Button && Text
     private Image buttonImage;
     private Text iconText;
 

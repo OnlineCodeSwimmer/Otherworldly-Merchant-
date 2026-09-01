@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 656653e107433d249aae56e08aab1d97, type: 3}
   m_Name: Revolve
   m_EditorClassIdentifier: 
+  ID: 1001
+  Name: Revolve
   damage: 10
   fireInterval: 0.3
   fireDistance: 30
@@ -25,3 +27,4 @@ MonoBehaviour:
   muzzleLocalPosition: {x: 0.372, y: 0.718}
   gunIcon: {fileID: 1507646835, guid: 46bda8676169e7441a184fb48da7a602, type: 3}
   iconSize: {x: 91.4586, y: 57.252}
+  price: 300

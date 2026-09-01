@@ -24,10 +24,6 @@ public class GameManager : MonoBehaviour
         instance = this; 
     }
 
-    private void Update()
-    {
-        
-    }
 
     public void SetCustomCursor() //Change the cursor in game
     {

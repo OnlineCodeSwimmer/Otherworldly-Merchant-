@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 656653e107433d249aae56e08aab1d97, type: 3}
   m_Name: AK47
   m_EditorClassIdentifier: 
+  shoppingListItemIconSize: {x: 114.9828, y: 41.3884}
+  shoppinProductItemIconSize: {x: 141.9442, y: 51.0932}
+  productIcon: {fileID: -1860309307, guid: 46bda8676169e7441a184fb48da7a602, type: 3}
+  price: 800
+  ID: 1002
+  Name: AK47
   damage: 12
   fireInterval: 0.15
   fireDistance: 30
