@@ -100,5 +100,26 @@ public class PlayerStateManager : MonoBehaviour
         }
 
     }
+
+    public bool OwnsGun(GunData gunData)
+    {
+        for (int i = 0; i < ownGun.Count; i++)
+        {
+            if (ownGun[i].gunData == gunData) return true;
+        }
+
+        return false;
+    }
+
+    public void ObtainGun(GunData gunData)
+    {
+        if (OwnsGun(gunData)) return;
+
+        WeaponInformation weaponInformation = new WeaponInformation();
+        weaponInformation.gunData = gunData;
+        weaponInformation.currentAmmo = 0;
+
+        ownGun.Add(weaponInformation);
+    }
 }
 

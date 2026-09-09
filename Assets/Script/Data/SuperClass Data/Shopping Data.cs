@@ -7,7 +7,7 @@ public class ShoppingProductData : ScriptableObject
     //Shopping Information
     [Header("Shopping Information")]
     public Vector2 shoppingListItemIconSize;
-    public Vector2 shoppinProductItemIconSize;
     public Sprite productIcon;
     public float price;
+    public int amountPerPurchase = 1;
 }

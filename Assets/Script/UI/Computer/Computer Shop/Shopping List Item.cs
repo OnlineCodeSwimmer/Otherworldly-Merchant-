@@ -22,20 +22,21 @@ public class ShoppingListItem : MonoBehaviour
         ;
     }
 
-    public void Refresh(float quantity)
+    public void Refresh(int quantity)
     {
         quantityText.text = string.Format("x{0}", quantity);
-        float subtotal = productData.price * quantity;
-        priceText.text = string.Format("{0}$", subtotal);
+        int purchaseCount = quantity / productData.amountPerPurchase;
+        float subtotal = productData.price * purchaseCount;
+        priceText.text = string.Format("${0}", subtotal);
     }
 
-    public void AddOne()
+    public void Add()
     {
-        shoppingList.ChangeQuantity(productData, 1);
+        shoppingList.ChangeQuantity(productData, productData.amountPerPurchase);
     }
 
-    public void SubtractOne()
+    public void Subtract()
     {
-        shoppingList.ChangeQuantity(productData, -1);
+        shoppingList.ChangeQuantity(productData, -productData.amountPerPurchase);
     }
 }

@@ -34,7 +34,7 @@ public class ShoppingList : MonoBehaviour
         ShoppingEntry entry = FindShoppingEntry(productData);
 
         if (entry == null ) return;
-
+        if (entry.productType == ShopProductType.Equipment && amount > 0) return;
 
         entry.quantity += amount;
 
@@ -71,19 +71,26 @@ public class ShoppingList : MonoBehaviour
             ShoppingEntry entry = shoppingEntries[i];
 
             entry.shoppingListItem.Refresh(entry.quantity);
-            totalPrice += entry.unitPrice * entry.quantity;
+            int purchaseCount = entry.quantity / entry.productData.amountPerPurchase;
+            totalPrice += entry.unitPrice * purchaseCount;
         }
 
-        totalText.text = string.Format("Total: {0}$", totalPrice);
+        totalText.text = string.Format("Total: ${0}", totalPrice);
     }
 
 
     //Add Area
     public void AddGun(GunData gunData)
     {
+        if (PlayerStateManager.instance.OwnsGun(gunData)) return;
+        if (FindShoppingEntry(gunData) != null) return;
         AddProduct(gunData, ShopProductType.Equipment, gunData.price);
     }
 
+    public void AddAmmo(AmmoData ammoData)
+    {
+        AddProduct(ammoData, ShopProductType.Ammo, ammoData.price);
+    }
 
     private void AddProduct(ShoppingProductData productData, ShopProductType productType, float unitPrice)
     {
@@ -107,7 +114,7 @@ public class ShoppingList : MonoBehaviour
             shoppingEntries.Add(entry);
         }
 
-        entry.quantity++;
+        entry.quantity += productData.amountPerPurchase;
         RefreshShoppingList();
 
     }
@@ -124,5 +131,43 @@ public class ShoppingList : MonoBehaviour
 
         shoppingEntries.Clear();
         RefreshShoppingList();
+    }
+
+
+    //Purchase
+    public void Purchase()
+    {
+        float totalPrice = 0;
+
+        for (int i = 0; i < shoppingEntries.Count; i++)
+        {
+            ShoppingEntry entry = shoppingEntries[i];
+            int purchaseCount = entry.quantity / entry.productData.amountPerPurchase;
+            totalPrice += entry.unitPrice * purchaseCount;
+        }
+
+        if (PlayerStateManager.instance.balance < totalPrice) return;
+
+        for (int i = 0; i < shoppingEntries.Count; i++)
+        {
+            ShoppingEntry entry = shoppingEntries[i];
+
+            switch (entry.productType)
+            {
+                case ShopProductType.Ammo:
+                    AmmoData ammoData = (AmmoData)entry.productData;
+                    int receiveAmount = entry.quantity;
+                    PlayerStateManager.instance.AddAmount(ammoData.ammoType, receiveAmount);
+                    break;
+
+                case ShopProductType.Equipment:
+                    GunData gunData = (GunData)entry.productData;
+                    PlayerStateManager.instance.ObtainGun(gunData);
+                    break;
+            }
+        }
+
+        PlayerStateManager.instance.balance -= totalPrice;
+        ClearShoppingList();
     }
 }

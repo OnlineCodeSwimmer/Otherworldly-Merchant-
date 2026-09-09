@@ -4,5 +4,6 @@ using UnityEngine;
 
 public enum ShopProductType
 {
-    Equipment
+    Equipment,
+    Ammo
 }

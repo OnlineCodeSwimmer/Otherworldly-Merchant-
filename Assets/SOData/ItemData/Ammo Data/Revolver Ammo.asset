@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8014fa87e466814a9d35a7671e4c490, type: 3}
+  m_Name: Revolver Ammo
+  m_EditorClassIdentifier: 
+  shoppingListItemIconSize: {x: 56.5566, y: 86.7731}
+  shoppinProductItemIconSize: {x: 107.0935, y: 164.31}
+  productIcon: {fileID: 21300000, guid: e4ad0bfb035cdd245bc28bcbdc9a6c1e, type: 3}
+  price: 10
+  amountPerPurchase: 6
+  ammoType: 0
