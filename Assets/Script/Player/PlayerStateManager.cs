@@ -85,6 +85,15 @@ public class PlayerStateManager : MonoBehaviour
             ammo.amount += amount;
             return;
         }
+
+        //Automatically add new ammunition information when the ammunition type is not found
+        AmmoInformation newAmmo = new AmmoInformation
+        {
+            ammoType = ammoType,
+            amount = amount
+        };
+
+        ammoInformation.Add(newAmmo);
     }
 
     public void ReloadAllWeaponsOnSceneEnter()

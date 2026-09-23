@@ -5,15 +5,24 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Item Data", menuName = "Data/Item Data")]
 public class InventoryItemData : ScriptableObject
 {
+    public enum ItemQuality
+    {
+        Common,
+        Rare,
+        Legendary,
+        Guaranteed
+    }
+
     [Header("Size")]
     public int sizeWidth = 1;
     public int sizeHeight = 1;
 
     [Header("Basic Information")]
-    public int ItemID;
+    public string ItemID = string.Empty;
     public Sprite itemIcon;
     public string itemName;
     public string itemDescription;
     public Color itemNameColor;
+    public ItemQuality itemQuality;
 
 }

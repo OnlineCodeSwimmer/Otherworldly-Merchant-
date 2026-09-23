@@ -243,7 +243,7 @@ public class InventoryGrid : MonoBehaviour
 
 
 
-    public int GetItemCount(int ItemID)
+    public int GetItemCount(string ItemID)
     {
         int count = 0;
 
@@ -261,11 +261,11 @@ public class InventoryGrid : MonoBehaviour
     public bool HasRequiredItems(List<ItemRequirement> requirements)
     {
 
-        Dictionary<int, int> requiredAmounts = BuildRequiredAmounts(requirements);
+        Dictionary<string, int> requiredAmounts = BuildRequiredAmounts(requirements);
 
-        foreach(KeyValuePair<int,int> requitement in requiredAmounts)
+        foreach(KeyValuePair<string,int> requitement in requiredAmounts)
         {
-            int itemID =requitement.Key;
+            string itemID =requitement.Key;
             int requiredAmount=requitement.Value;
 
             if(GetItemCount(itemID) < requiredAmount) return false; 
@@ -278,12 +278,12 @@ public class InventoryGrid : MonoBehaviour
     public void RemoveRequiredItems(List<ItemRequirement> requirements)
     {
 
-        Dictionary<int, int> requiredAmounts=BuildRequiredAmounts(requirements);
+        Dictionary<string, int> requiredAmounts=BuildRequiredAmounts(requirements);
         List<InventoryItem> itemsToRemove = new List<InventoryItem>();
 
         foreach(InventoryItem item in GetAllItems())
         {
-            int itemID = item.inventoryItemData.ItemID;
+            string itemID = item.inventoryItemData.ItemID;
 
             if (!requiredAmounts.ContainsKey(itemID)) continue;
 
@@ -303,13 +303,13 @@ public class InventoryGrid : MonoBehaviour
     }
 
 
-    private Dictionary<int, int> BuildRequiredAmounts(List<ItemRequirement> requirements)
+    private Dictionary<string, int> BuildRequiredAmounts(List<ItemRequirement> requirements)
     {
-        Dictionary<int, int> requiredAmounts = new Dictionary<int, int>();
+        Dictionary<string, int> requiredAmounts = new Dictionary<string, int>();
 
         foreach (ItemRequirement requirement in requirements)
         {
-            int itemID = requirement.inventoryItemData.ItemID;
+            string itemID = requirement.inventoryItemData.ItemID;
             int amount = requirement.amount;
 
             if (requiredAmounts.ContainsKey(itemID))

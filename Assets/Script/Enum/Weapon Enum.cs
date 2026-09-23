@@ -7,6 +7,8 @@ public enum AmmoType
 {
     Revolver,
     AK47,
+    Pistol,
+    UZI
 }
 
 public enum FireMode

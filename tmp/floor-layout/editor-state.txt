@@ -1,0 +1,5 @@
+Playing: True
+Scene: Assets/Scenes/Clinic.unity | Clinic | loaded=True
+Floors:
+Floor 2 | Assets/Scenes/Clinic.unity
+Floor 1 | Assets/Scenes/Clinic.unity

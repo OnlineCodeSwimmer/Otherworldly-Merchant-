@@ -2,13 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using static InventoryItemData;
 
 public class InventoryItemGenerate : MonoBehaviour
 {
 
+    //Generate Varible
     [Header("Random Amount")]
     public int minGenerateAmount;
     public int maxGenerateAmount;
+
+    [Header("Quality Probability")]
+    public float commonProbability = 70f;
+    public float rareProbability = 25f;
+    public float legendaryProbability = 5f;
+
 
     [Header("Inventory ItemData")]
     public InventoryItemData[] inventoryItemToGenerateData;
@@ -46,18 +54,18 @@ public class InventoryItemGenerate : MonoBehaviour
         {
             InventoryItem inventoryItem = CreateInventoryItem(inventoryItemdata);
 
-            if (inventoryItem == null)  return;
+            if (inventoryItem == null) return;
 
             for (int y = 0; y < inventoryGrid.gridSizeHeight; y++)
             {
                 for (int x = 0; x < inventoryGrid.gridSizeWidth; x++)
                 {
                     //Check whether it is out of bounds
-                    bool isInsideGrid = inventoryGrid.BoundryCheck(x,y,inventoryItem.Width,inventoryItem.Height);
-                    if (isInsideGrid == false)  continue;
+                    bool isInsideGrid = inventoryGrid.BoundryCheck(x, y, inventoryItem.Width, inventoryItem.Height);
+                    if (isInsideGrid == false) continue;
 
                     //Check whterther there is an empty site;
-                    bool isEmpty = inventoryGrid.OverlapCheck( x, y, inventoryItem.Width, inventoryItem.Height );
+                    bool isEmpty = inventoryGrid.OverlapCheck(x, y, inventoryItem.Width, inventoryItem.Height);
 
                     if (isEmpty)
                     {
@@ -75,20 +83,21 @@ public class InventoryItemGenerate : MonoBehaviour
     private void GenerateInventoryItem() //Allow the inventory to choose between randomly generated items and directly generated items.
     {
         if (inventoryGrid.loadedFromSave) return;
-        if(randomInventoryItemToGenerateData != null)
+        if (randomInventoryItemToGenerateData != null)
         {
-            int generateAmount = Random.Range(minGenerateAmount, maxGenerateAmount+1);
+            int generateAmount = Random.Range(minGenerateAmount, maxGenerateAmount + 1);
 
             for (int i = 0; i < generateAmount; i++)
             {
-                int randomIndex = Random.Range(0, randomInventoryItemToGenerateData.Length);
-
-                InventoryItemData randomItemData = randomInventoryItemToGenerateData[randomIndex];
-
+                ItemQuality randomQuality = GetRandomQuality();
+                InventoryItemData randomItemData = GetRandomItemByQuality(randomQuality);
                 PlaceInventoryItem(randomItemData);
             }
         }
 
+
+
+        //Direct generate inventoryItem
         if (inventoryItemToGenerateData != null)
         {
             foreach (InventoryItemData inventoryitemData in inventoryItemToGenerateData)
@@ -97,5 +106,44 @@ public class InventoryItemGenerate : MonoBehaviour
             }
         }
     }
+
+
+    //Item probability calculation area
+    private ItemQuality GetRandomQuality()
+    {
+        float randomValue = Random.Range(0f, 100f);
+
+        switch (randomValue)
+        {
+            case float value when value <= commonProbability:
+                return ItemQuality.Common;
+
+            case float value when value <= commonProbability+rareProbability:
+                return ItemQuality.Rare;
+
+            default:
+                return ItemQuality.Legendary;
+        }
+    }
+
+
+    private InventoryItemData GetRandomItemByQuality(ItemQuality itemQuality)
+    {
+        List<InventoryItemData> qualityItems = new List<InventoryItemData>();
+
+        for (int i = 0; i < randomInventoryItemToGenerateData.Length; i++)
+        {
+            InventoryItemData itemData = randomInventoryItemToGenerateData[i];
+
+            if (itemData.itemQuality == itemQuality)
+            {
+                qualityItems.Add(itemData);
+            }
+        }
+
+        int randomIndex = Random.Range(0, qualityItems.Count);
+        return qualityItems[randomIndex];
+    }
+
 
 }

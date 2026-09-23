@@ -1,0 +1,2153 @@
+{
+  "6070108": {
+    "id": 6070108,
+    "name": "chair_2_Sheet_0 (1)",
+    "parent": 992400009,
+    "pos": [
+      3.4300003,
+      -0.5100002,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\chair_2_Sheet_0.prefab",
+    "instance": 1804197381,
+    "components": []
+  },
+  "8505966": {
+    "id": 8505966,
+    "name": "Wating Chairs (1)",
+    "parent": 801445065,
+    "pos": [
+      -4.6800003,
+      -4.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Wating Chairs.prefab",
+    "instance": 8505965,
+    "components": []
+  },
+  "42541926": {
+    "id": 42541926,
+    "name": "WoodDoor (11)",
+    "parent": 1939826255,
+    "pos": [
+      151.01,
+      9.99,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\WoodDoor.prefab",
+    "instance": 42541925,
+    "components": []
+  },
+  "44311637": {
+    "id": 44311637,
+    "name": "shelfLaboratory_Sheet_0",
+    "parent": 992400009,
+    "pos": [
+      3.46,
+      0.53999996,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\shelfLaboratory_Sheet_0.prefab",
+    "instance": 1523712633,
+    "components": []
+  },
+  "74208235": {
+    "id": 74208235,
+    "name": "fridge_Sheet_1 (1)",
+    "parent": 280027647,
+    "pos": [
+      20.0,
+      -4.48,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\fridge_Sheet_1.prefab",
+    "instance": 74208234,
+    "components": []
+  },
+  "126738656": {
+    "id": 126738656,
+    "name": "Floor 2",
+    "parent": 1939826255,
+    "pos": [
+      138.99,
+      6.97,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        126738656,
+        4
+      ]
+    ]
+  },
+  "134986696": {
+    "id": 134986696,
+    "name": "cm",
+    "parent": 1919866693,
+    "pos": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        134986696,
+        4
+      ],
+      [
+        134986698,
+        114
+      ],
+      [
+        134986697,
+        114
+      ]
+    ]
+  },
+  "171008835": {
+    "id": 171008835,
+    "name": "Wall",
+    "parent": 2143501758,
+    "pos": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        171008835,
+        4
+      ],
+      [
+        171008837,
+        1839735485
+      ],
+      [
+        171008836,
+        483693784
+      ],
+      [
+        171008840,
+        19719996
+      ],
+      [
+        171008839,
+        50
+      ],
+      [
+        171008838,
+        66
+      ]
+    ]
+  },
+  "184456453": {
+    "id": 184456453,
+    "name": "couch_1_Sheet_0",
+    "parent": 689882035,
+    "pos": [
+      4.0,
+      -2.5200005,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\couch_1_Sheet_0.prefab",
+    "instance": 89010643660121388,
+    "components": []
+  },
+  "187631967": {
+    "id": 187631967,
+    "name": "trashCan",
+    "parent": 1681993356,
+    "pos": [
+      -17.548504,
+      -13.34,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        187631967,
+        4
+      ],
+      [
+        187631968,
+        212
+      ]
+    ]
+  },
+  "242282457": {
+    "id": 242282457,
+    "name": "display_1_Sheet_1",
+    "parent": 44311637,
+    "pos": [
+      -0.3699999,
+      -0.02000008,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\display_1_Sheet_1.prefab",
+    "instance": 7462514564625421624,
+    "components": []
+  },
+  "254572826": {
+    "id": 254572826,
+    "name": "WoodDoor (6)",
+    "parent": 1939826255,
+    "pos": [
+      111.92,
+      1.92,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\WoodDoor.prefab",
+    "instance": 254572825,
+    "components": []
+  },
+  "274177434": {
+    "id": 274177434,
+    "name": "clinic_sink_counter_l_corrected_topdown_512x512",
+    "parent": 1419769967,
+    "pos": [
+      14.08,
+      10.13,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\clinic_sink_counter_l_corrected_topdown_512x512.prefab",
+    "instance": 1299790292849626689,
+    "components": []
+  },
+  "276111054": {
+    "id": 276111054,
+    "name": "Floor",
+    "parent": 2143501758,
+    "pos": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        276111054,
+        4
+      ],
+      [
+        276111056,
+        1839735485
+      ],
+      [
+        276111055,
+        483693784
+      ]
+    ]
+  },
+  "279489828": {
+    "id": 279489828,
+    "name": "WoodDoor (3)",
+    "parent": 1419769967,
+    "pos": [
+      17.959,
+      2.925,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\WoodDoor.prefab",
+    "instance": 625452892,
+    "components": []
+  },
+  "280027647": {
+    "id": 280027647,
+    "name": "Pharmacy",
+    "parent": 1681993356,
+    "pos": [
+      -20.05,
+      -6.97,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        280027647,
+        4
+      ]
+    ]
+  },
+  "301465701": {
+    "id": 301465701,
+    "name": "chair_2_Sheet_0",
+    "parent": 992400009,
+    "pos": [
+      3.449831,
+      1.6000004,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\chair_2_Sheet_0.prefab",
+    "instance": 2088846475,
+    "components": []
+  },
+  "308421000": {
+    "id": 308421000,
+    "name": "cooler_Sheet_0",
+    "parent": 992400009,
+    "pos": [
+      -1.51,
+      -2.6610003,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\cooler_Sheet_0.prefab",
+    "instance": 1808145556,
+    "components": []
+  },
+  "311780806": {
+    "id": 311780806,
+    "name": "Report",
+    "parent": 44311637,
+    "pos": [
+      0.51,
+      0.024000168,
+      0.0
+    ],
+    "scale": [
+      0.299994,
+      0.24000387,
+      0.3
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Report.prefab",
+    "instance": 670618931,
+    "components": []
+  },
+  "312556615": {
+    "id": 312556615,
+    "name": "Wating Chairs (6)",
+    "parent": 801445065,
+    "pos": [
+      -4.6800003,
+      -2.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Wating Chairs.prefab",
+    "instance": 312556614,
+    "components": []
+  },
+  "361336779": {
+    "id": 361336779,
+    "name": "toilet stall (2)",
+    "parent": 1714540076,
+    "pos": [
+      41.45,
+      10.41,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Building\\toilet stall.prefab",
+    "instance": 1043576864,
+    "components": []
+  },
+  "398693410": {
+    "id": 398693410,
+    "name": "restroom_urinal_strict_topdown_64x64 (3)",
+    "parent": 1714540076,
+    "pos": [
+      41.5,
+      15.64,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\restroom_urinal_strict_topdown_64x64.prefab",
+    "instance": 914995211,
+    "components": []
+  },
+  "440561581": {
+    "id": 440561581,
+    "name": "restroom_urinal_strict_topdown_64x64",
+    "parent": 1714540076,
+    "pos": [
+      35.5,
+      15.64,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\restroom_urinal_strict_topdown_64x64.prefab",
+    "instance": 553672721804487226,
+    "components": []
+  },
+  "467753631": {
+    "id": 467753631,
+    "name": "couch_1_Sheet_0",
+    "parent": 992400009,
+    "pos": [
+      -4.0,
+      -2.5200005,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\couch_1_Sheet_0.prefab",
+    "instance": 1989947511,
+    "components": []
+  },
+  "470903747": {
+    "id": 470903747,
+    "name": "Women's restroom (1)",
+    "parent": 1681993356,
+    "pos": [
+      -20.05,
+      -6.97,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        470903747,
+        4
+      ]
+    ]
+  },
+  "493456277": {
+    "id": 493456277,
+    "name": "toiletTable_Sheet_0",
+    "parent": 1714540076,
+    "pos": [
+      32.57,
+      10.02,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\toiletTable_Sheet_0.prefab",
+    "instance": 2945627578010925828,
+    "components": []
+  },
+  "518021043": {
+    "id": 518021043,
+    "name": "Light 2D",
+    "parent": 0,
+    "pos": [
+      -2.3991342,
+      0.101153985,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        518021043,
+        4
+      ],
+      [
+        518021042,
+        114
+      ]
+    ]
+  },
+  "531346920": {
+    "id": 531346920,
+    "name": "hospitalSurgeryBed_Sheet_0 (1)",
+    "parent": 1419769967,
+    "pos": [
+      20.87,
+      15.29,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\hospitalSurgeryBed_Sheet_0 (1).prefab",
+    "instance": 531346919,
+    "components": []
+  },
+  "575378143": {
+    "id": 575378143,
+    "name": "hospitalSurgeryBed_Sheet_0 (3)",
+    "parent": 1419769967,
+    "pos": [
+      20.9,
+      9.72,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\hospitalSurgeryBed_Sheet_0 (1).prefab",
+    "instance": 575378142,
+    "components": []
+  },
+  "605663312": {
+    "id": 605663312,
+    "name": "trashCan_1_Sheet_0",
+    "parent": 1714540076,
+    "pos": [
+      32.76,
+      6.8,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\trashCan_1_Sheet_0.prefab",
+    "instance": 4161795432075468503,
+    "components": []
+  },
+  "657480091": {
+    "id": 657480091,
+    "name": "WoodDoor",
+    "parent": 992400009,
+    "pos": [
+      -0.9860007,
+      -4.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\WoodDoor.prefab",
+    "instance": 1432316560,
+    "components": []
+  },
+  "657754029": {
+    "id": 657754029,
+    "name": "storage_cabinet_topdown_512x512 (1)",
+    "parent": 470903747,
+    "pos": [
+      43.5,
+      7.62,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\storage_cabinet_topdown_512x512.prefab",
+    "instance": 468292142,
+    "components": []
+  },
+  "662521456": {
+    "id": 662521456,
+    "name": "Floor",
+    "parent": 2132279472,
+    "pos": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        662521456,
+        4
+      ],
+      [
+        662521458,
+        1839735485
+      ],
+      [
+        662521457,
+        483693784
+      ]
+    ]
+  },
+  "665131651": {
+    "id": 665131651,
+    "name": "keyboardMouse",
+    "parent": 1682932553,
+    "pos": [
+      -0.00999999,
+      0.07999992,
+      0.0
+    ],
+    "scale": [
+      0.996569,
+      0.8022095,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\keyboardMouse.prefab",
+    "instance": 9182465615341771565,
+    "components": []
+  },
+  "679674209": {
+    "id": 679674209,
+    "name": "toilet stall (2)",
+    "parent": 470903747,
+    "pos": [
+      41.45,
+      6.58,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Building\\toilet stall.prefab",
+    "instance": 2109481679,
+    "components": []
+  },
+  "689882035": {
+    "id": 689882035,
+    "name": "Examination Room1",
+    "parent": 1681993356,
+    "pos": [
+      -24.05,
+      5.03,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        689882035,
+        4
+      ]
+    ]
+  },
+  "726836749": {
+    "id": 726836749,
+    "name": "Report",
+    "parent": 1682932553,
+    "pos": [
+      0.51,
+      0.024000168,
+      0.0
+    ],
+    "scale": [
+      0.299994,
+      0.24000387,
+      0.3
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Report.prefab",
+    "instance": 726836748,
+    "components": []
+  },
+  "767612450": {
+    "id": 767612450,
+    "name": "Wooden cabinet",
+    "parent": 689882035,
+    "pos": [
+      -3.677,
+      3.476,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\clinic_cabinet_topdown_wood_512x512.prefab",
+    "instance": 4860183578590688162,
+    "components": []
+  },
+  "787665601": {
+    "id": 787665601,
+    "name": "toilet stall (1)",
+    "parent": 470903747,
+    "pos": [
+      38.40534,
+      6.58,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Building\\toilet stall.prefab",
+    "instance": 1803427831,
+    "components": []
+  },
+  "801445065": {
+    "id": 801445065,
+    "name": "Hall",
+    "parent": 1681993356,
+    "pos": [
+      -20.05,
+      -6.97,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        801445065,
+        4
+      ]
+    ]
+  },
+  "802852996": {
+    "id": 802852996,
+    "name": "fridge_Sheet_0",
+    "parent": 280027647,
+    "pos": [
+      21.3,
+      -4.48,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\fridge_Sheet_0.prefab",
+    "instance": 5288259766888418017,
+    "components": []
+  },
+  "813885759": {
+    "id": 813885759,
+    "name": "couch_2_Sheet_0",
+    "parent": 992400009,
+    "pos": [
+      -2.47,
+      -2.5200005,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\couch_2_Sheet_0.prefab",
+    "instance": 1717245544,
+    "components": []
+  },
+  "832933305": {
+    "id": 832933305,
+    "name": "clinic_wood_door_handle_right_topdown_64x64",
+    "parent": 280027647,
+    "pos": [
+      14.01,
+      2.9249997,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.3299999,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\clinic_wood_door_handle_right_topdown_64x64.prefab",
+    "instance": 8586453643054699597,
+    "components": []
+  },
+  "843737864": {
+    "id": 843737864,
+    "name": "clinic_medicine_gondola_shelf_topdown_512x512 (3)",
+    "parent": 280027647,
+    "pos": [
+      16.41,
+      -4.56,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\clinic_medicine_gondola_shelf_topdown_512x512.prefab",
+    "instance": 576740488,
+    "components": []
+  },
+  "870222195": {
+    "id": 870222195,
+    "name": "clinic_pharmacy_counter_topdown_512x512",
+    "parent": 280027647,
+    "pos": [
+      19.74,
+      -1.3199999,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\clinic_pharmacy_counter_topdown_512x512.prefab",
+    "instance": 7206123704673771825,
+    "components": []
+  },
+  "909877797": {
+    "id": 909877797,
+    "name": "plants_Sheet_2",
+    "parent": 689882035,
+    "pos": [
+      -1.8499999,
+      3.4899998,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\plants_Sheet_2.prefab",
+    "instance": 625689108972649772,
+    "components": []
+  },
+  "915165108": {
+    "id": 915165108,
+    "name": "hospitalSurgeryBed_Sheet_0 (2)",
+    "parent": 1419769967,
+    "pos": [
+      20.9,
+      12.56,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      0.9,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\hospitalSurgeryBed_Sheet_0 (1).prefab",
+    "instance": 915165107,
+    "components": []
+  },
+  "927728261": {
+    "id": 927728261,
+    "name": "keyboardMouse",
+    "parent": 44311637,
+    "pos": [
+      -0.00999999,
+      0.07999992,
+      0.0
+    ],
+    "scale": [
+      0.996569,
+      0.8022095,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\keyboardMouse.prefab",
+    "instance": 157102262,
+    "components": []
+  },
+  "986782597": {
+    "id": 986782597,
+    "name": "hospitalSurgeryBed_Sheet_0 (2)",
+    "parent": 992400009,
+    "pos": [
+      -4.2437205,
+      2.88,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\hospitalSurgeryBed_Sheet_0 (1).prefab",
+    "instance": 986782596,
+    "components": []
+  },
+  "992400009": {
+    "id": 992400009,
+    "name": "Examination Room2",
+    "parent": 1681993356,
+    "pos": [
+      -13.049999,
+      5.03,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        992400009,
+        4
+      ]
+    ]
+  },
+  "1031908701": {
+    "id": 1031908701,
+    "name": "WoodDoor (7)",
+    "parent": 1939826255,
+    "pos": [
+      119.98,
+      1.94,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\WoodDoor.prefab",
+    "instance": 1031908700,
+    "components": []
+  },
+  "1040441589": {
+    "id": 1040441589,
+    "name": "Wating Chairs (5)",
+    "parent": 801445065,
+    "pos": [
+      -4.6800003,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Wating Chairs.prefab",
+    "instance": 1040441588,
+    "components": []
+  },
+  "1043789482": {
+    "id": 1043789482,
+    "name": "fridge_Sheet_1",
+    "parent": 280027647,
+    "pos": [
+      18.7,
+      -4.477,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\fridge_Sheet_1.prefab",
+    "instance": 4170175754066094459,
+    "components": []
+  },
+  "1109521769": {
+    "id": 1109521769,
+    "name": "clinic_bedside_cabinet_lightoak_topdown_512x512 (1)",
+    "parent": 1419769967,
+    "pos": [
+      21.48,
+      13.918135,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\clinic_bedside_cabinet_lightoak_topdown_512x512.prefab",
+    "instance": 1109521768,
+    "components": []
+  },
+  "1156756323": {
+    "id": 1156756323,
+    "name": "hospitalSurgeryBed_Sheet_0 (1)",
+    "parent": 689882035,
+    "pos": [
+      4.2562795,
+      2.88,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\hospitalSurgeryBed_Sheet_0 (1).prefab",
+    "instance": 1156756322,
+    "components": []
+  },
+  "1165619099": {
+    "id": 1165619099,
+    "name": "EventSystem",
+    "parent": 0,
+    "pos": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        1165619099,
+        4
+      ],
+      [
+        1165619098,
+        114
+      ],
+      [
+        1165619097,
+        114
+      ]
+    ]
+  },
+  "1186894890": {
+    "id": 1186894890,
+    "name": "WoodDoor (10)",
+    "parent": 1939826255,
+    "pos": [
+      151.01,
+      2.03,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\WoodDoor.prefab",
+    "instance": 1186894889,
+    "components": []
+  },
+  "1192077982": {
+    "id": 1192077982,
+    "name": "toilet stall (1)",
+    "parent": 1714540076,
+    "pos": [
+      38.40534,
+      10.425,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Building\\toilet stall.prefab",
+    "instance": 623479222,
+    "components": []
+  },
+  "1201626339": {
+    "id": 1201626339,
+    "name": "Main Camera",
+    "parent": 0,
+    "pos": [
+      0.51,
+      -3.95,
+      -10.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        1201626339,
+        4
+      ],
+      [
+        1201626338,
+        20
+      ],
+      [
+        1201626337,
+        81
+      ],
+      [
+        1201626336,
+        114
+      ],
+      [
+        1201626335,
+        114
+      ],
+      [
+        1201626340,
+        114
+      ]
+    ]
+  },
+  "1244420070": {
+    "id": 1244420070,
+    "name": "Player",
+    "parent": 0,
+    "pos": [
+      0.51,
+      -3.95,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Player\\Player.prefab",
+    "instance": 488534488668548063,
+    "components": []
+  },
+  "1269335364": {
+    "id": 1269335364,
+    "name": "Exit Teleportation",
+    "parent": 0,
+    "pos": [
+      0.504,
+      -5.484,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        1269335364,
+        4
+      ],
+      [
+        1269335363,
+        61
+      ],
+      [
+        1269335362,
+        114
+      ]
+    ]
+  },
+  "1278143964": {
+    "id": 1278143964,
+    "name": "clinic_medical_trolley_instruments_bloodstained_pixel_topdown_128x128",
+    "parent": 280027647,
+    "pos": [
+      17.145487,
+      12.25753,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\clinic_medical_trolley_instruments_bloodstained_pixel_topdown_128x128.prefab",
+    "instance": 212995510625688000,
+    "components": []
+  },
+  "1294319941": {
+    "id": 1294319941,
+    "name": "Wall",
+    "parent": 2132279472,
+    "pos": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        1294319941,
+        4
+      ],
+      [
+        1294319946,
+        1839735485
+      ],
+      [
+        1294319945,
+        483693784
+      ],
+      [
+        1294319944,
+        19719996
+      ],
+      [
+        1294319943,
+        50
+      ],
+      [
+        1294319942,
+        66
+      ]
+    ]
+  },
+  "1356595608": {
+    "id": 1356595608,
+    "name": "Chairs",
+    "parent": 801445065,
+    "pos": [
+      7.52,
+      -2.15,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Chairs.prefab",
+    "instance": 5253888453872387461,
+    "components": []
+  },
+  "1385240314": {
+    "id": 1385240314,
+    "name": "small_black_round_trash_can_topdown_32x32",
+    "parent": 1419769967,
+    "pos": [
+      15.58,
+      9.3,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\small_black_round_trash_can_topdown_32x32.prefab",
+    "instance": 8114322156795879438,
+    "components": []
+  },
+  "1391437328": {
+    "id": 1391437328,
+    "name": "chair_2_Sheet_0 (1)",
+    "parent": 689882035,
+    "pos": [
+      -3.5700002,
+      -0.5100002,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\chair_2_Sheet_0.prefab",
+    "instance": 1702350840,
+    "components": []
+  },
+  "1419769967": {
+    "id": 1419769967,
+    "name": "Medical Room",
+    "parent": 1681993356,
+    "pos": [
+      -20.05,
+      -6.97,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        1419769967,
+        4
+      ]
+    ]
+  },
+  "1446178723": {
+    "id": 1446178723,
+    "name": "Guest Table",
+    "parent": 801445065,
+    "pos": [
+      6.83,
+      -2.11,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Guest Table 1.prefab",
+    "instance": 6412468892840625557,
+    "components": []
+  },
+  "1460935673": {
+    "id": 1460935673,
+    "name": "display_1_Sheet_0",
+    "parent": 1682932553,
+    "pos": [
+      -0.3699999,
+      -0.020000076,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\display_1_Sheet_0.prefab",
+    "instance": 8038058012978438648,
+    "components": []
+  },
+  "1470986118": {
+    "id": 1470986118,
+    "name": "chair_2_Sheet_0",
+    "parent": 689882035,
+    "pos": [
+      -3.5501695,
+      1.6000004,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\chair_2_Sheet_0.prefab",
+    "instance": 7106772246619149281,
+    "components": []
+  },
+  "1476017080": {
+    "id": 1476017080,
+    "name": "WoodDoor (2)",
+    "parent": 1419769967,
+    "pos": [
+      16.019,
+      7.98,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\WoodDoor.prefab",
+    "instance": 1945527092,
+    "components": []
+  },
+  "1519638530": {
+    "id": 1519638530,
+    "name": "AStarManager",
+    "parent": 0,
+    "pos": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        1519638530,
+        4
+      ],
+      [
+        1519638529,
+        114
+      ]
+    ]
+  },
+  "1541036552": {
+    "id": 1541036552,
+    "name": "clinic_cabinet_topdown_wood_512x512",
+    "parent": 992400009,
+    "pos": [
+      3.676,
+      3.48,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\clinic_cabinet_topdown_wood_512x512.prefab",
+    "instance": 1395252677,
+    "components": []
+  },
+  "1571133659": {
+    "id": 1571133659,
+    "name": "clinic_medicine_gondola_shelf_topdown_512x512 (2)",
+    "parent": 280027647,
+    "pos": [
+      13.181,
+      -4.56,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\clinic_medicine_gondola_shelf_topdown_512x512.prefab",
+    "instance": 1685636351,
+    "components": []
+  },
+  "1590624707": {
+    "id": 1590624707,
+    "name": "toilet stall",
+    "parent": 470903747,
+    "pos": [
+      35.41,
+      6.58,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Building\\toilet stall.prefab",
+    "instance": 1915891407,
+    "components": []
+  },
+  "1600025231": {
+    "id": 1600025231,
+    "name": "WoodDoor (4)",
+    "parent": 1939826255,
+    "pos": [
+      119.96,
+      6.1,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\WoodDoor.prefab",
+    "instance": 1600025230,
+    "components": []
+  },
+  "1626188343": {
+    "id": 1626188343,
+    "name": "restroom_urinal_strict_topdown_64x64 (1)",
+    "parent": 1714540076,
+    "pos": [
+      37.5,
+      15.64,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\restroom_urinal_strict_topdown_64x64.prefab",
+    "instance": 1577566095,
+    "components": []
+  },
+  "1636882339": {
+    "id": 1636882339,
+    "name": "WoodDoor (9)",
+    "parent": 1939826255,
+    "pos": [
+      139.92,
+      -0.92,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\WoodDoor.prefab",
+    "instance": 1636882338,
+    "components": []
+  },
+  "1672197389": {
+    "id": 1672197389,
+    "name": "Wating Chairs (8)",
+    "parent": 801445065,
+    "pos": [
+      -2.18,
+      -2.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Wating Chairs.prefab",
+    "instance": 1672197388,
+    "components": []
+  },
+  "1681993356": {
+    "id": 1681993356,
+    "name": "Floor 1",
+    "parent": 1939826255,
+    "pos": [
+      20.05,
+      6.97,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        1681993356,
+        4
+      ]
+    ]
+  },
+  "1682932553": {
+    "id": 1682932553,
+    "name": "shelfLaboratory_Sheet_0",
+    "parent": 689882035,
+    "pos": [
+      -3.54,
+      0.53999996,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\shelfLaboratory_Sheet_0.prefab",
+    "instance": 649494951248695337,
+    "components": []
+  },
+  "1714540076": {
+    "id": 1714540076,
+    "name": "Men's restroom",
+    "parent": 1681993356,
+    "pos": [
+      -20.05,
+      -6.97,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        1714540076,
+        4
+      ]
+    ]
+  },
+  "1751552666": {
+    "id": 1751552666,
+    "name": "WoodDoor (5)",
+    "parent": 1939826255,
+    "pos": [
+      111.93,
+      6.12,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\WoodDoor.prefab",
+    "instance": 1751552665,
+    "components": []
+  },
+  "1759142819": {
+    "id": 1759142819,
+    "name": "storage_cabinet_topdown_512x512",
+    "parent": 1714540076,
+    "pos": [
+      43.5,
+      9.397,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\storage_cabinet_topdown_512x512.prefab",
+    "instance": 8289904568630830773,
+    "components": []
+  },
+  "1799079757": {
+    "id": 1799079757,
+    "name": "toiletTable_Sheet_0 (1)",
+    "parent": 1714540076,
+    "pos": [
+      32.57,
+      8.172,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\toiletTable_Sheet_0.prefab",
+    "instance": 1972235540,
+    "components": []
+  },
+  "1806475198": {
+    "id": 1806475198,
+    "name": "couch_2_Sheet_0",
+    "parent": 689882035,
+    "pos": [
+      2.46,
+      -2.5200005,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\couch_2_Sheet_0.prefab",
+    "instance": 8188725036168824595,
+    "components": []
+  },
+  "1873085707": {
+    "id": 1873085707,
+    "name": "clinic_pharmacy_counter_topdown_512x512 (2)",
+    "parent": 280027647,
+    "pos": [
+      15.26,
+      -1.3199999,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\clinic_pharmacy_counter_topdown_512x512.prefab",
+    "instance": 11700360,
+    "components": []
+  },
+  "1903260820": {
+    "id": 1903260820,
+    "name": "clinic_wood_door_handle_right_topdown_64x64",
+    "parent": 470903747,
+    "pos": [
+      33.06,
+      1.02,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\clinic_wood_door_handle_right_topdown_64x64.prefab",
+    "instance": 1368436763,
+    "components": []
+  },
+  "1919866693": {
+    "id": 1919866693,
+    "name": "'Virtual Camera '",
+    "parent": 0,
+    "pos": [
+      0.51,
+      -3.95,
+      -10.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        1919866693,
+        4
+      ],
+      [
+        1919866692,
+        114
+      ],
+      [
+        1919866694,
+        114
+      ]
+    ]
+  },
+  "1935813490": {
+    "id": 1935813490,
+    "name": "Wating Chairs (2)",
+    "parent": 801445065,
+    "pos": [
+      -2.18,
+      -4.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Wating Chairs.prefab",
+    "instance": 1935813489,
+    "components": []
+  },
+  "1936276676": {
+    "id": 1936276676,
+    "name": "Global Volume",
+    "parent": 0,
+    "pos": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        1936276676,
+        4
+      ],
+      [
+        1936276675,
+        114
+      ]
+    ]
+  },
+  "1939826255": {
+    "id": 1939826255,
+    "name": "Clinic Object",
+    "parent": 0,
+    "pos": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        1939826255,
+        4
+      ]
+    ]
+  },
+  "1960553138": {
+    "id": 1960553138,
+    "name": "restroom_urinal_strict_topdown_64x64 (2)",
+    "parent": 1714540076,
+    "pos": [
+      39.5,
+      15.64,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\restroom_urinal_strict_topdown_64x64.prefab",
+    "instance": 1174669844,
+    "components": []
+  },
+  "1971785424": {
+    "id": 1971785424,
+    "name": "Wating Chairs (3)",
+    "parent": 801445065,
+    "pos": [
+      -7.1800003,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Wating Chairs.prefab",
+    "instance": 1971785423,
+    "components": []
+  },
+  "1985489658": {
+    "id": 1985489658,
+    "name": "WoodDoor (8)",
+    "parent": 1939826255,
+    "pos": [
+      135.99,
+      -0.92,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\WoodDoor.prefab",
+    "instance": 1985489657,
+    "components": []
+  },
+  "2012131469": {
+    "id": 2012131469,
+    "name": "Wating Chairs (4)",
+    "parent": 801445065,
+    "pos": [
+      -7.1800003,
+      -2.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Wating Chairs.prefab",
+    "instance": 2012131468,
+    "components": []
+  },
+  "2023777237": {
+    "id": 2023777237,
+    "name": "plants_Sheet_2 (1)",
+    "parent": 992400009,
+    "pos": [
+      6.52,
+      3.4899998,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\plants_Sheet_2.prefab",
+    "instance": 2023777236,
+    "components": []
+  },
+  "2047475149": {
+    "id": 2047475149,
+    "name": "plants_Sheet_2",
+    "parent": 992400009,
+    "pos": [
+      1.8999996,
+      3.4899998,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\plants_Sheet_2.prefab",
+    "instance": 675470496,
+    "components": []
+  },
+  "2073833044": {
+    "id": 2073833044,
+    "name": "WoodDoor",
+    "parent": 689882035,
+    "pos": [
+      -0.98600054,
+      -4.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\WoodDoor.prefab",
+    "instance": 206655570153019381,
+    "components": []
+  },
+  "2078964373": {
+    "id": 2078964373,
+    "name": "WoodDoor",
+    "parent": 1714540076,
+    "pos": [
+      33.06,
+      16.005,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\WoodDoor.prefab",
+    "instance": 42333124,
+    "components": []
+  },
+  "2120072641": {
+    "id": 2120072641,
+    "name": "cooler_Sheet_0",
+    "parent": 689882035,
+    "pos": [
+      1.49,
+      -2.6610003,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\cooler_Sheet_0.prefab",
+    "instance": 7301823508409797812,
+    "components": []
+  },
+  "2132279472": {
+    "id": 2132279472,
+    "name": "Grid",
+    "parent": 126738656,
+    "pos": [
+      -20.05,
+      -6.97,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        2132279472,
+        4
+      ],
+      [
+        2132279473,
+        156049354
+      ]
+    ]
+  },
+  "2143501758": {
+    "id": 2143501758,
+    "name": "Grid",
+    "parent": 1681993356,
+    "pos": [
+      -20.05,
+      -6.97,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "components": [
+      [
+        2143501758,
+        4
+      ],
+      [
+        2143501757,
+        156049354
+      ]
+    ]
+  },
+  "4133585761727731964": {
+    "id": 4133585761727731964,
+    "name": "Wating Chairs (7)",
+    "parent": 801445065,
+    "pos": [
+      -2.18,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Wating Chairs.prefab",
+    "instance": 4133585761727731963,
+    "components": []
+  },
+  "6421446474997773308": {
+    "id": 6421446474997773308,
+    "name": "toilet stall",
+    "parent": 1714540076,
+    "pos": [
+      35.41,
+      10.43,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Building\\toilet stall.prefab",
+    "instance": 1517357497009700274,
+    "components": []
+  },
+  "6683170604168892203": {
+    "id": 6683170604168892203,
+    "name": "Wating Chairs",
+    "parent": 801445065,
+    "pos": [
+      -7.1800003,
+      -4.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\Wating Chairs.prefab",
+    "instance": 6683170604168892202,
+    "components": []
+  },
+  "7126054740022121161": {
+    "id": 7126054740022121161,
+    "name": "clinic_medicine_storage_cabinet_plain_topdown_512x512",
+    "parent": 1419769967,
+    "pos": [
+      13.42,
+      12.91,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\clinic_medicine_storage_cabinet_plain_topdown_512x512.prefab",
+    "instance": 7126054740022121160,
+    "components": []
+  },
+  "7463649358170411008": {
+    "id": 7463649358170411008,
+    "name": "clinic_bedside_cabinet_lightoak_topdown_512x512",
+    "parent": 1419769967,
+    "pos": [
+      21.48,
+      11.168135,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "prefab": "Assets\\Prefab\\Clinic\\clinic_bedside_cabinet_lightoak_topdown_512x512.prefab",
+    "instance": 7463649358170411007,
+    "components": []
+  }
+}

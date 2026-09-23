@@ -12,19 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 656653e107433d249aae56e08aab1d97, type: 3}
   m_Name: Revolve
   m_EditorClassIdentifier: 
+  shoppingListItemIconSize: {x: 73.3711, y: 45.756}
+  productIcon: {fileID: 1507646835, guid: 46bda8676169e7441a184fb48da7a602, type: 3}
+  price: 300
+  amountPerPurchase: 1
   ID: 1001
   Name: Revolve
-  damage: 10
+  damage: 12
   fireInterval: 0.3
   fireDistance: 30
   bulletSpeed: 30
   spreadAngle: 5
   magazineSize: 6
-  reloadTime: 1
+  reloadTime: 2.5
   fireMode: 0
   ammoType: 0
   animatorOverrideController: {fileID: 22100000, guid: d9164b69a4b55d74485d6feb0dd99dad, type: 2}
   muzzleLocalPosition: {x: 0.372, y: 0.718}
   gunIcon: {fileID: 1507646835, guid: 46bda8676169e7441a184fb48da7a602, type: 3}
   iconSize: {x: 91.4586, y: 57.252}
-  price: 300

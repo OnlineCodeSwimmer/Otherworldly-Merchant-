@@ -300,7 +300,6 @@ public class InventoryManager : MonoBehaviour
             currentObjectInventory = null;
         }
         highlighter.SetParent(mainInventoryUI.transform, false);
-        ItemToolTip.SetParent(mainInventoryUI.transform, false);
         mainInventoryUI.SetActive(false);
 
     }

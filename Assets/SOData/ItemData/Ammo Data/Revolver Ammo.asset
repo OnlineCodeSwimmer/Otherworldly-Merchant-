@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8014fa87e466814a9d35a7671e4c490, type: 3}
   m_Name: Revolver Ammo
   m_EditorClassIdentifier: 
-  shoppingListItemIconSize: {x: 56.5566, y: 86.7731}
-  shoppinProductItemIconSize: {x: 107.0935, y: 164.31}
+  shoppingListItemIconSize: {x: 47.8107, y: 63.5683}
   productIcon: {fileID: 21300000, guid: e4ad0bfb035cdd245bc28bcbdc9a6c1e, type: 3}
-  price: 10
+  price: 15
   amountPerPurchase: 6
   ammoType: 0

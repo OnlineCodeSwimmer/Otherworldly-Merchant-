@@ -11,8 +11,11 @@ public class InventoryItemToolTip : MonoBehaviour
     public Text nameText;
     public Text descriptionText;
 
-    [Header("Position")]
+    [Header("Position adjustment")]
     public Vector2 offset = new Vector2(25f, -25f);
+    public float screenPadding = 10f;
+    private Vector3[] corners = new Vector3[4];
+
 
     private RectTransform rectTransform;
 
@@ -44,9 +47,6 @@ public class InventoryItemToolTip : MonoBehaviour
 
         FollowMouse();
 
-        Canvas targetCanvas = inventoryItem.GetComponentInParent<Canvas>();
-        transform.SetParent(targetCanvas.transform);
-
         gameObject.SetActive(true);
 
 
@@ -66,6 +66,24 @@ public class InventoryItemToolTip : MonoBehaviour
         Vector2 mousePosition = Mouse.current.position.ReadValue();
 
         rectTransform.position = mousePosition + offset;
+
+
+        //Determine if the pop-up box exceeds the screen boundaries
+        rectTransform.GetWorldCorners(corners);
+        Vector2 correction = Vector2.zero;
+
+
+        if (corners[2].x > Screen.width - screenPadding)
+        {
+            correction.x -= corners[2].x - (Screen.width - screenPadding);
+        }
+
+        if (corners[0].y < screenPadding)
+        {
+            correction.y += screenPadding - corners[0].y;
+        }
+
+        rectTransform.position += (Vector3)correction;
     }
 
 

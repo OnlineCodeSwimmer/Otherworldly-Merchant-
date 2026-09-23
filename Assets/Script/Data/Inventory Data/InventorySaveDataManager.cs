@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Text.RegularExpressions;
 using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEditor.Progress;
@@ -36,7 +37,7 @@ public class InventorySaveDataManager : MonoBehaviour
         }
 
         string json = File.ReadAllText(savePath);
-        GameSaveData saveData = JsonUtility.FromJson<GameSaveData>(json);
+        GameSaveData saveData = JsonUtility.FromJson<GameSaveData>(ConvertLegacyItemIDs(json));
 
         foreach (InventoryGrid inventoryGrid in savedInventoryGrids)
         {
@@ -115,7 +116,17 @@ public class InventorySaveDataManager : MonoBehaviour
         return null;
     }
 
-    private InventoryItemData FindInventoryItemData(int ItemId)
+    private static string ConvertLegacyItemIDs(string json)
+    {
+        // Older saves stored item IDs as integers, which discarded leading zeros.
+        return Regex.Replace(
+            json,
+            @"(?<!\\)""ItemID""\s*:\s*(\d+)(?=\s*[,}])",
+            match => "\"ItemID\": \"" + match.Groups[1].Value.PadLeft(4, '0') + "\""
+        );
+    }
+
+    private InventoryItemData FindInventoryItemData(string ItemId)
     {
         foreach(InventoryItemData itemData in allInventoryItemData)
         {

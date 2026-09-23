@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEngine.Rendering.DebugUI;
+
 
 public class NormalButtonPressEffect : MonoBehaviour
 {
     //Button Base Component
     public Text uiText;
     public Image uiPanel;
+    public Button button;
 
     //Text and panel orginal color
     private Color originalTextColor;
@@ -24,6 +25,7 @@ public class NormalButtonPressEffect : MonoBehaviour
 
     private void Awake()
     {
+        button = GetComponent<Button>();
         uiText = GetComponentInChildren<Text>();
     }
     private void Start()
@@ -54,11 +56,16 @@ public class NormalButtonPressEffect : MonoBehaviour
     }
     public void Press()
     {
+        if (!button.interactable) return;
+
         uiText.rectTransform.anchoredPosition = originalPosition + pressedOffset;
     }
 
     public void Release()
     {
+        if (!button.interactable) return;
+
         uiText.rectTransform.anchoredPosition = originalPosition;
+
     }
 }

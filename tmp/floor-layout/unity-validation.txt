@@ -1,0 +1,9 @@
+PASS
+Scene: Assets/Scenes/Clinic.unity
+Floor: Floor 3
+Painted cells: 1062
+Ground bounds: Position: (-9, -5, 0), Size: (53, 21, 1)
+Wall bounds: Position: (-10, -6, 0), Size: (55, 23, 1)
+Doorways checked: 6
+Hinge anchors aligned: 12
+Saved: 2026-09-10T17:58:11.9441028+08:00

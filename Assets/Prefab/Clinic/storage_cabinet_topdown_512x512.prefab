@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 244325539240566623}
   - component: {fileID: 6312688653603619641}
   - component: {fileID: 4958402992038306081}
-  - component: {fileID: 3396010586083770549}
-  - component: {fileID: 5705599303433211298}
   - component: {fileID: 2704011360903362265}
+  - component: {fileID: 4345438609345845218}
   m_Layer: 8
   m_Name: storage_cabinet_topdown_512x512
   m_TagString: Untagged
@@ -134,38 +133,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9105176, y: 0.733881}
   m_EdgeRadius: 0
---- !u!114 &3396010586083770549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 709928949135941832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d49e4de12787ff4c8d3e1184b30d552, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openObjectName: 
-  openObject: 0
-  inventoryWindow: {fileID: 0}
-  outline: {fileID: 0}
---- !u!114 &5705599303433211298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 709928949135941832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d49e4de12787ff4c8d3e1184b30d552, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openObjectName: 
-  openObject: 0
-  inventoryWindow: {fileID: 0}
-  outline: {fileID: 0}
 --- !u!61 &2704011360903362265
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -211,6 +178,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.90984535, y: 1.1150193}
   m_EdgeRadius: 0
+--- !u!114 &4345438609345845218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709928949135941832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d49e4de12787ff4c8d3e1184b30d552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openObjectName: 
+  openObject: 0
+  inventoryWindow: {fileID: 0}
+  outline: {fileID: 0}
 --- !u!1 &7490756863562138393
 GameObject:
   m_ObjectHideFlags: 0

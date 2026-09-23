@@ -9,18 +9,22 @@ public class SceneChange : MonoBehaviour
     public enum CurrentLocation
     { 
      Home,
-     ClinicExit
+     ClinicExit,
+     ClinicFloor2Down,
+     ClinicFloor1Up,
     
     }
     public CurrentLocation currentLocation;
     public GameObject senceChoose;
 
 
-    private void OnTriggerEnter2D (Collider2D other)
+    private void OnTriggerEnter2D (Collider2D collider)
     {
-        if (!other.CompareTag("Player")) return;
+        if (!collider.CompareTag("Player")) return;
 
-        switch(currentLocation)
+        Transform player = collider.transform;
+
+        switch (currentLocation)
         { 
             case CurrentLocation.Home:
                 PlayerController playerController = GameManager.instance.playerController;
@@ -36,6 +40,14 @@ public class SceneChange : MonoBehaviour
             case CurrentLocation.ClinicExit:
             SceneManager.LoadScene("Home");
              break;
+
+            case CurrentLocation.ClinicFloor2Down:
+                player.position = new Vector3 (35.61f, -2.99f, 0);
+                break;
+
+            case CurrentLocation.ClinicFloor1Up:
+                player.position = new Vector3(156.511f, -2.99f, 0);
+                break;
         }
         
     }

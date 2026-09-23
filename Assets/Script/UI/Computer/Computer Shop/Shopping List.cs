@@ -167,6 +167,13 @@ public class ShoppingList : MonoBehaviour
             }
         }
 
+
+        //If the player doesn't have a gun, let them equip it after purchasing.  
+        if (PlayerStateManager.instance.ownGun.Count > 0 && GameManager.instance.playerController.gun.currentGunData == null)
+        {
+            GameManager.instance.playerController.InitEquipWeapon();
+        }
+
         PlayerStateManager.instance.balance -= totalPrice;
         ClearShoppingList();
     }

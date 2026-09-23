@@ -25,7 +25,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241146995374206705}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -353,11 +353,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aff6b2b578203e4b8e989794e0350b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minGenerateAmount: 0
-  maxGenerateAmount: 0
-  inventoryItemToGenerateData:
-  - {fileID: 11400000, guid: e6fa7dbbb889bac4da2fbd94ced2d6dd, type: 2}
-  randomInventoryItemToGenerateData: []
+  minGenerateAmount: 1
+  maxGenerateAmount: 3
+  commonProbability: 70
+  rareProbability: 25
+  legendaryProbability: 5
+  inventoryItemToGenerateData: []
+  randomInventoryItemToGenerateData:
+  - {fileID: 11400000, guid: 34a6124d868c42b29fb944bd78669a0d, type: 2}
+  - {fileID: 11400000, guid: bee07459bbef46bf81606419af1c0fb5, type: 2}
+  - {fileID: 11400000, guid: 380364c03aa34b7eb086da71a55462cf, type: 2}
+  - {fileID: 11400000, guid: d63d4437115f43df8e746ead99d08aa5, type: 2}
+  - {fileID: 11400000, guid: dbc99309542844ff91aa47ce37c2d395, type: 2}
+  - {fileID: 11400000, guid: 8156d02d3be5448aa66bb0d9c6d884fc, type: 2}
+  - {fileID: 11400000, guid: cc504c6be774469788430ce5dd79b471, type: 2}
+  - {fileID: 11400000, guid: 28b33e741497436f92b6afa877800a0b, type: 2}
   inventoryPrefab: {fileID: 433883997196567079, guid: 73b924acfb2c9ea4892bfcaaa6de9dea, type: 3}
 --- !u!1 &7152353750675135881
 GameObject:

@@ -45,8 +45,8 @@ public class PlayerController : MonoBehaviour
     {
         GameManager.instance.SetCustomCursor();
         PlayerStateManager.instance.ReloadAllWeaponsOnSceneEnter();
-        EquipWeapon(0);
-    }
+        InitEquipWeapon();
+     }
 
 
     private void Update()
@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
     private void OnDisable()
     {
         playerInput.Player.Disable();
-        UIInputUnsubscribe();
+        UIInputUnSubscribe();
     }
 
 
@@ -98,15 +98,8 @@ public class PlayerController : MonoBehaviour
     //Weapon
     private void HoldWeapon(InputAction.CallbackContext context)
     {
-        if (holdWeapon == false)
-        {
-            holdWeapon = true;
-        }
-        else
-        {
-            holdWeapon = false;
-        }
-
+        if (gun.currentGunData == null) return;
+        holdWeapon = !holdWeapon;
         animator.SetBool("Hold Weapon", holdWeapon);
 
     }
@@ -172,6 +165,13 @@ public class PlayerController : MonoBehaviour
         EquipWeapon(playerState.weaponIndex);
     }
 
+    public void InitEquipWeapon()
+    {
+        if (PlayerStateManager.instance.ownGun.Count > 0)
+        {
+            EquipWeapon(0);
+        }
+    }
 
     //Switch UI
     private void OpenBackpackInventory(InputAction.CallbackContext callBackContext)
@@ -214,7 +214,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-    private void UIInputUnsubscribe()
+    private void UIInputUnSubscribe()
     {
         playerInput.Player.OpenBackpackInventory.started -= OpenBackpackInventory;
         playerInput.Player.OpenObject.started -= OpenObject;

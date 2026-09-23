@@ -66,6 +66,7 @@ public class HUD : MonoBehaviour
     {
         Gun gun = GameManager.instance.playerController.gun;
         GunData currentGunData = GameManager.instance.playerController.gun.currentGunData;
+        bool hasGun = gun != null && gun.currentGunData != null;
 
 
         switch (type)
@@ -98,18 +99,26 @@ public class HUD : MonoBehaviour
                 break;
 
             case InformationType.GunSprite:
+                uiImage.enabled = hasGun;
+
+                if (!hasGun) break;
+
                 uiImage.sprite = currentGunData.gunIcon;
                 uiImage.rectTransform.sizeDelta = currentGunData.iconSize;
                 break;
 
             case InformationType.GunAmmo:
+                uiText.enabled = hasGun;
+
+                if (!hasGun) break;
+
                 int gunAmmo = gun.currentAmmo;
                 int reserveAmmo = PlayerStateManager.instance.GetAmmoAmount(gun.currentGunData.ammoType);
                 uiText.text =string.Format("{0}/{1}", gunAmmo, reserveAmmo);
                 break;
 
             case InformationType.ReloadIcon:
-                uiImage.enabled = gun.isReloding;
+                uiImage.enabled = hasGun && gun.isReloding;
                 break;
 
             case InformationType.HintE:

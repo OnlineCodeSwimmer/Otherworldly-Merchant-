@@ -1,0 +1,222 @@
+[
+  {
+    "row": 9,
+    "id": "0007",
+    "slug": "cd_drive",
+    "gw": 1,
+    "gh": 1,
+    "name": "CD光驱",
+    "subject": "A single ordinary internal computer CD/DVD optical drive, square brushed silver metal housing seen from above with a slim black front loading tray at the bottom edge, tiny eject button, restrained screws and stamped metal panel details. No disc outside the drive.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-da2f1aa0-709b-43d2-a8d9-fbb3eea6dd9b.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single ordinary internal computer CD/DVD optical drive, square brushed silver metal housing seen from above with a slim black front loading tray at the bottom edge, tiny eject button, restrained screws and stamped metal panel details. No disc outside the drive.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. Square canvas. Design it to read at native 64x64 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 10,
+    "id": "0008",
+    "slug": "atx_4080",
+    "gw": 2,
+    "gh": 1,
+    "name": "ATX 4080",
+    "subject": "A premium high-end desktop graphics card called ATX 4080, horizontal long dark graphite triple-fan cooler, three clearly separated detailed black fans, angular silver-gray edge highlights, left metal mounting bracket, green PCB and gold contacts along lower edge. Sophisticated but realistic, no RGB glow.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-0d8b94dc-c17e-457a-a70f-ef6ea2c21ded.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A premium high-end desktop graphics card called ATX 4080, horizontal long dark graphite triple-fan cooler, three clearly separated detailed black fans, angular silver-gray edge highlights, left metal mounting bracket, green PCB and gold contacts along lower edge. Sophisticated but realistic, no RGB glow.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. landscape 2:1 canvas. Design it to read at native 128x64 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 11,
+    "id": "0009",
+    "slug": "hard_drive_5t",
+    "gw": 1,
+    "gh": 1,
+    "name": "5T硬盘",
+    "subject": "A single 5-terabyte internal hard disk drive, compact square silver metal shell viewed from above, pale rectangular specification sticker with tiny unreadable markings, corner screws and dark green connector edge. Closed enclosure, realistic industrial computer hardware.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-66108656-9201-45d1-8968-ab3d62bfcfb3.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single 5-terabyte internal hard disk drive, compact square silver metal shell viewed from above, pale rectangular specification sticker with tiny unreadable markings, corner screws and dark green connector edge. Closed enclosure, realistic industrial computer hardware.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. square canvas. Design it to read at native 64x64 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 12,
+    "id": "0010",
+    "slug": "memory_64g",
+    "gw": 1,
+    "gh": 1,
+    "name": "64G内存条",
+    "subject": "A single 64GB desktop RAM memory module, centered horizontally, green narrow PCB, row of black rectangular memory chips, clearly visible gold contact teeth along lower edge and a small notch. One stick only, no RGB.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-59f908ad-d84c-4f22-adde-b0efe7793161.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single 64GB desktop RAM memory module, centered horizontally, green narrow PCB, row of black rectangular memory chips, clearly visible gold contact teeth along lower edge and a small notch. One stick only, no RGB.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. square canvas. Design it to read at native 64x64 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 13,
+    "id": "0011",
+    "slug": "infinite_space_hard_drive",
+    "gw": 1,
+    "gh": 1,
+    "name": "无限空间硬盘",
+    "subject": "A single legendary infinite-capacity hard drive from universe C110, compact square futuristic graphite and silver data-storage device, nested mechanical panels, a small cyan infinity-shaped display inset on its top surface, restrained teal circuit accents. Physical hardware, not a floating hologram, no glow.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-6845d00b-6b0f-430a-8cbf-272fad1ad7cf.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single legendary infinite-capacity hard drive from universe C110, compact square futuristic graphite and silver data-storage device, nested mechanical panels, a small cyan infinity-shaped display inset on its top surface, restrained teal circuit accents. Physical hardware, not a floating hologram, no glow.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. square canvas. Design it to read at native 64x64 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 14,
+    "id": "0012",
+    "slug": "thermos_flask",
+    "gw": 1,
+    "gh": 2,
+    "name": "保温杯",
+    "subject": "A single ordinary tall thermos flask standing upright as an inventory object portrait icon, cylindrical dark graphite body, brushed steel collar and screw lid, restrained metallic stepped highlights, simple functional shape, closed lid, no handle or liquid.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-6a1f50c9-c008-4118-bd3c-026a9004fade.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single ordinary tall thermos flask standing upright as an inventory object portrait icon, cylindrical dark graphite body, brushed steel collar and screw lid, restrained metallic stepped highlights, simple functional shape, closed lid, no handle or liquid.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. portrait 1:2 canvas. Design it to read at native 64x128 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 15,
+    "id": "0013",
+    "slug": "medical_syringe",
+    "gw": 1,
+    "gh": 1,
+    "name": "针管",
+    "subject": "A single ordinary medical syringe laid diagonally from lower left to upper right, clear pale-gray barrel with a few dark measurement tick pixels, plunger and two finger flanges, slim metal needle, subtle pale cyan interior shading. No blood, no extra packaging.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-62d66e65-2654-491f-ae87-1a0e81e1bf8f.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single ordinary medical syringe laid diagonally from lower left to upper right, clear pale-gray barrel with a few dark measurement tick pixels, plunger and two finger flanges, slim metal needle, subtle pale cyan interior shading. No blood, no extra packaging.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. square canvas. Design it to read at native 64x64 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 16,
+    "id": "0014",
+    "slug": "premium_fountain_pen",
+    "gw": 1,
+    "gh": 1,
+    "name": "高级钢笔",
+    "subject": "A single premium collectible fountain pen laid diagonally across the square icon, black lacquer barrel with restrained gold bands, gold clip and exposed gold nib, cap fitted to the back of the barrel so it remains one connected object. Elegant and realistic, no sparkles.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-4d1c34b8-acb2-442b-b986-f6ce57c8dd97.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single premium collectible fountain pen laid diagonally across the square icon, black lacquer barrel with restrained gold bands, gold clip and exposed gold nib, cap fitted to the back of the barrel so it remains one connected object. Elegant and realistic, no sparkles.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. square canvas. Design it to read at native 64x64 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 17,
+    "id": "0015",
+    "slug": "aofe_chocolate",
+    "gw": 1,
+    "gh": 1,
+    "name": "奥芙巧克力",
+    "subject": "A single Aofe chocolate bar from universe C110, partially peeled burgundy paper and silver foil wrapper revealing a few square segments of rich dark brown chocolate, compact diagonal inventory icon. Tasteful wrapper accents, no legible logo or text, no loose extra pieces.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-289e1cb8-57ce-4b03-9700-0691de460325.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single Aofe chocolate bar from universe C110, partially peeled burgundy paper and silver foil wrapper revealing a few square segments of rich dark brown chocolate, compact diagonal inventory icon. Tasteful wrapper accents, no legible logo or text, no loose extra pieces.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. square canvas. Design it to read at native 64x64 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 18,
+    "id": "0016",
+    "slug": "detector_pill",
+    "gw": 1,
+    "gh": 1,
+    "name": "探测器药片",
+    "subject": "A single swallowable medical detector capsule from universe C110, oblong capsule laid diagonally, off-white ceramic half and muted teal half, a tiny dark optical sensor window and two small metallic seams suggest embedded miniature stomach examination electronics. Capsule-sized not a large machine, no glow.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-a31091f9-8002-4658-b0fb-795089a6c05e.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single swallowable medical detector capsule from universe C110, oblong capsule laid diagonally, off-white ceramic half and muted teal half, a tiny dark optical sensor window and two small metallic seams suggest embedded miniature stomach examination electronics. Capsule-sized not a large machine, no glow.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. square canvas. Design it to read at native 64x64 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 19,
+    "id": "0017",
+    "slug": "eddie_bear",
+    "gw": 2,
+    "gh": 2,
+    "name": "艾迪熊",
+    "subject": "A single soft brown teddy bear toy named Eddie Bear, full body front-facing readable inventory icon, round ears, tan muzzle and belly, two black bead eyes, small nose, seated legs and soft arm shapes, a small muted red ribbon. Detailed pixel clusters without furry noise, not a cartoon mascot with oversized eyes.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-0ff90892-b792-4e08-9e02-618fc4d9e108.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single soft brown teddy bear toy named Eddie Bear, full body front-facing readable inventory icon, round ears, tan muzzle and belly, two black bead eyes, small nose, seated legs and soft arm shapes, a small muted red ribbon. Detailed pixel clusters without furry noise, not a cartoon mascot with oversized eyes.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. square canvas. Design it to read at native 128x128 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 20,
+    "id": "0018",
+    "slug": "small_rechargeable_battery",
+    "gw": 3,
+    "gh": 3,
+    "name": "小型蓄电池",
+    "subject": "A single small rechargeable backup storage battery, compact heavy dark gray rectangular case, molded carrying handle on top, two terminal posts with restrained red and black caps, subtle inset status panel and ribbed industrial casing. Slight depth suggested by stepped pixels, no cables or separate accessories.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-e66d5841-ea41-4e0d-a03b-3a009912de61.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single small rechargeable backup storage battery, compact heavy dark gray rectangular case, molded carrying handle on top, two terminal posts with restrained red and black caps, subtle inset status panel and ribbed industrial casing. Slight depth suggested by stepped pixels, no cables or separate accessories.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. square canvas. Design it to read at native 192x192 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 21,
+    "id": "0019",
+    "slug": "te_rotary_phone",
+    "gw": 2,
+    "gh": 2,
+    "name": "TE电话",
+    "subject": "A single old-fashioned rotary telephone with cross-universe communication technology, cream and muted charcoal housing, handset resting across the top, clearly readable circular rotary dialing ring and central hub, short tightly coiled attached cord, tiny restrained teal status indicator. Readable overhead inventory view, no extra props, no glow.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-a7f06476-f11c-439c-852f-dd678d06ba53.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single old-fashioned rotary telephone with cross-universe communication technology, cream and muted charcoal housing, handset resting across the top, clearly readable circular rotary dialing ring and central hub, short tightly coiled attached cord, tiny restrained teal status indicator. Readable overhead inventory view, no extra props, no glow.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. square canvas. Design it to read at native 128x128 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 22,
+    "id": "0020",
+    "slug": "peach_watch",
+    "gw": 1,
+    "gh": 1,
+    "name": "桃子手表",
+    "subject": "A single ordinary digital smartwatch called PeachWatch, vertically aligned charcoal strap, rounded square graphite case, dark display with a few muted cyan digital clock pixels, small side crown, everyday electronic watch. No fruit shape, no floating interface, no brand logo.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-925dea7a-0af0-4579-b680-78a8f7e730c8.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single ordinary digital smartwatch called PeachWatch, vertically aligned charcoal strap, rounded square graphite case, dark display with a few muted cyan digital clock pixels, small side crown, everyday electronic watch. No fruit shape, no floating interface, no brand logo.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. square canvas. Design it to read at native 64x64 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 23,
+    "id": "0021",
+    "slug": "robot_vacuum",
+    "gw": 2,
+    "gh": 2,
+    "name": "扫地机器人",
+    "subject": "A single ordinary circular robot vacuum cleaner viewed directly from above, off-white and medium gray circular shell, inset dark bumper ring, small lidar sensor turret and simple two-button control inset, one tiny side brush partly visible at edge. No docking station or floor or motion trail.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-80a0aa12-f5f0-4d01-8a43-9065f07e9bf9.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single ordinary circular robot vacuum cleaner viewed directly from above, off-white and medium gray circular shell, inset dark bumper ring, small lidar sensor turret and simple two-button control inset, one tiny side brush partly visible at edge. No docking station or floor or motion trail.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. square canvas. Design it to read at native 128x128 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 24,
+    "id": "0022",
+    "slug": "smart_prosthetic_arm",
+    "gw": 3,
+    "gh": 1,
+    "name": "智能义肢",
+    "subject": "A single advanced human arm prosthesis from universe C110, laid horizontally pointing right, full forearm and articulated hand connected as one object, off-white armored panels, graphite joints, restrained teal electronics detail, five clearly separated mechanical fingers and thumb, exposed wrist mechanism. No human body, no extra pieces.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-451467f4-b54a-427a-ada5-8f498075dbab.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single advanced human arm prosthesis from universe C110, laid horizontally pointing right, full forearm and articulated hand connected as one object, off-white armored panels, graphite joints, restrained teal electronics detail, five clearly separated mechanical fingers and thumb, exposed wrist mechanism. No human body, no extra pieces.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. landscape 3:1 canvas. Design it to read at native 192x64 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 25,
+    "id": "0023",
+    "slug": "vitamin_pills",
+    "gw": 1,
+    "gh": 1,
+    "name": "维生素药片",
+    "subject": "A compact single sealed medicine blister pack holding six round pale yellow vitamin tablets in two columns and three rows, silver-gray foil backing, subtle pale cool gray raised clear pockets, understated clean medical design. One pack, no loose pills or bottle, no readable text.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-39d5012c-7544-4846-af28-0a59349e4962.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A compact single sealed medicine blister pack holding six round pale yellow vitamin tablets in two columns and three rows, silver-gray foil backing, subtle pale cool gray raised clear pockets, understated clean medical design. One pack, no loose pills or bottle, no readable text.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. square canvas. Design it to read at native 64x64 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 26,
+    "id": "0024",
+    "slug": "blood_exchange_machine",
+    "gw": 2,
+    "gh": 2,
+    "name": "血液交换机",
+    "subject": "A single legendary compact blood exchange medical machine from universe C110, off-white and slate-gray clinical box housing, small dark control screen with muted cyan indicators, two integrated red translucent blood-processing chambers, neatly attached short red and blue medical tube loops. Standalone portable inventory device, no cart, person or hospital background, restrained functional sci-fi no glowing effects.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-c7125246-2b88-4c26-9034-e3445115aac8.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single legendary compact blood exchange medical machine from universe C110, off-white and slate-gray clinical box housing, small dark control screen with muted cyan indicators, two integrated red translucent blood-processing chambers, neatly attached short red and blue medical tube loops. Standalone portable inventory device, no cart, person or hospital background, restrained functional sci-fi no glowing effects.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. square canvas. Design it to read at native 128x128 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 27,
+    "id": "0025",
+    "slug": "nuclear_ventilator",
+    "gw": 3,
+    "gh": 2,
+    "name": "核能呼吸机",
+    "subject": "A single advanced nuclear-powered portable ventilator from universe C110, horizontal off-white and graphite clinical device, dark small monitor with restrained teal waveform pixels, ribbed power-core section with small yellow caution mark, one neatly attached gray corrugated breathing hose curled beside the housing. Functional medical equipment, no radiation glow, no patient, no trolley or room.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-77123644-e951-4ec8-8b8b-f03492ba6286.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single advanced nuclear-powered portable ventilator from universe C110, horizontal off-white and graphite clinical device, dark small monitor with restrained teal waveform pixels, ribbed power-core section with small yellow caution mark, one neatly attached gray corrugated breathing hose curled beside the housing. Functional medical equipment, no radiation glow, no patient, no trolley or room.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. landscape 3:2 canvas. Design it to read at native 192x128 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  },
+  {
+    "row": 28,
+    "id": "0026",
+    "slug": "universal_cold_medicine",
+    "gw": 1,
+    "gh": 1,
+    "name": "万能感冒药",
+    "subject": "A single small universal cold medicine carton from universe C110, compact off-white rectangular pharmaceutical box with restrained muted blue and teal label panels and a simple small medical cross, precise folded carton edge pixels. No readable text, no bottle or loose tablets, no glow.",
+    "source": "C:\\Users\\望兴腾\\.codex\\generated_images\\01a0addf-8fad-7881-86cd-518faa3c1cd3\\exec-85cabd30-0e02-455d-8c2e-e859d0f83ebe.png",
+    "prompt": "Use case: stylized-concept. Asset type: 2D pixel-art inventory item icon for an industrial sci-fi game.\nSubject: A single small universal cold medicine carton from universe C110, compact off-white rectangular pharmaceutical box with restrained muted blue and teal label panels and a simple small medical cross, precise folded carton edge pixels. No readable text, no bottle or loose tablets, no glow.\nStyle reference: match the previously shown double-fan graphics-card and CPU pixel icons: sober detailed industrial pixel art, dark one-pixel-style contour, restrained neutral palette, hard-edged hand-placed square pixel clusters, flat stepped 3-4 tone material shadows, clear small mechanical details. Not cute simplified vector art, not a smooth painting.\nComposition: ONLY one complete isolated item, centered, full silhouette, no clipping, approximately 85% of canvas. square canvas. Design it to read at native 64x64 pixels, enlarged with exact nearest-neighbor square pixels for preview. Inventory icon view showing the identifying surface, orthographic, no dramatic perspective.\nBackground: genuinely transparent alpha PNG, NOT a painted checkerboard, not black or white background, no cast ground shadow.\nConstraints: no text labels, no surrounding UI or rarity frame, no glow, no gradients, no blur, no antialiasing, no hands, no other objects."
+  }
+]

@@ -351,8 +351,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minGenerateAmount: 0
   maxGenerateAmount: 0
-  inventoryItemToGenerateData:
-  - {fileID: 11400000, guid: e6fa7dbbb889bac4da2fbd94ced2d6dd, type: 2}
+  commonProbability: 70
+  rareProbability: 25
+  legendaryProbability: 5
+  inventoryItemToGenerateData: []
   randomInventoryItemToGenerateData: []
   inventoryPrefab: {fileID: 433883997196567079, guid: 73b924acfb2c9ea4892bfcaaa6de9dea, type: 3}
 --- !u!1 &9209227973127098584
@@ -366,6 +368,7 @@ GameObject:
   - component: {fileID: 4433342216348234190}
   - component: {fileID: 6084790563852045441}
   - component: {fileID: 8443689428159249958}
+  - component: {fileID: 2207664299935552613}
   m_Layer: 5
   m_Name: Lockers
   m_TagString: Untagged
@@ -380,7 +383,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9209227973127098584}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -434,3 +437,39 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2207664299935552613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9209227973127098584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aff6b2b578203e4b8e989794e0350b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minGenerateAmount: 1
+  maxGenerateAmount: 2
+  commonProbability: 70
+  rareProbability: 25
+  legendaryProbability: 5
+  inventoryItemToGenerateData: []
+  randomInventoryItemToGenerateData:
+  - {fileID: 11400000, guid: 34a6124d868c42b29fb944bd78669a0d, type: 2}
+  - {fileID: 11400000, guid: d4d5d902a8d94a478b853bfa7ab34036, type: 2}
+  - {fileID: 11400000, guid: bee07459bbef46bf81606419af1c0fb5, type: 2}
+  - {fileID: 11400000, guid: 41b0a27ba4ca428682839e5116d85603, type: 2}
+  - {fileID: 11400000, guid: 2b137d351d1a43b184bbb7d0624a5338, type: 2}
+  - {fileID: 11400000, guid: 380364c03aa34b7eb086da71a55462cf, type: 2}
+  - {fileID: 11400000, guid: 23a3d47118be4e84822b41f982c5f813, type: 2}
+  - {fileID: 11400000, guid: ddb279d3678a44faaac04b2e90fb2d1e, type: 2}
+  - {fileID: 11400000, guid: d63d4437115f43df8e746ead99d08aa5, type: 2}
+  - {fileID: 11400000, guid: 0353ecc0ccc24118a85e06d9170e0bdb, type: 2}
+  - {fileID: 11400000, guid: 339518a5d8814b509fa31273279e9f67, type: 2}
+  - {fileID: 11400000, guid: d3b95d4edfb3486d9ee007eab64afa8b, type: 2}
+  - {fileID: 11400000, guid: dbc99309542844ff91aa47ce37c2d395, type: 2}
+  - {fileID: 11400000, guid: 8156d02d3be5448aa66bb0d9c6d884fc, type: 2}
+  - {fileID: 11400000, guid: cc504c6be774469788430ce5dd79b471, type: 2}
+  - {fileID: 11400000, guid: 28b33e741497436f92b6afa877800a0b, type: 2}
+  inventoryPrefab: {fileID: 433883997196567079, guid: 73b924acfb2c9ea4892bfcaaa6de9dea, type: 3}

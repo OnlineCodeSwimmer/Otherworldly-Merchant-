@@ -13,7 +13,7 @@ public class OpenableObject : MonoBehaviour
     }
     public OpenObjectType openObject;
     public GameObject inventoryWindow;
-    public GameObject outline;
+    [HideInInspector]public GameObject outline;
 
 
 

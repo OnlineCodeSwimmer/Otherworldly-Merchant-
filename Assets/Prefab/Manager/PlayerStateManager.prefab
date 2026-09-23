@@ -44,17 +44,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a6040b71296dda4ab45043370a59c37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balance: 10
+  balance: 111111110
   debt: 1000
   health: 100
-  ownGun:
-  - gunData: {fileID: 11400000, guid: 011bfbbef58a26846be1d74f5955deb1, type: 2}
-    currentAmmo: 0
-  - gunData: {fileID: 11400000, guid: 06889e9cfb1b1a94ebb45aea50eaaf0b, type: 2}
-    currentAmmo: 0
+  ownGun: []
   weaponIndex: 0
   ammoInformation:
   - ammoType: 0
-    amount: 30
+    amount: 0
   - ammoType: 1
-    amount: 30
+    amount: 0
+  - ammoType: 3
+    amount: 0
+  - ammoType: 2
+    amount: 0

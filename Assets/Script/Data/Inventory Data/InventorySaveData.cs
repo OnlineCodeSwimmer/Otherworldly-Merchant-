@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
  public class InventoryItemSaveData
 {
-        public int ItemID;
+        public string ItemID = string.Empty;
         public int x;
         public int y;
         public int rotationIndex;

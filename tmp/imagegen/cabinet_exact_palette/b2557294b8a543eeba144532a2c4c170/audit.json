@@ -1,0 +1,34 @@
+[
+  {
+    "View": "topdown",
+    "Target": "Assets\\AIGC Source\\Building\\Object\\storage_cabinet_damaged_topdown_512x512.png",
+    "Reference": "Assets\\AIGC Source\\Building\\Object\\storage_cabinet_topdown_512x512.png",
+    "TargetHash": "6905009A0E81A133134AB6F88E15F9F09EE24AB53B1BB3711AD3D1247C19E4C7",
+    "MetaHash": "C3EB96463BF652A19F80850EF0203F98545F0D3DFF70C47B67897AA4C3FC546C",
+    "ReferenceHash": "8C467E538A28CAEC5F2CD2384042C8BE6F7BFD1955ED9B7706B6AD64DFA941D4",
+    "CorrectedHash": "E7CD61D5A139AFF38501D10091BDE31B1015A089FAFEC6C7A2AC2DF9BC6637C7",
+    "ChangedPixels": 5703,
+    "ProtectedFeaturePixels": 787,
+    "ReferencePaintPixels": 5704,
+    "AlphaChanges": 0,
+    "SampleMismatch": 0,
+    "ReferenceSampleMean": 53.76,
+    "CorrectedSampleMean": 53.76
+  },
+  {
+    "View": "front",
+    "Target": "Assets\\AIGC Source\\Building\\Object\\Front Image\\storage_cabinet_single_door_damaged_front_512x512.png",
+    "Reference": "Assets\\AIGC Source\\Building\\Object\\Front Image\\storage_cabinet_single_door_front_512x512.png",
+    "TargetHash": "896B61CFBCC27C7110B478A61FF45CE8179D530A6DFAAFC626AA850B082FE6D8",
+    "MetaHash": "1BDE61EDDD9CA3CF403719398F41D19761A496C59CE98B2CFBA23EB206C999D4",
+    "ReferenceHash": "01353654BAB091D56FCAD9942FEF9A3D9CFC6B1C873B3380E9029B33BB62A566",
+    "CorrectedHash": "3EFA75D7524F61CBF203D8178D0AEE4DFFED9DF117D52E63EF5AE40053AF8AF6",
+    "ChangedPixels": 86464,
+    "ProtectedFeaturePixels": 9984,
+    "ReferencePaintPixels": 88032,
+    "AlphaChanges": 0,
+    "SampleMismatch": 0,
+    "ReferenceSampleMean": 61.217,
+    "CorrectedSampleMean": 61.217
+  }
+]
