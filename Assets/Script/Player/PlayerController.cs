@@ -235,7 +235,7 @@ public class PlayerController : MonoBehaviour
 
             if (PlayerStateManager.instance.health > 0)
             {
-                PlayerStateManager.instance.health -= enemy.damage;
+                PlayerStateManager.instance.health -= enemy.enemyData.damage;
                 bleeding.BloodSpawn(collision.transform);
             }
             else

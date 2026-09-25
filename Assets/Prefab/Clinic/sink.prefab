@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1427137134451538650}
   - component: {fileID: 4837001779099482729}
   - component: {fileID: 506488926318321764}
+  - component: {fileID: 7125741729870309553}
   m_Layer: 8
   m_Name: sink
   m_TagString: Untagged
@@ -136,3 +137,40 @@ PolygonCollider2D:
       - {x: 0.28937608, y: 0.0037420243}
       - {x: 0.2857143, y: 0.2857143}
   m_UseDelaunayMesh: 0
+--- !u!114 &7125741729870309553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463910589933404023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5783dbbad6a59184fa58aa75d79bcc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shadowType: 1
+  shadowLayer: 0
+  shadowDistance: 0
+  shadowDistanceMin: 0.5
+  shadowDistanceMax: 1
+  shadowTranslucency: 0
+  maskType: 0
+  maskLit: 0
+  maskPivot: 0
+  maskLayer: 0
+  maskLitCustom: 1
+  bumpMapMode:
+    type: 0
+    textureType: 0
+    texture: {fileID: 0}
+    sprite: {fileID: 0}
+    invertX: 0
+    invertY: 0
+    depth: 1
+    spriteRenderer: {fileID: 0}
+  mainShape:
+    shadowType: 1
+    maskType: 0
+    maskPivot: 0
+    transform: {fileID: 0}

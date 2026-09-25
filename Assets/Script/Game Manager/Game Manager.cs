@@ -27,14 +27,19 @@ public class GameManager : MonoBehaviour
 
     public void SetCustomCursor() //Change the cursor in game
     {
-        Vector2 mousePoint = new Vector2(201, 201);
-        Cursor.SetCursor(cursorTexture, mousePoint, CursorMode.Auto);
+        if (cursorTexture == null)
+        {
+            SetDefaultCursor();
+            return;
+        }
+
+        Vector2 hotspot = new Vector2(cursorTexture.width / 2f, cursorTexture.height / 2f);
+        Cursor.SetCursor(cursorTexture, hotspot, CursorMode.Auto);
     }
 
     public void SetDefaultCursor()//Change the cursor in game
     {
-        Vector2 mousePoint = new Vector2(201, 201);
-        Cursor.SetCursor(null, mousePoint, CursorMode.Auto);
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 
 

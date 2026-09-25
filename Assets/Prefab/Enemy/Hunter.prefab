@@ -48,7 +48,6 @@ GameObject:
   - component: {fileID: 6726358565542233801}
   - component: {fileID: 357347359435548728}
   - component: {fileID: 2680418739500109326}
-  - component: {fileID: 2439336395895029284}
   - component: {fileID: 7314818310968318202}
   m_Layer: 7
   m_Name: Hunter
@@ -175,7 +174,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -692392587
-  m_SortingLayer: 7
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1746172177, guid: 5aa238bfe9fbe89439fa10ad16066473, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -221,14 +220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a202aefbda12b41be26b9f774a81ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolSpeed: 1
-  chaseSpeed: 2
-  damage: 10
-  health: 40
-  patrolRadius: 2.5
-  hearingDistance: 10
-  visionDistance: 5
-  attackDistance: 1
+  enemyData: {fileID: 11400000, guid: c5e0fdaf88178794a802d765ab468a22, type: 2}
+  currentHealth: 0
 --- !u!50 &2169367861908573317
 Rigidbody2D:
   serializedVersion: 4
@@ -255,7 +248,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &6726358565542233801
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -342,34 +335,6 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!114 &2439336395895029284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4073663117629293557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  drawGizmos: 1
-  detailedGizmos: 0
-  startEndModifier:
-    addPoints: 0
-    exactStartPoint: 3
-    exactEndPoint: 3
-    useRaycasting: 0
-    mask:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    useGraphRaycasting: 0
-  traversableTags: -1
-  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  graphMask:
-    value: -1
 --- !u!114 &7314818310968318202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,7 +371,7 @@ MonoBehaviour:
   maxAcceleration: -2.5
   rotationSpeed: 360
   slowdownDistance: 0.6
-  pickNextWaypointDist: 2
+  pickNextWaypointDist: 0.5
   endReachedDistance: 0.2
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1

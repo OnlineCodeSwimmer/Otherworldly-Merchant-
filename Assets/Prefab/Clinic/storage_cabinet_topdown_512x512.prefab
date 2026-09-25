@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4958402992038306081}
   - component: {fileID: 2704011360903362265}
   - component: {fileID: 4345438609345845218}
+  - component: {fileID: -518336890849970131}
   m_Layer: 8
   m_Name: storage_cabinet_topdown_512x512
   m_TagString: Untagged
@@ -194,6 +195,43 @@ MonoBehaviour:
   openObject: 0
   inventoryWindow: {fileID: 0}
   outline: {fileID: 0}
+--- !u!114 &-518336890849970131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709928949135941832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5783dbbad6a59184fa58aa75d79bcc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shadowType: 1
+  shadowLayer: 0
+  shadowDistance: 0
+  shadowDistanceMin: 0.5
+  shadowDistanceMax: 1
+  shadowTranslucency: 0
+  maskType: 0
+  maskLit: 0
+  maskPivot: 0
+  maskLayer: 0
+  maskLitCustom: 1
+  bumpMapMode:
+    type: 0
+    textureType: 0
+    texture: {fileID: 0}
+    sprite: {fileID: 0}
+    invertX: 0
+    invertY: 0
+    depth: 1
+    spriteRenderer: {fileID: 0}
+  mainShape:
+    shadowType: 1
+    maskType: 0
+    maskPivot: 0
+    transform: {fileID: 0}
 --- !u!1 &7490756863562138393
 GameObject:
   m_ObjectHideFlags: 0

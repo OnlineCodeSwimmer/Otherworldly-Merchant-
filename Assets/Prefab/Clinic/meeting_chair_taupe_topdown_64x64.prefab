@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3145550959338322292}
   - component: {fileID: 7687735298373235748}
   - component: {fileID: 2314818065084093273}
+  - component: {fileID: 7663248186698697748}
   m_Layer: 0
   m_Name: meeting_chair_taupe_topdown_64x64
   m_TagString: Untagged
@@ -130,3 +131,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7915073, y: 0.8609448}
   m_EdgeRadius: 0
+--- !u!114 &7663248186698697748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7530032776551475024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5783dbbad6a59184fa58aa75d79bcc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shadowType: 1
+  shadowLayer: 0
+  shadowDistance: 0
+  shadowDistanceMin: 0.5
+  shadowDistanceMax: 1
+  shadowTranslucency: 0
+  maskType: 0
+  maskLit: 0
+  maskPivot: 0
+  maskLayer: 0
+  maskLitCustom: 1
+  bumpMapMode:
+    type: 0
+    textureType: 0
+    texture: {fileID: 0}
+    sprite: {fileID: 0}
+    invertX: 0
+    invertY: 0
+    depth: 1
+    spriteRenderer: {fileID: 0}
+  mainShape:
+    shadowType: 1
+    maskType: 0
+    maskPivot: 0
+    transform: {fileID: 0}

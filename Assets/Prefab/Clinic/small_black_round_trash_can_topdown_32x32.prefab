@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5789910927572212058}
   - component: {fileID: 2446231258696004724}
   - component: {fileID: 6469297561243542690}
+  - component: {fileID: 2823552300828844133}
   m_Layer: 8
   m_Name: small_black_round_trash_can_topdown_32x32
   m_TagString: Untagged
@@ -120,3 +121,40 @@ CircleCollider2D:
   m_Offset: {x: 0.0028743744, y: 0}
   serializedVersion: 2
   m_Radius: 0.41091156
+--- !u!114 &2823552300828844133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8535457220341814336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5783dbbad6a59184fa58aa75d79bcc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shadowType: 1
+  shadowLayer: 0
+  shadowDistance: 0
+  shadowDistanceMin: 0.5
+  shadowDistanceMax: 1
+  shadowTranslucency: 0
+  maskType: 0
+  maskLit: 0
+  maskPivot: 0
+  maskLayer: 0
+  maskLitCustom: 1
+  bumpMapMode:
+    type: 0
+    textureType: 0
+    texture: {fileID: 0}
+    sprite: {fileID: 0}
+    invertX: 0
+    invertY: 0
+    depth: 1
+    spriteRenderer: {fileID: 0}
+  mainShape:
+    shadowType: 1
+    maskType: 0
+    maskPivot: 0
+    transform: {fileID: 0}

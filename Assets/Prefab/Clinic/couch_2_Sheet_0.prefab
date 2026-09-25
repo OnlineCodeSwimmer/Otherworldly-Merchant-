@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6498424687536719579}
   - component: {fileID: 8666100252072235647}
   - component: {fileID: 750874227693472809}
+  - component: {fileID: 7487838804821513697}
   m_Layer: 8
   m_Name: couch_2_Sheet_0
   m_TagString: Untagged
@@ -143,3 +144,40 @@ PolygonCollider2D:
       - {x: 0.5060108, y: 0.19109154}
       - {x: 0.3004787, y: 0.3996296}
   m_UseDelaunayMesh: 0
+--- !u!114 &7487838804821513697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5089168923158072817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5783dbbad6a59184fa58aa75d79bcc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shadowType: 1
+  shadowLayer: 0
+  shadowDistance: 0
+  shadowDistanceMin: 0.5
+  shadowDistanceMax: 1
+  shadowTranslucency: 0
+  maskType: 0
+  maskLit: 0
+  maskPivot: 0
+  maskLayer: 0
+  maskLitCustom: 1
+  bumpMapMode:
+    type: 0
+    textureType: 0
+    texture: {fileID: 0}
+    sprite: {fileID: 0}
+    invertX: 0
+    invertY: 0
+    depth: 1
+    spriteRenderer: {fileID: 0}
+  mainShape:
+    shadowType: 1
+    maskType: 0
+    maskPivot: 0
+    transform: {fileID: 0}

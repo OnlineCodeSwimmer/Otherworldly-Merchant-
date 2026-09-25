@@ -1,7 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.U2D;
+using System;
 
 public class Gun : MonoBehaviour
 {
@@ -19,6 +18,11 @@ public class Gun : MonoBehaviour
 
     //Component
     Transform muzzle;
+
+    //Event
+    public static event Action<Vector2> GunFired;
+
+
 
     private void Awake()
     {
@@ -46,13 +50,20 @@ public class Gun : MonoBehaviour
         currentWeaponInformation.currentAmmo =currentAmmo;
 
         //Generate and setting bullet
-        float angel = Random.Range(-currentGunData.spreadAngle, currentGunData.spreadAngle);
+        float angel = UnityEngine.Random.Range(-currentGunData.spreadAngle, currentGunData.spreadAngle);
         dirction = Quaternion.Euler(0f, 0f, angel) * dirction;
         GameObject bulletGameObject = PoolManager.instance.Get("Bullet");
         Bullet bullet = bulletGameObject.GetComponent<Bullet>();
         bulletGameObject.transform.position = muzzle.position;
         bullet.Init(dirction, currentGunData.bulletSpeed, currentGunData.damage);
+
+        //Trigger Event
+        GunFired?.Invoke(transform.position);
+
         StartCoroutine(FireCooldown());
+
+
+
     }
 
     public void Reload()

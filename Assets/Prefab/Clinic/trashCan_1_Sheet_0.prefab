@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6995679948857465354}
   - component: {fileID: 594606668630159990}
   - component: {fileID: 3220118653074116556}
+  - component: {fileID: 723072164324208636}
   m_Layer: 8
   m_Name: trashCan_1_Sheet_0
   m_TagString: Untagged
@@ -120,3 +121,40 @@ CircleCollider2D:
   m_Offset: {x: 0.002779007, y: 0}
   serializedVersion: 2
   m_Radius: 0.20803642
+--- !u!114 &723072164324208636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8527273380673989384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5783dbbad6a59184fa58aa75d79bcc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shadowType: 1
+  shadowLayer: 0
+  shadowDistance: 0
+  shadowDistanceMin: 0.5
+  shadowDistanceMax: 1
+  shadowTranslucency: 0
+  maskType: 0
+  maskLit: 0
+  maskPivot: 0
+  maskLayer: 0
+  maskLitCustom: 1
+  bumpMapMode:
+    type: 0
+    textureType: 0
+    texture: {fileID: 0}
+    sprite: {fileID: 0}
+    invertX: 0
+    invertY: 0
+    depth: 1
+    spriteRenderer: {fileID: 0}
+  mainShape:
+    shadowType: 1
+    maskType: 0
+    maskPivot: 0
+    transform: {fileID: 0}

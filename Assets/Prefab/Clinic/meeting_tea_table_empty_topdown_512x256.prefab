@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2888137761035939739}
   - component: {fileID: 3115955734438465921}
   - component: {fileID: 3629158909959106987}
+  - component: {fileID: -5473253346713848136}
   m_Layer: 0
   m_Name: meeting_tea_table_empty_topdown_512x256
   m_TagString: Untagged
@@ -130,3 +131,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5747745, y: 0.9473876}
   m_EdgeRadius: 0
+--- !u!114 &-5473253346713848136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260791972061803681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5783dbbad6a59184fa58aa75d79bcc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shadowType: 1
+  shadowLayer: 0
+  shadowDistance: 0
+  shadowDistanceMin: 0.5
+  shadowDistanceMax: 1
+  shadowTranslucency: 0
+  maskType: 0
+  maskLit: 0
+  maskPivot: 0
+  maskLayer: 0
+  maskLitCustom: 1
+  bumpMapMode:
+    type: 0
+    textureType: 0
+    texture: {fileID: 0}
+    sprite: {fileID: 0}
+    invertX: 0
+    invertY: 0
+    depth: 1
+    spriteRenderer: {fileID: 0}
+  mainShape:
+    shadowType: 1
+    maskType: 0
+    maskPivot: 0
+    transform: {fileID: 0}

@@ -16,26 +16,21 @@ public class Enemy : MonoBehaviour
 
     private EnemyState currentState;
 
-    //Character
-    [Header("Character")]
-    public float patrolSpeed;
-    public float chaseSpeed;
-    public float damage;
-    public float health;
+    //Character Data
+    [Header("Enemy Character Data")]
+    public EnemyData enemyData;
 
+    //Current status
+    public float currentHealth;
 
     //Patrol Varible
     [Header("Patrol Parameter")]
-    public float patrolRadius ;
     private Vector2 patrolCenter;
     private Vector2 patrolTarget;
     private bool isPatrolWatiing;
 
     //Chase Vairible
     [Header("Chase Parameter")]
-    public float hearingDistance;
-    public float visionDistance ;
-    public float attackDistance;
     private LayerMask wallLayer;
     private LayerMask doorLayer;
 
@@ -63,6 +58,9 @@ public class Enemy : MonoBehaviour
 
     private void OnEnable()
     {
+        SubscribeEvent();
+
+        currentHealth = enemyData.maxHealth;
         currentState = EnemyState.Patrol;
         patrolCenter = transform.position;
         polygonCollider2D.enabled = true;
@@ -71,6 +69,8 @@ public class Enemy : MonoBehaviour
 
     private void OnDisable()
     {
+        UnsubscribeEvent();
+
         rb.velocity = Vector2.zero;
 
     }
@@ -87,6 +87,13 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    //Reset the position when retrieving from the object pool again using this method.
+    public void ResetPatrolPosition()
+    {
+        patrolCenter = transform.position;
+        SelectNewPatrolPosition();
+    }
+
 
 
 
@@ -96,7 +103,7 @@ public class Enemy : MonoBehaviour
         Vector2 playerPosition = GameManager.instance.playerController.transform.position;
         Vector2 playerDirection =playerPosition - (Vector2)transform.position;
         float distanceSqrMagnitude = playerDirection.sqrMagnitude;
-        bool playerInVisionDistance =distanceSqrMagnitude < visionDistance * visionDistance;
+        bool playerInVisionDistance =distanceSqrMagnitude < enemyData.visionDistance * enemyData.visionDistance;
         bool canSeePlayer =playerInVisionDistance && CanSeePlayer(playerPosition);
 
         switch (currentState)
@@ -113,7 +120,7 @@ public class Enemy : MonoBehaviour
 
             case EnemyState.Chase:
 
-                if(distanceSqrMagnitude > hearingDistance * hearingDistance)
+                if(distanceSqrMagnitude > enemyData.hearingDistance * enemyData.hearingDistance)
                 {
                     currentState=EnemyState.Patrol;
                     patrolCenter = transform.position;
@@ -150,7 +157,7 @@ public class Enemy : MonoBehaviour
 
 
                 aiPath.canMove = true;
-                aiPath.maxSpeed = patrolSpeed;
+                aiPath.maxSpeed = enemyData.patrolSpeed;
                 aiPath.destination = patrolTarget;
 
                 if (aiPath.reachedDestination)
@@ -165,11 +172,11 @@ public class Enemy : MonoBehaviour
 
                 PlayerController player =GameManager.instance.playerController;
                 Vector2 playerDirection =player.transform.position - transform.position;
-                bool isAttack = playerDirection.sqrMagnitude <= attackDistance * attackDistance;
+                bool isAttack = playerDirection.sqrMagnitude <= enemyData.attackDistance * enemyData.attackDistance;
                 animator.SetBool("Attack", isAttack);
 
                 aiPath.destination =player.transform.position;
-                aiPath.maxSpeed = chaseSpeed;
+                aiPath.maxSpeed = enemyData.chaseSpeed;
 
                 if (isAttack)
                 {
@@ -192,10 +199,31 @@ public class Enemy : MonoBehaviour
             transform.right = moveDirection;
         }
     }
-    
+
+
+    //However, when the player fires a shot, it will trigger this event, switching the monster into pursuit mode.
+    private void HearGunshot(Vector2 gunshotPosition)
+    {
+        if (isDead) return;
+
+        Vector2 gunshotDirection =gunshotPosition - (Vector2)transform.position;
+
+        float distanceSqrMagnitude = gunshotDirection.sqrMagnitude;
+
+        if (distanceSqrMagnitude > enemyData.hearingDistance * enemyData.hearingDistance)
+        {
+            return;
+        }
+
+        currentState = EnemyState.Chase;
+    }
+
+
+
+
     private void SelectNewPatrolPosition()
     {
-        Vector2 randomOffset = Random.insideUnitCircle * patrolRadius;
+        Vector2 randomOffset = Random.insideUnitCircle * enemyData.patrolRadius;
         Vector2 randomPosition = patrolCenter + randomOffset;
         NNInfo nearestNode = AstarPath.active.GetNearest(randomPosition);
         patrolTarget = nearestNode.position;
@@ -207,7 +235,7 @@ public class Enemy : MonoBehaviour
         //patrol Area
         Vector2 drawPatrolCenter = Application.isPlaying ? patrolCenter : transform.position;
         Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(drawPatrolCenter, patrolRadius);
+        Gizmos.DrawWireSphere(drawPatrolCenter, enemyData.patrolRadius);
 
         //Point of patrol
         if(Application.isPlaying && currentState== EnemyState.Patrol)
@@ -216,17 +244,17 @@ public class Enemy : MonoBehaviour
             Gizmos.DrawWireSphere(patrolTarget, 0.05f);
         }
 
-        //Discovery Area
+        //Discovery Area or Visual  Area
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, visionDistance);
+        Gizmos.DrawWireSphere(transform.position, enemyData.visionDistance);
 
-        //Lose Chase Area
+        //Lose Chase Area or Auditory area
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, hearingDistance);
+        Gizmos.DrawWireSphere(transform.position, enemyData.hearingDistance);
 
         //Attack Area
         Gizmos.color= Color.green;
-        Gizmos.DrawWireSphere(transform.position, attackDistance);
+        Gizmos.DrawWireSphere(transform.position, enemyData.attackDistance);
     }
 
 
@@ -252,7 +280,7 @@ public class Enemy : MonoBehaviour
         aiPath.canMove = false;
         rb.velocity = Vector2.zero;
         polygonCollider2D.enabled = false;
-        health = 0;
+        currentHealth = 0;
         animator.SetBool("Attack", false);
         animator.SetBool("Dead", isDead);
     }
@@ -265,9 +293,9 @@ public class Enemy : MonoBehaviour
         {
             Bullet bullet = collision.GetComponent<Bullet>();
 
-            if (health > 0)
+            if (currentHealth > 0)
             {
-                health -= bullet.currentDamage;
+                currentHealth -= bullet.currentDamage;
                 bleeding.BloodSpawn(bullet.moveDirection);
             }
             else
@@ -276,6 +304,18 @@ public class Enemy : MonoBehaviour
             }
 
         }
+
+    }
+
+    //Subscribe event and unsubscribe event
+    private void SubscribeEvent()
+    {
+        Gun.GunFired += HearGunshot;
+    }
+
+    private void UnsubscribeEvent()
+    {
+        Gun.GunFired -= HearGunshot;
 
     }
 
