@@ -8,6 +8,10 @@ public class Bullet : MonoBehaviour
     [HideInInspector]public float currentDamage;
     [HideInInspector] public Vector2 moveDirection;
 
+    //Prefab
+    [Header("Bullet Explosion Prefab")]
+    public GameObject bulletExplosionPrefab;
+
     //Component
     private Rigidbody2D rb;
     private TrailRenderer trailRenderer;
@@ -61,7 +65,7 @@ public class Bullet : MonoBehaviour
     }
     private void Destory()
     {
-        GameObject bulletExplosion = PoolManager.instance.Get("GunBulletExplosion");
+        GameObject bulletExplosion = PoolManager.instance.Get(bulletExplosionPrefab);
         bulletExplosion.transform.position = transform.position;
 
         rb.velocity = Vector2.zero;

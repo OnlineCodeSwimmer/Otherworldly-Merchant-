@@ -21,6 +21,9 @@ public class InventoryManager : MonoBehaviour
     [Header("Tooltip")]
     public Transform ItemToolTip;
 
+    //Inventory Warning
+    [Header("Inventory Warning Prefab")]
+    public GameObject inventoryWarningPrefab;
 
     //Item Variable
     public InventoryGrid selectedInventoryGrid;
@@ -314,10 +317,10 @@ public class InventoryManager : MonoBehaviour
 
         if (selectedItem != null)
         {
-            if (!PoolManager.instance.HasActiveObject("InventoryWarning"))
+            if (!PoolManager.instance.HasActiveObject(inventoryWarningPrefab))
             {
 
-                GameObject text = PoolManager.instance.Get("InventoryWarning");
+                GameObject text = PoolManager.instance.Get(inventoryWarningPrefab);
                 text.transform.SetParent(mainInventoryUI.transform);
                 text.transform.SetAsLastSibling();
                 text.GetComponent<RectTransform>().anchoredPosition = new Vector2(140f, -450f);

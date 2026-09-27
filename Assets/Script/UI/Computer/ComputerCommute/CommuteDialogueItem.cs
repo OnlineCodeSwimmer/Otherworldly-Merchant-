@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
-using static RandomDialogueGenerate;
 
 public class CommuteDialogueItem : MonoBehaviour
 {
@@ -20,7 +19,7 @@ public class CommuteDialogueItem : MonoBehaviour
     private Text nameText; 
     private Text messageText;
     private Text priceText;
-    private List<ItemRequirement> requiredItems;
+    private List<CommuteDialogueData.ItemRequirement> requiredItems;
     private InventoryGrid storageInventoryGrid;
     private Button tradeButton;
     private CanvasGroup canvasGroup;
@@ -52,7 +51,7 @@ public class CommuteDialogueItem : MonoBehaviour
         string nameText, 
         string messageText,
         float price,
-        List<ItemRequirement> requiredItems,
+        List<CommuteDialogueData.ItemRequirement> requiredItems,
         InventoryGrid storageInventoryGrid
         )
     {

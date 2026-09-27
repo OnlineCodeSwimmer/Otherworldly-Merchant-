@@ -17,11 +17,15 @@ public class InventoryItemGenerate : MonoBehaviour
     public float rareProbability = 25f;
     public float legendaryProbability = 5f;
 
+    
 
-    [Header("Inventory ItemData")]
+    //Inventory Item Data
+    [Header("Inventory Item Data")]
     public InventoryItemData[] inventoryItemToGenerateData;
     public InventoryItemData[] randomInventoryItemToGenerateData;
 
+    //Prefab
+    [Header("Prefab")]
     public GameObject inventoryPrefab;
 
 
@@ -43,7 +47,7 @@ public class InventoryItemGenerate : MonoBehaviour
 
         if (inventoryItemdata == null) return null;
 
-        InventoryItem inventoryItem = PoolManager.instance.Get("Inventory Item Prefab").GetComponent<InventoryItem>();
+        InventoryItem inventoryItem = PoolManager.instance.Get(inventoryPrefab).GetComponent<InventoryItem>();
         inventoryItem.Set(inventoryItemdata, inventoryGrid);
 
         return inventoryItem;

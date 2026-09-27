@@ -19,6 +19,10 @@ public class Gun : MonoBehaviour
     //Component
     Transform muzzle;
 
+    //Bullet 
+    [Header("Bullet Prefab")]
+    public GameObject bulletPrefab;
+
     //Event
     public static event Action<Vector2> GunFired;
 
@@ -52,7 +56,7 @@ public class Gun : MonoBehaviour
         //Generate and setting bullet
         float angel = UnityEngine.Random.Range(-currentGunData.spreadAngle, currentGunData.spreadAngle);
         dirction = Quaternion.Euler(0f, 0f, angel) * dirction;
-        GameObject bulletGameObject = PoolManager.instance.Get("Bullet");
+        GameObject bulletGameObject = PoolManager.instance.Get(bulletPrefab);
         Bullet bullet = bulletGameObject.GetComponent<Bullet>();
         bulletGameObject.transform.position = muzzle.position;
         bullet.Init(dirction, currentGunData.bulletSpeed, currentGunData.damage);

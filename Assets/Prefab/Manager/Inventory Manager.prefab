@@ -125,6 +125,7 @@ MonoBehaviour:
   inventoryItemToolTip: {fileID: 529371809667864989}
   highlighter: {fileID: 4980919404590419317}
   ItemToolTip: {fileID: 6354235138829119906}
+  inventoryWarningPrefab: {fileID: 1522640642585636200, guid: 9fc27cd064b521747a2f734ec73110fd, type: 3}
   selectedInventoryGrid: {fileID: 0}
   inventoryUIpanel: {fileID: 4087908108137427910}
   mainInventoryUI: {fileID: 7544586088187375490}

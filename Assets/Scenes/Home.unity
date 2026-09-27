@@ -4095,19 +4095,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storageInventoryGrid: {fileID: 905131269}
   dialogueCount: 10
+  CommuniteDialoguePrefab: {fileID: 487251586614954850, guid: c2475ddd2ae6be941849e11374eed653, type: 3}
   characterOptions:
-  - characterName: Jake
-    avatar: {fileID: 21300000, guid: ed82b1216f4487341957ed2ddb1f4138, type: 3}
-  - characterName: Georage
-    avatar: {fileID: 21300000, guid: c4f61d80f0aa2ab47a413fc2024ba40e, type: 3}
-  - characterName: Harry
-    avatar: {fileID: 21300000, guid: f9a34b4d28f3b844ca2a35e48ef46fb8, type: 3}
-  - characterName: HazelLily
-    avatar: {fileID: 21300000, guid: 95d7856bf6fb0ea4d91e2e00d3639798, type: 3}
-  - characterName: Lumen
-    avatar: {fileID: 21300000, guid: 3bc8db24db7825247804c526982013f0, type: 3}
-  - characterName: YorkshireTom
-    avatar: {fileID: 21300000, guid: cdc9aa6c751d72c49bb94d75f46ce234, type: 3}
+  - {fileID: 11400000, guid: 1e8509238ae24556a4f3db4755974620, type: 2}
+  - {fileID: 11400000, guid: e1d7c26fd280406eb0e2380e82d6605e, type: 2}
+  - {fileID: 11400000, guid: cbb2239cc693449da5ffda108bc0ed6f, type: 2}
+  - {fileID: 11400000, guid: 06c58b81a73e42c994a0bf23555fc33b, type: 2}
+  - {fileID: 11400000, guid: 164c2ec589f84b8c9b453d14b9e5fb2c, type: 2}
+  - {fileID: 11400000, guid: 9bd433c488fd46be96d21299358b0b52, type: 2}
+  - {fileID: 11400000, guid: e96188c3ebd749a8b50ac2c54eeb7026, type: 2}
+  - {fileID: 11400000, guid: 645d89afac9e4abda95fbcbc1f6861f5, type: 2}
+  - {fileID: 11400000, guid: 5d230e7347604cf09874340d966252ed, type: 2}
+  - {fileID: 11400000, guid: f9669a5bbfa34baf92816407fd952e1a, type: 2}
+  - {fileID: 11400000, guid: 149b2d83966b4a249c8c573457008de3, type: 2}
+  - {fileID: 11400000, guid: 4e8159536b514af3b0a0b9dfef1f8232, type: 2}
+  - {fileID: 11400000, guid: e329c4f6f08c45f09b1a0bd2f76d9521, type: 2}
+  - {fileID: 11400000, guid: 58e32fbdc223439e83676eea287882e5, type: 2}
+  - {fileID: 11400000, guid: f3e9258eda7e4be7b91af27112816dc7, type: 2}
+  - {fileID: 11400000, guid: 2c540cd5644547c58c20e2443726d872, type: 2}
+  - {fileID: 11400000, guid: f8c757d7c6d0442181b4e7adec100b62, type: 2}
+  - {fileID: 11400000, guid: 95d35195951a4c438c67fd8f08047710, type: 2}
+  - {fileID: 11400000, guid: 741972ca0bab430ab3deb8917a1d144c, type: 2}
+  - {fileID: 11400000, guid: 4c28fc9b4b344e42a307eb414dec7fd5, type: 2}
+  - {fileID: 11400000, guid: c8f9507e71274251960e3cbed2b85b25, type: 2}
+  - {fileID: 11400000, guid: 80b57037709b4b809c75f7d6057222e7, type: 2}
+  - {fileID: 11400000, guid: abe046bac5df4d4d843556dd4ef9f99b, type: 2}
+  - {fileID: 11400000, guid: 93ac724f3b224ab2b5abe7c2141ce324, type: 2}
   messageOption:
   - messageText: 'Who has poison? I want a bottle. '
     requiredItems:
@@ -5129,6 +5142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c009f6287088da4dab6b06c4359abc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryItemPrefab: {fileID: 433883997196567079, guid: 73b924acfb2c9ea4892bfcaaa6de9dea, type: 3}
   savedInventoryGrids:
   - {fileID: 0}
   - {fileID: 0}
@@ -14429,6 +14443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalText: {fileID: 1114305622}
   shoppingItemList: {fileID: 1862185112}
+  shoppingListItemPrefab: {fileID: 772483772665721085, guid: 4580c60ec0779a44e999c839816be56a, type: 3}
 --- !u!1 &1503408190
 GameObject:
   m_ObjectHideFlags: 0

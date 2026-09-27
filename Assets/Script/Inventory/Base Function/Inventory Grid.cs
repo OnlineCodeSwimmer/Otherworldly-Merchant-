@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
-using static RandomDialogueGenerate;
 
 public class InventoryGrid : MonoBehaviour
 {
@@ -258,7 +257,7 @@ public class InventoryGrid : MonoBehaviour
         return count;   
     }
 
-    public bool HasRequiredItems(List<ItemRequirement> requirements)
+    public bool HasRequiredItems(List<CommuteDialogueData.ItemRequirement> requirements)
     {
 
         Dictionary<string, int> requiredAmounts = BuildRequiredAmounts(requirements);
@@ -275,7 +274,7 @@ public class InventoryGrid : MonoBehaviour
         return true;
     }
 
-    public void RemoveRequiredItems(List<ItemRequirement> requirements)
+    public void RemoveRequiredItems(List<CommuteDialogueData.ItemRequirement> requirements)
     {
 
         Dictionary<string, int> requiredAmounts=BuildRequiredAmounts(requirements);
@@ -303,11 +302,11 @@ public class InventoryGrid : MonoBehaviour
     }
 
 
-    private Dictionary<string, int> BuildRequiredAmounts(List<ItemRequirement> requirements)
+    private Dictionary<string, int> BuildRequiredAmounts(List<CommuteDialogueData.ItemRequirement> requirements)
     {
         Dictionary<string, int> requiredAmounts = new Dictionary<string, int>();
 
-        foreach (ItemRequirement requirement in requirements)
+        foreach (CommuteDialogueData.ItemRequirement requirement in requirements)
         {
             string itemID = requirement.inventoryItemData.ItemID;
             int amount = requirement.amount;

@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c036c4b09de30e04c8f5d072640453ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloodSparyName: Blood Spray1
+  bloodSpary: {fileID: 3768209144619257217, guid: 8354ebc879c325c44ba3876f652565e2, type: 3}
 --- !u!114 &7633103394522762226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,6 +251,7 @@ MonoBehaviour:
   currentAmmo: 0
   currentGunData: {fileID: 0}
   isReloding: 0
+  bulletPrefab: {fileID: 2306138944757512274, guid: cfdbf9b2628fcc94588d3856acf1565a, type: 3}
 --- !u!1 &5125923954005519362
 GameObject:
   m_ObjectHideFlags: 0

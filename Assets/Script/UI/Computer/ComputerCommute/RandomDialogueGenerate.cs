@@ -14,35 +14,6 @@ public class RandomDialogueGenerate : MonoBehaviour
     }
 
 
-    //Struct
-    //Charcter name and avater struct
-    [System.Serializable]
-    public struct CharacterOption
-    {
-        public string characterName;
-        public Sprite avatar;
-    }
-    //Requirement struct
-    [System.Serializable]
-    public struct ItemRequirement
-    {
-        public InventoryItemData inventoryItemData;
-        public int amount;
-    }
-
-
-
-
-    //Message struct
-    [System.Serializable]
-    public struct MessageOption
-    {
-        public string messageText;
-        public List<ItemRequirement> requiredItems;
-        public float minPrice;
-        public float maxPrice;
-    }
-
     //InventoryGrid
     public InventoryGrid storageInventoryGrid;
 
@@ -55,12 +26,15 @@ public class RandomDialogueGenerate : MonoBehaviour
     //List
     //Character name and avatar List
     [Header("Character Name and Avatar")]
-    public List<CharacterOption> characterOptions = new List<CharacterOption>();
+    public List<CommuteCharacterData> characterOptions = new List<CommuteCharacterData>();
 
     //Message list
     [Header("Message")]
-    public List<MessageOption> messageOption = new List<MessageOption>();
+    public List<CommuteDialogueData> messageOption = new List<CommuteDialogueData>();
 
+    //Prefab
+    [Header("Prefab")]
+    public GameObject CommuniteDialoguePrefab;
 
 
     private void Awake()
@@ -85,16 +59,16 @@ public class RandomDialogueGenerate : MonoBehaviour
     {
         for(int i = 0; i < dialogueCount; i++)
         {
-            
-            CharacterOption randomCharacterOption = characterOptions[Random.Range(0, characterOptions.Count)];
-            MessageOption randomMessageOption = messageOption[Random.Range(0, messageOption.Count)];
+
+            CommuteCharacterData randomCharacterOption = characterOptions[Random.Range(0, characterOptions.Count)];
+            CommuteDialogueData randomMessageOption = messageOption[Random.Range(0, messageOption.Count)];
 
             //Generate price
             int minCents = (int)(randomMessageOption.minPrice * 100f);
             int maxCents = (int)(randomMessageOption.maxPrice * 100f);
             float randomPrice = Random.Range(minCents, maxCents + 1) / 100f;
 
-            CommuteDialogueItem dialogueItem = PoolManager.instance.Get("Commute Dialoge Prefab").GetComponent<CommuteDialogueItem>();
+            CommuteDialogueItem dialogueItem = PoolManager.instance.Get(CommuniteDialoguePrefab).GetComponent<CommuteDialogueItem>();
             dialogueItem.transform.SetParent(transform, false);
             dialogueItem.Setup(
                 randomCharacterOption.avatar, 

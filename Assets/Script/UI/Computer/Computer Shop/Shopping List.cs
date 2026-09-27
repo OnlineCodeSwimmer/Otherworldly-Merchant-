@@ -23,6 +23,9 @@ public class ShoppingList : MonoBehaviour
     public Text totalText;
     public GameObject shoppingItemList;
 
+    //Prefab
+    [Header("Prefab")]
+    public GameObject shoppingListItemPrefab;
     private void OnEnable()
     {
         ClearShoppingList();
@@ -98,7 +101,7 @@ public class ShoppingList : MonoBehaviour
 
         if (entry == null)
         {
-            GameObject itemObject = PoolManager.instance.Get("Shopping List Item");
+            GameObject itemObject = PoolManager.instance.Get(shoppingListItemPrefab);
             itemObject.transform.SetParent(shoppingItemList.transform);
 
             ShoppingListItem shoppingListItem = itemObject.GetComponent<ShoppingListItem>();

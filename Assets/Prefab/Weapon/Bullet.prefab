@@ -242,6 +242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentDamage: 0
   moveDirection: {x: 0, y: 0}
+  bulletExplosionPrefab: {fileID: 6807008833943084622, guid: 782c89169f036aa4b952f79c9c1aefc2, type: 3}
 --- !u!61 &3671610422876512979
 BoxCollider2D:
   m_ObjectHideFlags: 0

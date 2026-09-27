@@ -20,7 +20,10 @@ public class EnemySpawnManager : MonoBehaviour
     public SpawnAreaData[] spawnAreas;
 
 
-
+    private void Start()
+    {
+        SpawnEnemies();
+    }
 
 
     public void SpawnEnemies()
@@ -47,7 +50,7 @@ public class EnemySpawnManager : MonoBehaviour
 
             // 随机选择这个区域允许出现的怪物
             int enemyIndex = Random.Range(0, area.enemyPrefabs.Length);
-            GameObject enemy = PoolManager.instance.Get(area.enemyPrefabs[enemyIndex].name);
+            GameObject enemy = PoolManager.instance.Get(area.enemyPrefabs[enemyIndex]);
 
             enemy.transform.position = points[i].position;
             enemy.GetComponent<Enemy>().ResetPatrolPosition();

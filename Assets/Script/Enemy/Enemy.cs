@@ -8,13 +8,14 @@ using Pathfinding;
 public class Enemy : MonoBehaviour
 {
     //State
-    private enum EnemyState
+    protected enum EnemyState
     {
+        Idle,
         Patrol,
         Chase
     }
 
-    private EnemyState currentState;
+    protected EnemyState currentState;
 
     //Character Data
     [Header("Enemy Character Data")]
@@ -27,7 +28,6 @@ public class Enemy : MonoBehaviour
     [Header("Patrol Parameter")]
     private Vector2 patrolCenter;
     private Vector2 patrolTarget;
-    private bool isPatrolWatiing;
 
     //Chase Vairible
     [Header("Chase Parameter")]
@@ -56,7 +56,7 @@ public class Enemy : MonoBehaviour
     }
 
 
-    private void OnEnable()
+    protected virtual void OnEnable()
     {
         SubscribeEvent();
 
@@ -98,7 +98,7 @@ public class Enemy : MonoBehaviour
 
 
 
-    private void UpdateState()
+    protected virtual void UpdateState()
     {
         Vector2 playerPosition = GameManager.instance.playerController.transform.position;
         Vector2 playerDirection =playerPosition - (Vector2)transform.position;
@@ -108,6 +108,15 @@ public class Enemy : MonoBehaviour
 
         switch (currentState)
         {
+            case EnemyState.Idle:
+
+                if (canSeePlayer)
+                {
+                    currentState = EnemyState.Chase;
+                }
+
+                break;
+
             case EnemyState.Patrol:
 
                 if (canSeePlayer)
@@ -139,7 +148,7 @@ public class Enemy : MonoBehaviour
         animator.SetFloat("VelocityX", Mathf.Abs(velocity.x));
         animator.SetFloat("VelocityY", Mathf.Abs(velocity.y));
     }
-    private bool CanSeePlayer(Vector2 playerPosition)
+    protected bool CanSeePlayer(Vector2 playerPosition)
     {
 
         RaycastHit2D wallHit = Physics2D.Linecast(transform.position,playerPosition,wallLayer);
@@ -152,10 +161,15 @@ public class Enemy : MonoBehaviour
 
         switch (currentState)
         {
+            case EnemyState.Idle:
+
+                aiPath.canMove = false;
+                rb.velocity = Vector2.zero;
+                animator.SetBool("Attack", false);
+
+                break;
+
             case EnemyState.Patrol:
-                if (isPatrolWatiing) return;
-
-
                 aiPath.canMove = true;
                 aiPath.maxSpeed = enemyData.patrolSpeed;
                 aiPath.destination = patrolTarget;
@@ -262,14 +276,19 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator PatrolWait()
     {
-        isPatrolWatiing = true;
+        currentState = EnemyState.Idle;
         aiPath.canMove = false;
 
         yield return new WaitForSeconds(1f);
 
+        if (currentState != EnemyState.Idle)
+        {
+            yield break;
+        }
+
+
         SelectNewPatrolPosition();
         aiPath.destination = patrolTarget;
-        isPatrolWatiing = false;
 
     }
 
@@ -287,18 +306,16 @@ public class Enemy : MonoBehaviour
 
 
     //Trrigger Area
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
        if( collision.CompareTag("Bullet"))
         {
             Bullet bullet = collision.GetComponent<Bullet>();
 
-            if (currentHealth > 0)
-            {
-                currentHealth -= bullet.currentDamage;
-                bleeding.BloodSpawn(bullet.moveDirection);
-            }
-            else
+            currentHealth -= bullet.currentDamage;
+            bleeding.BloodSpawn(bullet.moveDirection);
+
+            if (currentHealth <= 0)
             {
                 Die();
             }
@@ -308,12 +325,12 @@ public class Enemy : MonoBehaviour
     }
 
     //Subscribe event and unsubscribe event
-    private void SubscribeEvent()
+    protected virtual void SubscribeEvent()
     {
         Gun.GunFired += HearGunshot;
     }
 
-    private void UnsubscribeEvent()
+    protected virtual void UnsubscribeEvent()
     {
         Gun.GunFired -= HearGunshot;
 

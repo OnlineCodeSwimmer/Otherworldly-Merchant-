@@ -1,5 +1,42 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1893905970666607187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 8271196733289242808}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5783dbbad6a59184fa58aa75d79bcc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shadowType: 1
+  shadowLayer: 0
+  shadowDistance: 0
+  shadowDistanceMin: 0.5
+  shadowDistanceMax: 1
+  shadowTranslucency: 0
+  maskType: 0
+  maskLit: 0
+  maskPivot: 0
+  maskLayer: 0
+  maskLitCustom: 1
+  bumpMapMode:
+    type: 0
+    textureType: 0
+    texture: {fileID: 0}
+    sprite: {fileID: 0}
+    invertX: 0
+    invertY: 0
+    depth: 1
+    spriteRenderer: {fileID: 0}
+  mainShape:
+    shadowType: 1
+    maskType: 0
+    maskPivot: 0
+    transform: {fileID: 0}
 --- !u!1 &5594014916224305538
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +48,6 @@ GameObject:
   - component: {fileID: 4058451564830330880}
   - component: {fileID: 5891625378690204914}
   - component: {fileID: 4242075308760670543}
-  - component: {fileID: -607912521180146403}
   m_Layer: 8
   m_Name: Guest Table 1
   m_TagString: Untagged
@@ -174,13 +210,13 @@ PolygonCollider2D:
       - {x: 1.4921875, y: -0.8625}
       - {x: 1.5609375, y: -0.78125}
   m_UseDelaunayMesh: 0
---- !u!114 &-607912521180146403
+--- !u!114 &2992159534839727534
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_PrefabInstance: {fileID: 7814199994076493352}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5594014916224305538}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5783dbbad6a59184fa58aa75d79bcc02, type: 3}

@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c036c4b09de30e04c8f5d072640453ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloodSparyName: Blood Spray2
+  bloodSpary: {fileID: 3768209144619257217, guid: cb3031ee7485aa5498046a15c458a962, type: 3}
 --- !u!114 &2680418739500109326
 MonoBehaviour:
   m_ObjectHideFlags: 0

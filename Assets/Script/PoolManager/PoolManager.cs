@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class PoolManager : MonoBehaviour
 {
-    //Prefabs Store
-    [Header("Prefabs Store")]
-    public GameObject[] prefabs;
-    private Dictionary<string, List<GameObject>> pools = new Dictionary<string, List<GameObject>>();
-    private Dictionary<string, GameObject> prefabDictionary = new Dictionary<string, GameObject>();
+    //Prefabs Data
+    [Header("Prefabs Data")]
+    private Dictionary<GameObject, List<GameObject>> pools = new Dictionary<GameObject, List<GameObject>>();
 
 
     public static PoolManager instance;
@@ -17,68 +15,44 @@ public class PoolManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        InitPool();
 
     }
 
-    private void InitPool() //Initialize Object Pool
-    {
-        foreach (GameObject prefab in prefabs)
-        {
-            if (prefab == null)
-            {
-                Debug.LogWarning("Some prefab disapper ");
-                continue;
-            }
-
-            string prefabName = prefab.name;
-
-            prefabDictionary.Add(prefabName, prefab);
-            pools.Add(prefabName, new List<GameObject>());
-        }
-    }
-    public GameObject Get(string prefabName)
+    public GameObject Get(GameObject prefab)
     {
 
-        GameObject selectedObject = null;
-
-        if (!prefabDictionary.ContainsKey(prefabName))
+        if (!pools.TryGetValue(prefab, out List<GameObject> pool))
         {
-            Debug.LogWarning("The prefab is not exist: " + prefabName);
-            return null;
+            pool = new List<GameObject>();
+            pools.Add(prefab, pool);
         }
 
-        foreach (GameObject item in pools[prefabName]) //Get object from pool, activate if exists, avoid new instantiation
+        foreach (GameObject item in pool)
         {
-            if (!item.activeSelf)
+            if (item != null && !item.activeSelf && item.transform.parent == transform)
             {
-                if (item.transform.parent == transform)
-                {
-                    selectedObject = item;
-                    selectedObject.SetActive(true);
-                    break;
-                }
+                item.SetActive(true);
+                return item;
             }
         }
 
-        if (selectedObject == null)
-        {
-            selectedObject = Instantiate(prefabDictionary[prefabName], transform);
-            selectedObject.name = prefabName;
-            pools[prefabName].Add(selectedObject);
-        }
+        GameObject newObject = Instantiate(prefab, transform);
+        newObject.name = prefab.name;
+        pool.Add(newObject);
 
-        return selectedObject;
+
+        return newObject;
     }
-    public bool HasActiveObject(string prefabName)//Used to check if an object is active 
+
+    //This is for the Inventory warning, but the way it's generated is somewhat redundant£¬remember to optimize it later.
+    public bool HasActiveObject(GameObject prefab)
     {
-        if (!pools.ContainsKey(prefabName))
+        if (!pools.TryGetValue(prefab, out List<GameObject> pool))
         {
-            Debug.LogError("The prefab is not exist: " + prefabName);
             return false;
         }
 
-        foreach (GameObject item in pools[prefabName])
+        foreach (GameObject item in pool)
         {
             if (item.activeSelf)
             {
@@ -88,6 +62,15 @@ public class PoolManager : MonoBehaviour
 
         return false;
     }
+
+
+    public void Recycle(GameObject gameObject, bool keepWorldTransform = true)
+    {
+        gameObject.SetActive(false);
+        gameObject.transform.SetParent(transform, keepWorldTransform);
+    }
+
+
 }
 
 

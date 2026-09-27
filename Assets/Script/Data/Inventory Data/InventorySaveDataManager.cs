@@ -20,6 +20,10 @@ public class InventorySaveDataManager : MonoBehaviour
 
     public static InventorySaveDataManager instance;
 
+    //Prefab
+    [Header("Prefab")]
+    public GameObject inventoryItemPrefab;
+
 
     private void Awake()
     {
@@ -37,7 +41,7 @@ public class InventorySaveDataManager : MonoBehaviour
         }
 
         string json = File.ReadAllText(savePath);
-        GameSaveData saveData = JsonUtility.FromJson<GameSaveData>(ConvertLegacyItemIDs(json));
+        GameSaveData saveData = JsonUtility.FromJson<GameSaveData>(json);
 
         foreach (InventoryGrid inventoryGrid in savedInventoryGrids)
         {
@@ -116,15 +120,6 @@ public class InventorySaveDataManager : MonoBehaviour
         return null;
     }
 
-    private static string ConvertLegacyItemIDs(string json)
-    {
-        // Older saves stored item IDs as integers, which discarded leading zeros.
-        return Regex.Replace(
-            json,
-            @"(?<!\\)""ItemID""\s*:\s*(\d+)(?=\s*[,}])",
-            match => "\"ItemID\": \"" + match.Groups[1].Value.PadLeft(4, '0') + "\""
-        );
-    }
 
     private InventoryItemData FindInventoryItemData(string ItemId)
     {
@@ -156,7 +151,7 @@ public class InventorySaveDataManager : MonoBehaviour
 
             if(inventoryItemData == null)  continue;
 
-            InventoryItem inventoryItem = PoolManager.instance.Get("Inventory Item Prefab").GetComponent<InventoryItem>();
+            InventoryItem inventoryItem = PoolManager.instance.Get(inventoryItemPrefab).GetComponent<InventoryItem>();
             inventoryItem.Set(inventoryItemData, inventorygrid);
             inventoryItem.SetRotationIndex(inventoryItemSaveData.rotationIndex);
             inventorygrid.PlaceInventoryItem(inventoryItem, inventoryItemSaveData.x, inventoryItemSaveData.y);
